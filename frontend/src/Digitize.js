@@ -1,9 +1,10 @@
 import React from 'react';
+import { Home } from './pages/Home';
 
 export const Digitize = () => {
   return (
     <>
-      <h1>Digitize App Start </h1>
+      <Home />
     </>
   );
 };

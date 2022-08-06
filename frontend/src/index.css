@@ -1,3 +1,38 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-size: 65.2%;
+    min-width: 320px;
+}
+
 body {
-    background-color: #ccc;
+    color: #FFFFFF;
+    font-family: 'Saira', sans-serif;
+}
+
+*,
+*:after,
+*::before {
+    box-sizing: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.container {
+    width: 90%;
+    max-width: 1800px;
+    margin: 0 auto;
 }
