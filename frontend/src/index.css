@@ -33,7 +33,16 @@ img {
 
 .container {
     width: 90%;
-    max-width: 1800px;
+    max-width: 1300px;
     /* min-width: 320px; */
     margin: 0 auto;
+}
+
+
+/* helpers */
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

@@ -1,0 +1,10 @@
+.icon-row-down {
+    margin-top: 10rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .icon-row-down {
+        display: none;
+    }
+
+}

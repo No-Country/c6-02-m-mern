@@ -1,0 +1,27 @@
+.button {
+    background-color: hsl(80, 100%, 70%);
+    color: #05668D;
+    width: 195px;
+    height: 45px;
+    font-weight: 700;
+    font-size: 16px;
+
+    text-align: center;
+    line-height: 45px;
+    margin-top: 112px;
+    /* cambiar margin top */
+    border-radius: 20px;
+    box-shadow: 4px 20px 7px -10px hsl(80deg 100% 70% / 81%);
+    margin: 0 auto;
+
+
+}
+
+@media screen and (min-width: 1024px) {
+    .button {
+        width: 333px;
+        height: 79px;
+        font-size: 40px;
+        line-height: 79px;
+    }
+}
