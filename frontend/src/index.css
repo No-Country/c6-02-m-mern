@@ -5,6 +5,10 @@ html {
     min-width: 320px;
 }
 
+/* * {
+    border: 1px solid white;
+} */
+
 body {
     color: #FFFFFF;
     font-family: 'Saira', sans-serif;
