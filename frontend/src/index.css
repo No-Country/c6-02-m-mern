@@ -34,5 +34,6 @@ img {
 .container {
     width: 90%;
     max-width: 1800px;
+    /* min-width: 320px; */
     margin: 0 auto;
 }

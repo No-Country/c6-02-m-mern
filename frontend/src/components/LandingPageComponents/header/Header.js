@@ -1,7 +1,8 @@
 import React from 'react';
+import './header.css';
 
-import logoDigitize from '../assets/images/digital-logo.svg';
-import iconHamburger from '../assets/images/hamburger.svg';
+import logoDigitize from '../../../assets/images/digital-logo.svg';
+import iconHamburger from '../../../assets/images/hamburger.svg';
 
 export const Header = () => {
   return (

@@ -1,10 +1,10 @@
 import React from 'react';
-import { Home } from './pages/Home';
+import { LandingPage } from './pages/LandingPagePrincipal/LandingPage';
 
 export const Digitize = () => {
   return (
     <>
-      <Home />
+      <LandingPage />
     </>
   );
 };
