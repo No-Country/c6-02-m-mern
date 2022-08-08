@@ -75,6 +75,11 @@ mobile */
     color: white;
 }
 
+.Ulist__link span {
+    color: rgb(190, 188, 18);
+}
+
+
 /* desktop */
 
 @media screen and (min-width: 1024px) {

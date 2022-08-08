@@ -15,7 +15,7 @@ export const Header = () => {
           <ul className="Ulist">
             <li className="Ulist__list">
               <a className="Ulist__link" href="#">
-                digitize NOW!
+                digitize <span>NOW</span>!
               </a>
             </li>
             <li className="Ulist__list">
