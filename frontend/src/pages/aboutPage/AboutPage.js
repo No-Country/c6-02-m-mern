@@ -4,7 +4,7 @@ import './aboutPage.css';
 export const AboutPage = () => {
   return (
     <div className="aboutPage">
-      <h2>aboutPage</h2>
+      <h1>aboutPage</h1>
       <hr />
     </div>
   );
