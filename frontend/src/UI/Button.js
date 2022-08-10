@@ -1,6 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './button.css';
 
 export const Button = () => {
-  return <div className="button">START NOW!</div>;
+  return (
+    <Link to="/desing-packs-page" className="button">
+      START NOW!
+    </Link>
+  );
 };

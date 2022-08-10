@@ -1,0 +1,62 @@
+/*principal section*/
+.sectionDiscover {
+    background: linear-gradient(0deg, #05668D, #05668D);
+    color: white;
+}
+
+/*titulo*/
+.wrapper-title {
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 37px;
+}
+
+.wrapper-title__title {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 600px;
+}
+
+
+/*contenedor */
+.wrapper-discover {}
+
+/*card*/
+
+.card {
+    width: 90%;
+    margin-top: 90px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.card__img {
+    margin: 0 auto;
+}
+
+.card__paragraph {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0 auto;
+    max-width: 326px;
+    margin-top: 4rem;
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    .wrapper-discover {
+        display: flex;
+        align-items: center;
+        height: 70vh;
+    }
+
+    .card {
+        margin-top: -25px;
+        padding: 10rem;
+    }
+
+
+
+}

@@ -50,3 +50,11 @@ img {
     justify-content: center;
     align-items: center;
 }
+
+.color-yellow {
+    background: linear-gradient(0deg, #CCFF66, #CCFF66);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
