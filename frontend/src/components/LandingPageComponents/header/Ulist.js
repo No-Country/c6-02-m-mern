@@ -11,7 +11,6 @@ export const Ulist = ({ setIsActiveNav }) => {
   return (
     <ul className="Ulist">
       {links.map((link) => {
-        console.log(link);
         return (
           <List
             key={link.id}
