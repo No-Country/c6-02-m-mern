@@ -6,9 +6,7 @@ import { Ulist } from './Ulist';
 import { LogoDigitize } from './LogoDigitize';
 import { HamburgerLogo } from './HamburgerLogo';
 
-export const Header = () => {
-  const [isActiveNav, setIsActiveNav] = useState(false);
-
+export const Header = ({ setIsActiveNav, isActiveNav }) => {
   const handlerHamburger = () => {
     setIsActiveNav(true);
   };
