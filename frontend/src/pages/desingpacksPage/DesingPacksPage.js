@@ -1,14 +1,11 @@
 import React from 'react';
+import { HeaderSub } from '../../components/DesingPageComponents/HeaderSub';
 import './desingPacksPage.css';
 
-export const DesingPacksPage = () => {
+export const DesingPacksPage = ({ setIsActiveNav }) => {
   return (
     <div className="desingPacksPage">
-      <h2>
-        AQUI CREAR SUS COMPONENTES ojo porfavor sus componentes en los folders
-        de componentes
-      </h2>
-      <hr />
+      <HeaderSub setIsActiveNav={setIsActiveNav} />
     </div>
   );
 };
