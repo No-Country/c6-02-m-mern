@@ -1,0 +1,41 @@
+.SectionContact {
+    background: #171716;
+    padding-bottom: 4rem;
+}
+
+.SectionContact-header {
+    background: linear-gradient(180deg, #05668D 0%, #171716 100%);
+}
+
+.SectionContact-header__title {
+    margin: 0;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .SectionContact__wrapper-main {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-top: 3rem;
+    }
+
+
+    .wrapper-input {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .wrapper-media {
+        width: 50%;
+    }
+
+    .SectionContact-header__title {
+        font-size: 48px;
+    }
+
+}
