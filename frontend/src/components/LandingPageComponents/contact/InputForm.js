@@ -1,8 +1,9 @@
 import React from 'react';
+import './input.css';
 
 export const InputForm = () => {
   return (
-    <form>
+    <form className="InputForm">
       <label for="">Full name</label>
       <input type="text" placeholder="Ex: Jhon Black" />
       <label for="">Mail</label>

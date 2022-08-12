@@ -1,0 +1,13 @@
+.LogoContact {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .LogoContact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
