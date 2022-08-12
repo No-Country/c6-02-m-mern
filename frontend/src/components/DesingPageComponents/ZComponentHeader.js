@@ -22,24 +22,24 @@ export const ZComponentHeader = () => {
           y2="41.2289"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#006494" />
-          <stop offset="0.2" stop-color="#026594" />
-          <stop offset="0.27" stop-color="#096B94" />
-          <stop offset="0.32" stop-color="#147493" />
-          <stop offset="0.36" stop-color="#258192" />
-          <stop offset="0.4" stop-color="#3B9291" />
-          <stop offset="0.43" stop-color="#57A690" />
-          <stop offset="0.46" stop-color="#77BF8E" />
-          <stop offset="0.49" stop-color="#9BDB8C" />
-          <stop offset="0.5" stop-color="#B4EE8B" />
-          <stop offset="0.52" stop-color="#9FDC8E" />
-          <stop offset="0.55" stop-color="#80C193" />
-          <stop offset="0.58" stop-color="#64A997" />
-          <stop offset="0.62" stop-color="#4E969A" />
-          <stop offset="0.66" stop-color="#3D889D" />
-          <stop offset="0.71" stop-color="#327D9F" />
-          <stop offset="0.79" stop-color="#2B78A0" />
-          <stop offset="1" stop-color="#2976A0" />
+          <stop stopColor="#006494" />
+          <stop offset="0.2" stopColor="#026594" />
+          <stop offset="0.27" stopColor="#096B94" />
+          <stop offset="0.32" stopColor="#147493" />
+          <stop offset="0.36" stopColor="#258192" />
+          <stop offset="0.4" stopColor="#3B9291" />
+          <stop offset="0.43" stopColor="#57A690" />
+          <stop offset="0.46" stopColor="#77BF8E" />
+          <stop offset="0.49" stopColor="#9BDB8C" />
+          <stop offset="0.5" stopColor="#B4EE8B" />
+          <stop offset="0.52" stopColor="#9FDC8E" />
+          <stop offset="0.55" stopColor="#80C193" />
+          <stop offset="0.58" stopColor="#64A997" />
+          <stop offset="0.62" stopColor="#4E969A" />
+          <stop offset="0.66" stopColor="#3D889D" />
+          <stop offset="0.71" stopColor="#327D9F" />
+          <stop offset="0.79" stopColor="#2B78A0" />
+          <stop offset="1" stopColor="#2976A0" />
         </linearGradient>
       </defs>
     </svg>
