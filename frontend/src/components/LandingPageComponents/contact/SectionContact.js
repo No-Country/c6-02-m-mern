@@ -9,11 +9,11 @@ export const SectionContact = () => {
       <h3>Contact us </h3>
       <div className="SectionContact__wrapper-main">
         <div>
-          <InputForm />
-        </div>
-        <div>
           <SocialMedia />
           <LogoContact />
+        </div>
+        <div>
+          <InputForm />
         </div>
       </div>
     </div>
