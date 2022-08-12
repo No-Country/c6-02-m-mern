@@ -18,7 +18,22 @@
     font-size: 20px;
     font-weight: 700;
     width: 100%;
-    max-width: 171px;
+    max-width: 422px;
     margin: 0 auto;
     margin-top: 3rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .SocialMedia__list {
+        display: flex;
+        justify-content: center;
+    }
+
+    .SocialMedia__description {
+        font-size: 48px;
+    }
+
+    .SocialMedia__type {
+        padding-left: 2rem;
+    }
 }
