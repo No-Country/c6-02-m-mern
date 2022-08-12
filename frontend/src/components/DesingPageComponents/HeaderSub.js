@@ -1,16 +1,21 @@
 import React from 'react';
-import { Ulist } from '../LandingPageComponents/header/Ulist';
-import { ArrowHeader } from './ArrowHeader';
+import { Ulista } from '../DesingPageComponents/ListaDesordenada';
+import { ArrowHeader } from './ArrowHeader.js';
 import './HeaderSub.css';
 import { ZComponentHeader } from './ZComponentHeader';
+
 
 export const HeaderSub = ({ setIsActiveNav }) => {
   return (
     <header className="header">
-      <div className="header__wrapper container">
+      <div className="header__wrapper contenedor">
+        <div className="arrow">
         <ArrowHeader />
-        <nav className="nav">
-          <Ulist setIsActiveNav={setIsActiveNav} />
+        </div>
+        <nav className="navo">
+          <div className="Ulista">
+          <Ulista setIsActiveNav={setIsActiveNav} />
+          </div>
         </nav>
         <ZComponentHeader />
       </div>
