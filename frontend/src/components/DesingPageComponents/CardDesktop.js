@@ -1,19 +1,28 @@
 import React from "react";
-import './CardDesktop.css'
 import Card from "./Cards/Card";
 
 const CardDesktop = () => {
   return (
-  
-      <div className="flex-container">
-      <Card titulo={'Bronce'} />
-      <Card titulo={'Silver'}/>
-      <Card titulo={'Gold'}/>
-
-        
-        
-      </div>
- 
+    <div className="flex-container">
+      <Card
+        titulo={"Bronce"}
+        include={"include"}
+        page={"Landing page design"}
+        precio={"$ 1.000"}
+      />
+      <Card
+        titulo={"Silver"}
+        include={"include"}
+        page={"Landing page design"}
+        precio={"$ 3.000"}
+      />
+      <Card
+        titulo={"Gold"}
+        include={"include"}
+        page={"Landing page design"}
+        precio={"$ 5.000"}
+      />
+    </div>
   );
 };
 

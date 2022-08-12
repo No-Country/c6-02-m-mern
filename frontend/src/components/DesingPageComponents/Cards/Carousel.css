@@ -19,30 +19,6 @@ h2{
 h3{
     color: white;
 }
-/* p{
-    color: black;
-} */
-.precio{
-    background-color: hsl(80, 100%, 70%);
-    color: black;
-    padding: 10px;
-}
-.precios{
-    color: #05668D;
-}
-.tarjetas{
-    background-color: #05668D;
-    margin-top: 100px;
-    
-}
-
-.flex-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-
 
 
 @media screen and (min-width: 1024px){
@@ -51,6 +27,3 @@ h3{
     }
 };
 
-.seccion-card{
-    display: block;
-}
