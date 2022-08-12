@@ -1,3 +1,23 @@
 .SectionContact {
-    background: #171716c0;
+    background: #171716;
+}
+
+.SectionContact-header {
+    background: linear-gradient(180deg, #05668D 0%, #171716 100%);
+}
+
+.SectionContact-header__title {
+    margin: 0;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .SectionContact__wrapper-main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
 }
