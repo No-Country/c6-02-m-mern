@@ -1,5 +1,6 @@
 .SectionContact {
     background: #171716;
+    padding-bottom: 4rem;
 }
 
 .SectionContact-header {
@@ -18,7 +19,9 @@
     .SectionContact__wrapper-main {
         display: flex;
         flex-direction: row-reverse;
+        margin-top: 3rem;
     }
+
 
     .wrapper-input {
         width: 50%;

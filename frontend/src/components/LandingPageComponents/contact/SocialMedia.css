@@ -20,7 +20,6 @@
     width: 100%;
     max-width: 422px;
     margin: 0 auto;
-    margin-top: 3rem;
 }
 
 @media screen and (min-width: 1024px) {
@@ -35,5 +34,6 @@
 
     .SocialMedia__type {
         padding-left: 2rem;
+        width: 326px;
     }
 }

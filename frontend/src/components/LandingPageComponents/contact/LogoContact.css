@@ -10,4 +10,8 @@
         align-items: center;
         flex-direction: column;
     }
+
+    .LogoContact__zIcon {
+        padding-bottom: 2rem;
+    }
 }
