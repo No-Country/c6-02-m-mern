@@ -8,4 +8,4 @@
 
 ## Cohorte c6-02-M-MERN
 
-**Gonza Dev - segunda parte
+**Gonza
