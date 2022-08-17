@@ -7,3 +7,4 @@
 # WELCOME TO DIGITIZE APP
 
 ## Cohorte c6-02-M-MERN
+# Santiago
