@@ -3,7 +3,6 @@ import CardDesktop from "../../components/DesingPageComponents/CardDesktop";
 import Carousel from "../../components/DesingPageComponents/Cards/Carousel";
 import Titulo from "../../components/DesingPageComponents/Cards/Titulo";
 import "./desingPacksPage.css";
-import React from "react";
 import { HeaderSub } from "../../components/DesingPageComponents/HeaderSub";
 import "./desingPacksPage.css";
 
