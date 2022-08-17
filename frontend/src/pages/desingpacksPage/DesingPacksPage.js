@@ -3,8 +3,11 @@ import CardDesktop from "../../components/DesingPageComponents/CardDesktop";
 import Carousel from "../../components/DesingPageComponents/Cards/Carousel";
 import Titulo from "../../components/DesingPageComponents/Cards/Titulo";
 import "./desingPacksPage.css";
+import React from "react";
+import { HeaderSub } from "../../components/DesingPageComponents/HeaderSub";
+import "./desingPacksPage.css";
 
-export const DesingPacksPage = () => {
+export const DesingPacksPage = ({ setIsActiveNav }) => {
   return (
     <div className="desingPacksPage">
       <div class="container">
@@ -20,6 +23,8 @@ export const DesingPacksPage = () => {
           </div>
         </div>
       </div>
+
+      <HeaderSub setIsActiveNav={setIsActiveNav} />
     </div>
   );
 };
