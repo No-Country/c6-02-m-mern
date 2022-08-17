@@ -1,4 +1,5 @@
 .desingPacksPage {
     /*eliminar esta clase si necesitan esta clase es solo para que el texto se muestre ya que el fondo es blanco de la pagina*/
     color: black;
+    background-color: black;
 }

@@ -1,0 +1,12 @@
+.class-titulo{
+    color: white;
+    text-align: center;
+}
+h1{
+    font-weight: 600;
+    font-size: xx-large;
+    color:  hsl(80, 100%, 70%);
+}
+p{
+    font-size: larger;
+}
