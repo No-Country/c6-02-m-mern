@@ -2,7 +2,7 @@ import React from 'react';
 import concentrationhero from '../../../assets/images/concentration-hero.png';
 import { Button } from '../../../UI/Button';
 import './hero.css';
-import { IconRow } from './IconRow';
+
 export const Hero = () => {
   return (
     <div className="hero">
@@ -19,7 +19,6 @@ export const Hero = () => {
           </p>
         </div>
         <Button />
-        <IconRow />
       </div>
     </div>
   );
