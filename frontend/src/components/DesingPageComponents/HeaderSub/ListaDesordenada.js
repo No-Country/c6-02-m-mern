@@ -1,5 +1,5 @@
 import React from 'react';
-import { List } from '../LandingPageComponents/header/List';
+import { List } from '../../LandingPageComponents/header/List'
 
 
 export const Ulista = ({ setIsActiveNav }) => {
