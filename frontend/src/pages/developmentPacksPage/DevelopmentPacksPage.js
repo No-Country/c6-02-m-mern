@@ -1,13 +1,12 @@
 import React from 'react';
+import { HeaderSub } from '../../components/DesingPageComponents/HeaderSub/HeaderSub.js';
+import { NextAndBack } from '../../components/DesingPageComponents/DownContainer/NextBack.js';
 
-export const DevelopmentPacksPage = () => {
+export const DevelopmentPacksPage = ({ setIsActiveNav }) => {
   return (
     <div className="developmentPacksPage">
-      <h2>
-        AQUI CREAR SUS COMPONENTES ojo porfavor sus componentes en los folders
-        de componentes
-      </h2>
-      <hr />
+      <HeaderSub setIsActiveNav={setIsActiveNav} />
+      <NextAndBack/>
     </div>
   );
 };

@@ -45,7 +45,7 @@
     display: flex;
     flex-direction: row;
     height: 100%;
-    width: 80%;
+    width: 85%;
     
     justify-content: space-around;
 
@@ -82,7 +82,8 @@
 @media screen and (min-width: 1024px) {
     .header {
         font-weight: 700;
-        font-size: 20px;
+        font-size: 23px;
+
         height: 6rem;
     }
 
@@ -100,8 +101,9 @@
         padding-left: 17rem;
         }
 
-    .Ulist {
+    .Ulista {
         flex-direction: row;
+        padding-left: 2rem;
     }
 
     .z-icon {
