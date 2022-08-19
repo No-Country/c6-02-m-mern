@@ -4,17 +4,25 @@ import Carousel from "../../components/DesingPageComponents/Cards/Carousel";
 import Titulo from "../../components/DesingPageComponents/Cards/Titulo";
 import { HeaderSub } from "../../components/DesingPageComponents/HeaderSub/HeaderSub.js";
 import { NextAndBack } from "../../components/DesingPageComponents/DownContainer/NextBack.js";
+import "./desingpacksPakcs.css";
+import Question from "../../components/DesingPageComponents/Cards/Question";
 
 export const DesingPacksPage = ({ setIsActiveNav }) => {
   return (
     <div className="desingPacksPage">
-      <div class="container">
+      <div className="container">
         <HeaderSub setIsActiveNav={setIsActiveNav} />
-        <div class="row">
-          <div>
-            <Titulo />
+        <div className="row">
+          <div className="col-12 clase-titulo">
+            <div className="col-4 d-none d-lg-block">
+              <Question />
+            </div>
+            <div className="col-8">
+              <Titulo />
+            </div>
           </div>
-          <div class="col-12 d-lg-none d-md-block">
+
+          <div className="col-12 d-lg-none d-md-block">
             <Carousel />
           </div>
           <div className="col-12 d-none d-lg-block">

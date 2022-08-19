@@ -1,13 +1,17 @@
-.class-titulo{
+.class-title{
     color: white;
     text-align: center;
+    width: 300px;
 }
 h1{
     font-weight: 600;
     font-size: xx-large;
     color:  hsl(80, 100%, 70%);
 }
-p{
-    font-size: larger;
-    color: black;
+
+.clase-titulo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
 }
