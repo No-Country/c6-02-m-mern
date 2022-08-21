@@ -13,11 +13,11 @@ export const DesingPacksPage = ({ setIsActiveNav }) => {
       <div className="container">
         <HeaderSub setIsActiveNav={setIsActiveNav} />
         <div className="row">
-          <div className="col-12 clase-titulo">
-            <div className="col-4 d-none d-lg-block">
+          <div className="col-12">
+            <div className="col align-self-start">
               <Question />
             </div>
-            <div className="col-8">
+            <div className="col align-self-center">
               <Titulo />
             </div>
           </div>

@@ -1,0 +1,12 @@
+.icono-question {
+  width: 75px;
+}
+@media screen and (max-width:768px) {
+  .icono-question {
+    position: absolute;
+    top: 493px;
+    /* left: 341px; */
+    text-align: center;
+    width: 80px;
+  }
+}

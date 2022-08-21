@@ -10,7 +10,7 @@ const Card = ({ titulo, include, page, precio }) => {
         <p>{page}</p>
         <div className="precio">
         <h3 className="costo">Chose: {precio}</h3>
-        </div>
+        </div> 
       </div>
     </div>
   );
