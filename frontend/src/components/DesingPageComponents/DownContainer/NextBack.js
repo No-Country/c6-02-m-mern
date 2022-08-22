@@ -6,13 +6,16 @@ import './NextBack.css'
 
 
 export const NextAndBack = () => {
+
+   
     return (
-        <section className="containerDown">
+        <footer className="containerDown">
           
-            <div className="bar">
+            
               <Bar/>
-            </div>
+            
         
-        </section>
+        </footer>
     );
   };
+  
