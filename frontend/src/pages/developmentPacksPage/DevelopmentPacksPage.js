@@ -1,10 +1,11 @@
 import React from "react";
 import { HeaderSub } from "../../components/DesingPageComponents/HeaderSub/HeaderSub.js";
 import { NextAndBack } from "../../components/DesingPageComponents/DownContainer/NextBack.js";
+
 import TituloDevelop from "../../components/DevelopmentPacks/TituloDevelop.js";
 import Question from "../../components/DesingPageComponents/Cards/Question.js";
-import { Carousel } from "bootstrap";
 import CardDesktop from "../../components/DesingPageComponents/Cards/CardDesktop.js";
+import Carousel from "../../components/DesingPageComponents/Cards/Carousel.js";
 
 export const DevelopmentPacksPage = ({ setIsActiveNav }) => {
   return (
@@ -17,7 +18,7 @@ export const DevelopmentPacksPage = ({ setIsActiveNav }) => {
               <Question />
             </div>
             <div className="col align-self-center">
-              <TituloDevelop/>
+              <TituloDevelop />
             </div>
           </div>
 
