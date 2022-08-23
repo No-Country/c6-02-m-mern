@@ -1,0 +1,174 @@
+.paymentContainer{
+    display: flex;
+    background-color: #171716;
+    height: 86.1rem;
+    width: 100%;
+    flex-direction: column;
+    
+   
+}
+
+.accountDetails{
+   
+    display: flex;
+    width: 90%;
+    max-width: 500px;
+    height: 300px;
+    
+    background: linear-gradient(180deg, #05668D 0%, rgba(5, 102, 141, 0.16) 100%);
+    box-sizing: border-box;
+    border: 0.01px solid #05668D;
+    box-shadow: inset 6px 10px 15px rgba(33, 1, 36, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-top: 50px;
+ 
+}
+
+.accountDetails h1 {
+    
+    display: flex;
+    width: 100%;
+    height: 10%;
+    font-family: 'Saira';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 26px;
+    justify-content: center;
+    color: #ffff;
+    
+}
+
+.textContent{
+    
+    display: flex;
+    flex-direction: column;
+    position:absolute;
+    width: 95%;
+    height: 50%;
+    top: 20%;
+    left: 5%;
+}
+
+.paymentMethodContainer{
+   margin-top: 100px;
+   height: 50%;
+}
+
+.paymentMethodContainer .choose{
+    max-height: 1.5vh;
+    color: aliceblue;
+}
+
+
+
+.paymentMethodContainer p{
+    line-height: 15.92px;
+    font-size: 27px;  
+    text-align: center;
+    font-family: 'Saira';
+    font-weight: 800;
+}
+.paymentmeth{
+    color: rgba(204, 255, 102, 1);
+}
+
+.buttonsPayContainer{
+    margin-top: 100px;
+}
+
+.paymentMethodContainer .buttons {
+    justify-content: center;
+    
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    color: rgba(5, 102, 141, 1);
+    width: 53%;
+    max-width: 190px;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: 60px;
+    border-radius: 25px;
+    border: 5px solid  rgba(204, 255, 102, 1);
+    background-color: transparent;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.buttons p {
+    
+    margin-left: 25px;
+    margin-right: 10px;
+    font-size: 22px;
+}
+
+
+
+
+@media screen and (min-width: 1024px) {
+    .paymentContainer {
+            display: flex;
+            flex-direction: row;
+            
+    
+        }
+
+                 .accountDetails {
+                   
+                    display: flex;
+                    max-width: 643px;
+                    height: 541px;
+                    
+                }
+
+                    .subPaymentContainer{
+                        display: flex;
+                        height: 80%;
+                        width: 100%;
+                        margin-top: 25px;
+                    
+                    }
+
+                                        .paymentMethodContainer {
+                                         
+                                            margin-top: 0%;
+                                            width: 45%;
+                                            height: 100%;
+                                            display: flex;
+                                            
+                                        }
+
+                                                                            .subPaymentMethodContainer{
+                                                                                width: 600px;
+                                                                                margin-top: 50px;
+                                                                            }
+                                                                            .buttonsPayContainer {
+                                                                             margin-top: 190px;
+                                                                             
+                                                                            }.paymentMethodContainer p {
+                                                                                line-height: 18.92px;
+                                                                                font-size: 38px;
+                                                                            }
+                                                                            
+                                                                            .buttons {
+                                                                                display: flex;
+                                                                                align-items: center;
+                                                                                color: rgba(5, 102, 141, 1);
+                                                                                width: 407px;
+                                                                                max-width: 800px;
+                                                                                height: 88px;
+                                                                                margin: 0 auto;
+                                                                                margin-top: 60px;
+                                                                                border-radius: 25px;
+                                                                                border: 5px solid rgba(204, 255, 102, 1);
+                                                                                background-color: transparent;
+                                                                                font-weight: 700;
+                                                                            }
+
+                                                                            
+                                                                            
+}
