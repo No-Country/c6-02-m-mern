@@ -6,6 +6,7 @@ import { DevelopmentPacksPage } from './pages/developmentPacksPage/DevelopmentPa
 import { MarketinPacksPage } from './pages/marketinPage/MarketinPacksPage';
 import { AboutPage } from './pages/aboutPage/AboutPage';
 import { ContactPage } from './pages/contactPage/ContactPage';
+import { PaymentPage } from './pages/paymentPage/PaymentPage';
 
 export const Digitize = () => {
   const [isActiveNav, setIsActiveNav] = useState(false);
@@ -33,6 +34,10 @@ export const Digitize = () => {
         />
         <Route path="marketin-packs-page" element={<MarketinPacksPage />} />
         <Route path="/*" element={<LandingPage />} />
+        <Route
+        path="payment-page"
+        element={<PaymentPage/>}
+        />
       </Routes>
     </>
   );
