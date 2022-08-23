@@ -1,5 +1,5 @@
 import React from "react";
-import CardDesktop from "../../components/DesingPageComponents/CardDesktop";
+import CardDesktop from "../../components/DesingPageComponents/Cards/CardDesktop";
 import Carousel from "../../components/DesingPageComponents/Cards/Carousel";
 import Titulo from "../../components/DesingPageComponents/Cards/Titulo";
 import { HeaderSub } from "../../components/DesingPageComponents/HeaderSub/HeaderSub.js";
