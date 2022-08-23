@@ -1,5 +1,5 @@
-import React from 'react';
-import './LogoContact.css';
+import React from "react";
+import "./LogoContact.css";
 
 export const LogoContact = () => {
   return (
@@ -25,24 +25,24 @@ export const LogoContact = () => {
               y2="114.267"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stop-color="#006494" />
-              <stop offset="0.2" stop-color="#026594" />
-              <stop offset="0.27" stop-color="#096B94" />
-              <stop offset="0.32" stop-color="#147493" />
-              <stop offset="0.36" stop-color="#258192" />
-              <stop offset="0.4" stop-color="#3B9291" />
-              <stop offset="0.43" stop-color="#57A690" />
-              <stop offset="0.46" stop-color="#77BF8E" />
-              <stop offset="0.49" stop-color="#9BDB8C" />
-              <stop offset="0.5" stop-color="#B4EE8B" />
-              <stop offset="0.52" stop-color="#9FDC8E" />
-              <stop offset="0.55" stop-color="#80C193" />
-              <stop offset="0.58" stop-color="#64A997" />
-              <stop offset="0.62" stop-color="#4E969A" />
-              <stop offset="0.66" stop-color="#3D889D" />
-              <stop offset="0.71" stop-color="#327D9F" />
-              <stop offset="0.79" stop-color="#2B78A0" />
-              <stop offset="1" stop-color="#2976A0" />
+              <stop stopColor="#006494" />
+              <stop offset="0.2" stopColor="#026594" />
+              <stop offset="0.27" stopColor="#096B94" />
+              <stop offset="0.32" stopColor="#147493" />
+              <stop offset="0.36" stopColor="#258192" />
+              <stop offset="0.4" stopColor="#3B9291" />
+              <stop offset="0.43" stopColor="#57A690" />
+              <stop offset="0.46" stopColor="#77BF8E" />
+              <stop offset="0.49" stopColor="#9BDB8C" />
+              <stop offset="0.5" stopColor="#B4EE8B" />
+              <stop offset="0.52" stopColor="#9FDC8E" />
+              <stop offset="0.55" stopColor="#80C193" />
+              <stop offset="0.58" stopColor="#64A997" />
+              <stop offset="0.62" stopColor="#4E969A" />
+              <stop offset="0.66" stopColor="#3D889D" />
+              <stop offset="0.71" stopColor="#327D9F" />
+              <stop offset="0.79" stopColor="#2B78A0" />
+              <stop offset="1" stopColor="#2976A0" />
             </linearGradient>
           </defs>
         </svg>
@@ -56,7 +56,7 @@ export const LogoContact = () => {
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <g opacity="0.5" clip-path="url(#clip0_16_6)">
+          <g opacity="0.5" clipPath="url(#clip0_16_6)">
             <path
               d="M0 18.2224C2.98557 17.7425 6.00457 17.5039 9.02803 17.5089C15.1064 17.5089 19.463 18.9607 22.3387 21.6596C25.2143 24.3585 26.9915 28.1618 26.9915 33.5038C26.9915 38.9202 25.3069 43.3005 22.2646 46.353C19.2224 49.4056 14.082 51.118 7.7198 51.118C5.14108 51.1349 2.56353 51.0024 0 50.7209L0 18.2224ZM4.26409 47.445C5.6791 47.6113 7.10395 47.6776 8.52819 47.6435C17.6241 47.6435 22.5238 42.5746 22.5238 33.6403C22.5732 25.8413 18.2042 20.9151 9.23784 20.9151C7.56976 20.8953 5.9038 21.0407 4.26409 21.3494V47.445Z"
               fill="white"
@@ -99,24 +99,24 @@ export const LogoContact = () => {
               y2="70.0352"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stop-color="#006494" />
-              <stop offset="0.2" stop-color="#026594" />
-              <stop offset="0.27" stop-color="#096B94" />
-              <stop offset="0.32" stop-color="#147493" />
-              <stop offset="0.36" stop-color="#258192" />
-              <stop offset="0.4" stop-color="#3B9291" />
-              <stop offset="0.43" stop-color="#57A690" />
-              <stop offset="0.46" stop-color="#77BF8E" />
-              <stop offset="0.49" stop-color="#9BDB8C" />
-              <stop offset="0.5" stop-color="#B4EE8B" />
-              <stop offset="0.52" stop-color="#9FDC8E" />
-              <stop offset="0.55" stop-color="#80C193" />
-              <stop offset="0.58" stop-color="#64A997" />
-              <stop offset="0.62" stop-color="#4E969A" />
-              <stop offset="0.66" stop-color="#3D889D" />
-              <stop offset="0.71" stop-color="#327D9F" />
-              <stop offset="0.79" stop-color="#2B78A0" />
-              <stop offset="1" stop-color="#2976A0" />
+              <stop stopColor="#006494" />
+              <stop offset="0.2" stopColor="#026594" />
+              <stop offset="0.27" stopColor="#096B94" />
+              <stop offset="0.32" stopColor="#147493" />
+              <stop offset="0.36" stopColor="#258192" />
+              <stop offset="0.4" stopColor="#3B9291" />
+              <stop offset="0.43" stopColor="#57A690" />
+              <stop offset="0.46" stopColor="#77BF8E" />
+              <stop offset="0.49" stopColor="#9BDB8C" />
+              <stop offset="0.5" stopColor="#B4EE8B" />
+              <stop offset="0.52" stopColor="#9FDC8E" />
+              <stop offset="0.55" stopColor="#80C193" />
+              <stop offset="0.58" stopColor="#64A997" />
+              <stop offset="0.62" stopColor="#4E969A" />
+              <stop offset="0.66" stopColor="#3D889D" />
+              <stop offset="0.71" stopColor="#327D9F" />
+              <stop offset="0.79" stopColor="#2B78A0" />
+              <stop offset="1" stopColor="#2976A0" />
             </linearGradient>
             <clipPath id="clip0_16_6">
               <rect width="295" height="68" fill="white" />
