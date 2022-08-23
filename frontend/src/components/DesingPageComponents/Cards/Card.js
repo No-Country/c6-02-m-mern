@@ -3,8 +3,8 @@ import "./Card.css";
 
 const Card = ({ titulo, include, page, precio }) => {
   return (
-    <div class="card-tarjetas ">
-      <div class="card-body">
+    <div className="card-tarjetas ">
+      <div className="card-body">
         <h2>{titulo}</h2>
         <h3 className="include">{include}</h3>
         <p>{page}</p>
