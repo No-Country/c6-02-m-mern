@@ -3,13 +3,10 @@ import "./Titulo.css";
 
 const Titulo = () => {
   return (
-    <div className="class-titulo">
+    <div className="class-title">
       <h1>DESIGN PACKS</h1>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit
-        perferendis soluta pariatur ullam fuga nisi impedit quibusdam dolorem,
-        fugiat voluptates eveniet voluptatibus mollitia voluptatum natus quia
-        possimus? Deleniti, maxime nemo?
+      <p className="class-parrafo">
+        We design everything from the image of your business to the functionality of your website or software solution, to achieve an excellent experience for your users.
       </p>
     </div>
   );
