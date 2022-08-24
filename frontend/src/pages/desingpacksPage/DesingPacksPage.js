@@ -10,8 +10,8 @@ import Question from "../../components/DesingPageComponents/Cards/Question";
 export const DesingPacksPage = ({ setIsActiveNav }) => {
   return (
     <div className="desingPacksPage">
+      <HeaderSub setIsActiveNav={setIsActiveNav} />
       <div className="container">
-        <HeaderSub setIsActiveNav={setIsActiveNav} />
         <div className="row">
           <div className="col-12">
             <div className="col align-self-start">

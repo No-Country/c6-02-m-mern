@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
-import { LandingPage } from './pages/LandingPagePrincipal/LandingPage';
-import { Routes, Route } from 'react-router-dom';
-import { DesingPacksPage } from './pages/desingpacksPage/DesingPacksPage';
-import { DevelopmentPacksPage } from './pages/developmentPacksPage/DevelopmentPacksPage';
-import { MarketinPacksPage } from './pages/marketinPage/MarketinPacksPage';
-import { AboutPage } from './pages/aboutPage/AboutPage';
-import { ContactPage } from './pages/contactPage/ContactPage';
-import { PaymentPage } from './pages/paymentPage/PaymentPage';
+import React, { useState } from "react";
+import { LandingPage } from "./pages/LandingPagePrincipal/LandingPage";
+import { Routes, Route } from "react-router-dom";
+import { DesingPacksPage } from "./pages/desingpacksPage/DesingPacksPage";
+import { DevelopmentPacksPage } from "./pages/developmentPacksPage/DevelopmentPacksPage";
+import { MarketinPacksPage } from "./pages/marketinPage/MarketinPacksPage";
+import { AboutPage } from "./pages/aboutPage/AboutPage";
+import { ContactPage } from "./pages/contactPage/ContactPage";
+import { PaymentPage } from "./pages/paymentPage/PaymentPage";
 
 export const Digitize = () => {
   const [isActiveNav, setIsActiveNav] = useState(false);
@@ -33,11 +33,8 @@ export const Digitize = () => {
           element={<DevelopmentPacksPage />}
         />
         <Route path="marketin-packs-page" element={<MarketinPacksPage />} />
+        <Route path="payment-page" element={<PaymentPage />} />
         <Route path="/*" element={<LandingPage />} />
-        <Route
-        path="payment-page"
-        element={<PaymentPage/>}
-        />
       </Routes>
     </>
   );
