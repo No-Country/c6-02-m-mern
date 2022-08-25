@@ -1,0 +1,27 @@
+.AuthPage {
+  background-color: #1e1e1e;
+  height: 100vh;
+}
+.AuthPage .title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 28px;
+  color: #ccff66;
+}
+
+.content-authPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.AuthPage__wrapper form {
+  margin: 0 auto;
+  background-color: #05668d;
+  width: 90%;
+  max-width: 390px;
+  height: 490px;
+  padding: 2rem;
+  border-radius: 40px;
+}
