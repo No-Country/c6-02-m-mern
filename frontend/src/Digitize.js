@@ -8,7 +8,6 @@ import { ContactPage } from "./pages/contactPage/ContactPage";
 import { PaymentPage } from "./pages/paymentPage/PaymentPage";
 import { PageOurWork } from "./pages/ourWorkPage/PageOurWork";
 import Auth from "./pages/authPage/Auth";
-import { ConfirmationPage } from "./pages/confirmationPage/ConfirmationPage";
 
 export const Digitize = () => {
   return (
