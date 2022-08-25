@@ -1,7 +1,9 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useContext } from "react";
+import { Link } from "react-router-dom";
+import { GlobalContext } from "../../../context/GlobalContext";
 
-export const List = ({ text, setIsActiveNav, path }) => {
+export const List = ({ text, path }) => {
+  const { setIsActiveNav } = useContext(GlobalContext);
   const handlerClickLinkClose = () => {
     setIsActiveNav(false);
   };

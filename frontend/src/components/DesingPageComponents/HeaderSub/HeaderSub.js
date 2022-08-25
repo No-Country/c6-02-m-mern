@@ -5,21 +5,20 @@ import "./HeaderSub.css";
 import { ZComponentHeader } from "./ZComponentHeader";
 import { Link } from "react-router-dom";
 
-export const HeaderSub = ({ setIsActiveNav }) => {
+export const HeaderSub = () => {
   return (
     <header className="header">
       <div className="header__wrapper contenedor">
         <Link to="/">
           <div className="arrow">
-            {" "}
-            <ArrowHeader />{" "}
+            <ArrowHeader />
           </div>
         </Link>
 
         <nav className="subNav">
           <div className="Ulista">
             {" "}
-            <Ulista setIsActiveNav={setIsActiveNav} />{" "}
+            <Ulista />
           </div>
         </nav>
 
