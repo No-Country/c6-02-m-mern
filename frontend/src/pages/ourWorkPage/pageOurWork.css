@@ -1,0 +1,17 @@
+.PageOurWork {
+  background: #1e1e1e;
+  height: 100vh;
+  padding-top: 3rem;
+}
+
+.PageOurWork__title {
+  color: white;
+  text-align: center;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+}
+
+.PageOurWork--yellow {
+  color: #ccff66;
+}
