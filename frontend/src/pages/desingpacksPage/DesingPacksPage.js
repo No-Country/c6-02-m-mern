@@ -1,16 +1,15 @@
-import React from "react";
+import { HeaderSub } from "../../components/DesingPageComponents/HeaderSub/HeaderSub.js";
+import { NextAndBack } from "../../components/DesingPageComponents/DownContainer/NextBack.js";
 import CardDesktop from "../../components/DesingPageComponents/Cards/CardDesktop";
 import Carousel from "../../components/DesingPageComponents/Cards/Carousel";
 import Titulo from "../../components/DesingPageComponents/Cards/Titulo";
-import { HeaderSub } from "../../components/DesingPageComponents/HeaderSub/HeaderSub.js";
-import { NextAndBack } from "../../components/DesingPageComponents/DownContainer/NextBack.js";
 import "./desingpacksPakcs.css";
 import Question from "../../components/DesingPageComponents/Cards/Question";
 
-export const DesingPacksPage = ({ setIsActiveNav }) => {
+export const DesingPacksPage = () => {
   return (
     <div className="desingPacksPage">
-      <HeaderSub setIsActiveNav={setIsActiveNav} />
+      <HeaderSub />
       <div className="container">
         <div className="row">
           <div className="col-12">

@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useContext } from "react";
+import { GlobalContext } from "../../../context/GlobalContext";
 
-export const CloseIconNav = ({ setIsActiveNav }) => {
+export const CloseIconNav = () => {
+  const { setIsActiveNav } = useContext(GlobalContext);
   const handlerCloseNav = () => {
     setIsActiveNav(false);
   };

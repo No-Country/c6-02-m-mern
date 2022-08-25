@@ -1,6 +1,11 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from "react";
+import { GlobalContext } from "../../../context/GlobalContext";
 
-export const HamburgerLogo = ({ handlerHamburger }) => {
+export const HamburgerLogo = () => {
+  const { setIsActiveNav } = useContext(GlobalContext);
+  const handlerHamburger = () => {
+    setIsActiveNav(true);
+  };
   return (
     <svg
       width="35"

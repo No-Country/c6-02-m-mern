@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { LandingPage } from "./pages/LandingPagePrincipal/LandingPage";
 import { Routes, Route } from "react-router-dom";
 import { DesingPacksPage } from "./pages/desingpacksPage/DesingPacksPage";
@@ -7,28 +7,17 @@ import { MarketinPacksPage } from "./pages/marketinPage/MarketinPacksPage";
 import { AboutPage } from "./pages/aboutPage/AboutPage";
 import { ContactPage } from "./pages/contactPage/ContactPage";
 import { PaymentPage } from "./pages/paymentPage/PaymentPage";
+
 import Auth from "./pages/authPage/Auth";
 
 export const Digitize = () => {
-  const [isActiveNav, setIsActiveNav] = useState(false);
   return (
     <>
       <Routes>
+        <Route path="/" element={<LandingPage />} />
         <Route path="about-page" element={<AboutPage />} />
         <Route path="contact-page" element={<ContactPage />} />
-        <Route
-          path="/"
-          element={
-            <LandingPage
-              setIsActiveNav={setIsActiveNav}
-              isActiveNav={isActiveNav}
-            />
-          }
-        />
-        <Route
-          path="desing-packs-page"
-          element={<DesingPacksPage setIsActiveNav={setIsActiveNav} />}
-        />
+        <Route path="desing-packs-page" element={<DesingPacksPage />} />
         <Route
           path="development-packs-page"
           element={<DevelopmentPacksPage />}
