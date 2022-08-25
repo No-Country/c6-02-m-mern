@@ -13,7 +13,7 @@
     height: 100%;
 }
 
-.navo {
+.subNav {
     position: absolute;
     background-color: #3b3b39;
     width: 100%;
@@ -91,7 +91,7 @@
         flex-direction: row;
     }
 
-    .navo {
+    .subNav {
         position: unset;
         background-color: #171716;
         width: 100%;

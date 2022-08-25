@@ -1,21 +1,7 @@
 import React from "react";
 import { Bar } from "./Bar/Bar.js";
-import './NextBack.css'
-
-
-
+import "./NextBack.css";
 
 export const NextAndBack = () => {
-
-   
-    return (
-        <footer className="containerDown">
-          
-            
-              <Bar/>
-            
-        
-        </footer>
-    );
-  };
-  
+  return <Bar />;
+};

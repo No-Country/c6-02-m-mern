@@ -1,10 +1,10 @@
 .paymentContainer{
     display: flex;
     background-color: #171716;
-    height: 86.1rem;
+    height: 93.4vh;
     width: 100%;
     flex-direction: column;
-    
+   
    
 }
 
@@ -70,8 +70,14 @@
     font-family: 'Saira';
     font-weight: 800;
 }
+.paragraphContainer{
+    width: 100%;
+    margin-top: 5%;
+   
+}
 .paymentmeth{
     color: rgba(204, 255, 102, 1);
+    margin-top: 5%;
 }
 
 .buttonsPayContainer{
@@ -86,7 +92,7 @@
 .buttons{
     display: flex;
     align-items: center;
-    color: rgba(5, 102, 141, 1);
+    color: #CCFF66;
     width: 53%;
     max-width: 190px;
     height: 40px;
@@ -103,11 +109,16 @@
     
     margin-left: 25px;
     margin-right: 10px;
+    margin-top: 6%;
     font-size: 22px;
 }
 
-
-
+.BigStrypiceIcon{
+    display: none;
+}
+ .BigPaypalIcon {
+     display: none;
+ }
 
 @media screen and (min-width: 1024px) {
     .paymentContainer {
@@ -147,7 +158,7 @@
                                                                                 margin-top: 50px;
                                                                             }
                                                                             .buttonsPayContainer {
-                                                                             margin-top: 190px;
+                                                                             margin-top: 170px;
                                                                              
                                                                             }.paymentMethodContainer p {
                                                                                 line-height: 18.92px;
@@ -157,18 +168,34 @@
                                                                             .buttons {
                                                                                 display: flex;
                                                                                 align-items: center;
-                                                                                color: rgba(5, 102, 141, 1);
+                                                                                color: #CCFF66;
                                                                                 width: 407px;
                                                                                 max-width: 800px;
                                                                                 height: 88px;
                                                                                 margin: 0 auto;
-                                                                                margin-top: 60px;
+                                                                                margin-top: 90px;
                                                                                 border-radius: 25px;
                                                                                 border: 5px solid rgba(204, 255, 102, 1);
                                                                                 background-color: transparent;
                                                                                 font-weight: 700;
                                                                             }
+                                                                            .buttons p {
+                                                                              margin-top: 2%;
+                                                                            }
 
+                                                                           .StrypiceIcon{
+                                                                                display: none;
+                                                                            }
+                                                                                                                                                        .BigStrypiceIcon {
+                                                                                                                                                            display: flex;
+                                                                                                                                                        }
+                                                                                                                                                       
+                                                                                                                                                                                                                                                                                                                .BigPaypalIcon{
+                                                                                                                                                                                                                                                                                                                    display: flex;
+                                                                                                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 .PaypalIcon{
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    display: none;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 }
                                                                             
                                                                             
 }
