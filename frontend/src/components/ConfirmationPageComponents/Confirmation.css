@@ -1,0 +1,108 @@
+.confirmationContainer{
+    display: flex;
+    flex-direction: column;
+    background-color: #171716;
+    width: 100%;
+    height: 93.3vh;
+}
+.subConfirmationContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 75%;
+    margin-top: 60px;
+   
+}
+.choosnameContainer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 18%;
+}
+.subChoosenameContainer{
+    display: flex;
+    text-align: center;
+}
+.bigPalpayContainer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 60%;
+}
+.paypalpayContainer{
+        background-color: rgb(255, 255, 255);
+        width: 600px;
+        height: 350px;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        
+}
+.BorrarluegoContainer{
+    display: flex;
+    width: 80%;
+    height: 20%;
+    background-color: rgb(0, 0, 0);
+    justify-content: center;
+    
+}
+.Choosethe{
+    color: #FFFFFF;
+    font-size: 34px;
+}
+.PaymentMethodp{
+    color: #CCFF66;
+    font-size: 34px;
+}
+.fillouttheForm{
+    display: none;
+}
+
+@media screen and (min-width: 1024px){
+
+.subConfirmationContainer {
+        height: 85%;
+        margin-top: 80px
+    }
+    .paypalpayContainer {
+        width: 713px;
+        height: 420px;
+    }
+        .bigPalpayContainer {
+            height: 65%;
+        }
+                .choosnameContainer {
+                    display: flex;
+                    width: 100%;
+                    height: 28%;
+                
+                }
+                                .Choosethe {
+                                    display: none;
+                                }
+                                                                .PaymentMethodp {
+                                                                   display: none;
+                                                                }
+                                                                                                                                 .fillouttheForm {
+                                                                                                                                  
+                                                                                                                                     display: flex;
+                                                                                                                                     font-family: 'Saira';
+                                                                                                                                     font-style: medium;
+                                                                                                                                     font-size: 36px;
+                                                                                                                                     font-weight: 500;
+                                                                                                                                     vertical-align: top;
+                                                                                                                                     color: #FFFFFF;
+                                                                                                                                     line-height: 55px;
+                                                                                                                                     width: 500px;   
+                                                                                                                                     text-align: center;
+                                                                                                                                 }
+                                                                                                                                                                                                                                                          .subChoosenameContainer {
+                                                                                                                                                                                                                                                              display: flex;
+                                                                                                                                                                                                                                                              text-align: center;
+                                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                              height: 100%;
+                                                                                                                                                                                                                                                          }
+                                                                                                                                                                                                                                                        
+
+}
