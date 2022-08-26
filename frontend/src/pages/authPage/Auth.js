@@ -1,5 +1,5 @@
-import React from "react";
-
+import React, { useContext } from "react";
+import { useNavigate } from "react-router-dom";
 // validators input
 
 import { VALIDATOR_EMAIL, VALIDATOR_MINLENGTH } from "../../util/validators";
@@ -14,8 +14,10 @@ import "./Auth.css";
 import Input from "../../shared/Input";
 import Button from "../../shared/Button";
 import { HeaderSub } from "../../components/DesingPageComponents/HeaderSub/HeaderSub";
+import { GlobalContext } from "../../context/GlobalContext";
 
 const Auth = () => {
+  const navigate = useNavigate();
   const [formState, inputHandler] = useForm(
     {
       email: {
@@ -30,9 +32,15 @@ const Auth = () => {
     false
   );
 
+  const { Auth } = useContext(GlobalContext);
+
   const authSubmitHandler = (event) => {
     event.preventDefault();
     console.log(formState.inputs);
+    Auth.handlerLogIn();
+    navigate("/control-panel-admin", {
+      replace: true,
+    });
   };
 
   return (

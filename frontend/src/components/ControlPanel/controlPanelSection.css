@@ -1,0 +1,61 @@
+.controlPanelSection {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+}
+
+.controlPanelSection__firstColum {
+  margin-top: 4rem;
+}
+
+.controlPanelSection__firstColum__btn {
+  background: #05668d;
+  width: 177px;
+  height: 40px;
+  border-radius: 20px;
+  line-height: 40px;
+  font-weight: 800;
+  font-size: 16px;
+}
+
+.controlPanelSection__firstColum__paragraph {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 14px;
+  margin: 7rem 0;
+}
+
+.wrapper-icons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5rem;
+}
+.wrapper-icons__delete {
+  padding-top: 0.2rem;
+}
+
+.controlPanelSection__SecondColum__add {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  width: 100px;
+  height: 40px;
+  margin: 0 auto;
+  border-radius: 20px;
+  border: 3px solid #ccff66;
+  line-height: 40px;
+  font-weight: 800;
+  font-size: 16px;
+  color: #05668d;
+  cursor: pointer;
+}
+.controlPanelSection__SecondColum {
+  margin-top: 4rem;
+}
+
+.controlPanelSection__SecondColum__add__image {
+  width: 15px;
+  height: 15px;
+  margin-left: 1rem;
+}

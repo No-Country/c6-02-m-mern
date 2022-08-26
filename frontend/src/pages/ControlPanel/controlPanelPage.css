@@ -1,0 +1,12 @@
+.ControlPanelPage {
+  background: #171716;
+  color: white;
+}
+
+.controlPanel__title {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  color: #ccff66;
+  text-align: center;
+}

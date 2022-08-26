@@ -7,8 +7,9 @@ import { MarketinPacksPage } from "./pages/marketinPage/MarketinPacksPage";
 import { ContactPage } from "./pages/contactPage/ContactPage";
 import { PaymentPage } from "./pages/paymentPage/PaymentPage";
 import { PageOurWork } from "./pages/ourWorkPage/PageOurWork";
-import Auth from "./pages/authPage/Auth";
 import { ConfirmationPage } from "./pages/confirmationPage/ConfirmationPage";
+import Auth from "./pages/authPage/Auth";
+import { ControlPanelPage } from "./pages/ControlPanel/ControlPanelPage";
 
 export const Digitize = () => {
   return (
@@ -22,6 +23,7 @@ export const Digitize = () => {
           element={<DevelopmentPacksPage />}
         />
         <Route path="marketin-packs-page" element={<MarketinPacksPage />} />
+        <Route path="control-panel-admin" element={<ControlPanelPage />} />
         <Route path="payment-page" element={<PaymentPage />} />
         <Route path="confirmation-page" element={<ConfirmationPage />} />
         <Route path="our-work" element={<PageOurWork />} />
