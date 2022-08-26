@@ -22,6 +22,7 @@
   box-shadow: 0px 15px 20px -7px rgba(5, 102, 141, 0.7);
   border-radius: 20px;
 }
+
 .card-body {
   width: 250px;
   height: 250px;
@@ -44,4 +45,12 @@ h2 {
 }
 .costo {
   color: #05668d;
+}
+
+.card-tarjetas {
+  transform: scale(1);
+  transform: scale 1s ease;
+}
+.card-tarjetas:hover {
+  transform: scale(1.1);
 }
