@@ -4,12 +4,13 @@
   top: 7rem;
   left: 50%;
   transform: translateX(-50%);
+  cursor: pointer;
 }
 
 @media screen and (min-width: 1020px) {
   .icono-question {
-    top: 5%;
+    top: 13%;
     left: 7%;
-    width: 140px;
+    width: 93px;
   }
 }

@@ -1,14 +1,14 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import Icono from '../../../assets/images/question.png'
-import './Question.css'
+import React from "react";
+
+import Icono from "../../../assets/images/question.png";
+import "./Question.css";
 
 const Question = () => {
   return (
-    <Link to='/'>
-      <img src={Icono} className='icono-question'/>
-    </Link>
-  )
-}
+    <div>
+      <img src={Icono} className="icono-question" />
+    </div>
+  );
+};
 
-export default Question
+export default Question;
