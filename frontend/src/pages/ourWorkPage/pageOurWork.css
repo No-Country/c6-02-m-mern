@@ -15,3 +15,16 @@
 .PageOurWork--yellow {
   color: #ccff66;
 }
+
+@media screen and (min-width: 1024px) {
+  .PageOurWork {
+    padding-top: 8rem;
+  }
+
+  .PageOurWork-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(2, 320px);
+    align-items: center;
+  }
+}

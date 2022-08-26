@@ -1,42 +1,47 @@
-.flex-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    height: 100%;
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 100%;
+  margin-top: 3rem;
 }
 
-.card-tarjetas{
-    margin: 5px;
-    background: linear-gradient(180deg, #64C5EC 0%, rgba(255, 255, 255, 0.5) 100%);
-    text-align: center;
-    border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
-    box-shadow: 0px 15px 20px -7px rgba(5, 102, 141, 0.7);
-    border-radius: 20px;
+.card-tarjetas {
+  margin: 5px;
+  background: linear-gradient(
+    180deg,
+    #64c5ec 0%,
+    rgba(255, 255, 255, 0.5) 100%
+  );
+  text-align: center;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  box-shadow: 0px 15px 20px -7px rgba(5, 102, 141, 0.7);
+  border-radius: 20px;
 }
-.card-body{
-    width: 250px;
-    height:250px;
+.card-body {
+  width: 250px;
+  height: 250px;
 }
-h2{
-    font-weight: bolder;
+h2 {
+  font-weight: bolder;
 }
-.include{
-    color: hsl(80, 100%, 70%);
+.include {
+  color: hsl(80, 100%, 70%);
 }
-.precio{
-    background-color: hsl(80, 100%, 70%) ;
-    margin-top: 130px;
-    border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
+.precio {
+  background-color: hsl(80, 100%, 70%);
+  margin-top: 130px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  color: black;
 }
-.costo{
-    color: #05668D;
+.costo {
+  color: #05668d;
 }
-

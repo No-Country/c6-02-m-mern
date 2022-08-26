@@ -1,6 +1,26 @@
+.desingPacksPage {
+  background-color: #171716;
+  height: 100vh;
+}
 
-.desingPacksPage{
-    background-color: #171716;
-    height: 100vh;
-    
+.margin-top-custom {
+  margin-top: 9rem;
+}
+
+.custom-question {
+  position: relative;
+}
+
+@media screen and (min-width: 1020px) {
+  .custom-question {
+    position: static;
+  }
+
+  .custom-desktop {
+    margin-top: 21rem;
+  }
+
+  .margin-top-custom {
+    margin-top: unset;
+  }
 }

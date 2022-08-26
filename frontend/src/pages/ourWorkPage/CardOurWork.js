@@ -6,7 +6,11 @@ export const CardOurWork = (props) => {
       <p className="card-ourWork__description">{props.title}</p>
 
       <div className="card-ourWork__imgWrapper">
-        <img src={props.image} className="card-ourWork__imgWrapper__img" />
+        <img
+          src={props.image}
+          className="card-ourWork__imgWrapper__img"
+          alt={props.title}
+        />
       </div>
     </div>
   );

@@ -3,6 +3,7 @@ import "./sectionDiscover.css";
 import discoverGuy from "../../../assets/images/discoverImageGuy.png";
 import discoverOffice from "../../../assets/images/discoverOffice.png";
 import discoverSuccess from "../../../assets/images/discoverSuccess.png";
+import { CardDiscover } from "./CardDiscover";
 
 export const SectionDiscover = () => {
   return (
@@ -17,28 +18,28 @@ export const SectionDiscover = () => {
           </div>
 
           <div className="wrapper-discover">
-            <div className="cardDiscover">
-              <img src={discoverOffice} className="cardDiscover__img" />
-              <p className="cardDiscover__paragraph">
-                we have a panel of experts in your area willing to take your
-                business to the <span className="color-yellow">next level</span>
-              </p>
-            </div>
-            <div className="cardDiscover">
-              <img src={discoverSuccess} className="cardDiscover__img" />
-              <p className="cardDiscover__paragraph">
-                <span className="color-yellow">hire the digitization</span> of
-                your business in simple steps!
-              </p>
-            </div>
-            <div className="cardDiscover">
-              <img src={discoverGuy} className="cardDiscover__img" />
-              <p className="cardDiscover__paragraph">
-                We have a wide{" "}
-                <span className="color-yellow">variety of packages </span>
-                according to your needs!
-              </p>
-            </div>
+            <CardDiscover
+              image={discoverOffice}
+              description="we have a panel of experts in your area willing to take your
+                business to the."
+              alt={"discoverimage"}
+              extraDes="next level"
+            />
+            <CardDiscover
+              image={discoverSuccess}
+              description="hire the digitization of
+                your business in simple steps! "
+              alt={"discoverSuccess"}
+              extraDes="simple steps!"
+            />
+
+            <CardDiscover
+              image={discoverGuy}
+              description="We have a wide variety of packages </span>
+                according to "
+              alt={"discoverGuy"}
+              extraDes="your needs!"
+            />
           </div>
         </div>
       </div>

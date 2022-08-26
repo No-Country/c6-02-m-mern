@@ -10,12 +10,9 @@ export const DesingPacksPage = () => {
   return (
     <div className="desingPacksPage">
       <HeaderSub />
-      <div className="container">
-        <div className="row">
-          <div className="col-12">
-            <div className="col align-self-start">
-              <Question />
-            </div>
+      <div className="container ">
+        <div className="row custom-desktop">
+          <div className="col-12 margin-top-custom">
             <div className="col align-self-center">
               <Titulo />
             </div>
@@ -24,7 +21,10 @@ export const DesingPacksPage = () => {
           <div className="col-12 d-lg-none d-md-block">
             <Carousel />
           </div>
-          <div className="col-12 d-none d-lg-block">
+          <div className="col align-self-start custom-question">
+            <Question />
+          </div>
+          <div className="col-12 d-none d-lg-block ">
             <CardDesktop />
           </div>
         </div>

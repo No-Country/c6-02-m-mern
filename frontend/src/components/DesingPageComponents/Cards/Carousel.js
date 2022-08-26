@@ -6,7 +6,7 @@ const Carousel = () => {
     <>
       <div
         id="carouselExampleIndicators"
-        className="carousel slide "
+        className="carousel slide custom-class "
         data-bs-ride="carousel"
       >
         <div className="carousel-indicators">
@@ -64,7 +64,10 @@ const Carousel = () => {
           data-bs-target="#carouselExampleIndicators"
           data-bs-slide="prev"
         >
-          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span
+            className="carousel-control-prev-icon"
+            aria-hidden="true"
+          ></span>
           <span className="visually-hidden">Previous</span>
         </button>
         <button
@@ -73,7 +76,10 @@ const Carousel = () => {
           data-bs-target="#carouselExampleIndicators"
           data-bs-slide="next"
         >
-          <span className="carousel-control-next-icon" aria-hidden="true"></span>
+          <span
+            className="carousel-control-next-icon"
+            aria-hidden="true"
+          ></span>
           <span className="visually-hidden">Next</span>
         </button>
       </div>

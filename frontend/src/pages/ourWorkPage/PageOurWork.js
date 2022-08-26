@@ -9,27 +9,46 @@ export const PageOurWork = () => {
   return (
     <>
       <HeaderSub />
-      <div className="PageOurWork">
-        <h3 className="PageOurWork__title">
-          Our <span className="PageOurWork--yellow">Work</span>
-        </h3>
+      <div className="container">
+        <div className="PageOurWork">
+          <h3 className="PageOurWork__title">
+            Our <span className="PageOurWork--yellow">Work</span>
+          </h3>
 
-        <div className="PageOurWork-content">
-          <CardOurWork
-            title={"Desing portfolio"}
-            image={desingPortfolioImage}
-          />
-          <CardOurWork
-            title={"Development portfolio"}
-            image={DevelopmentPortfolioImage}
-          />
-          <CardOurWork
-            title={"Marketing portfolio"}
-            image={MarketingPortfolioImage}
-          />
+          <div className="PageOurWork-content">
+            <CardOurWork
+              title={"Desing portfolio"}
+              image={desingPortfolioImage}
+              alt={"Desing portfolio"}
+            />
+            <CardOurWork
+              title={"Development portfolio"}
+              image={DevelopmentPortfolioImage}
+              alt={"Development portfolio"}
+            />
+            <CardOurWork
+              title={"Marketing portfolio"}
+              image={MarketingPortfolioImage}
+              alt={"Marketing portfolio"}
+            />
+            <CardOurWork
+              title={"Marketing portfolio"}
+              image={MarketingPortfolioImage}
+              alt={"Marketing portfolio"}
+            />
+            <CardOurWork
+              title={"Marketing portfolio"}
+              image={MarketingPortfolioImage}
+              alt={"Marketing portfolio"}
+            />
+            <CardOurWork
+              title={"Marketing portfolio"}
+              image={MarketingPortfolioImage}
+              alt={"Marketing portfolio"}
+            />
+          </div>
         </div>
       </div>
-      ;
     </>
   );
 };

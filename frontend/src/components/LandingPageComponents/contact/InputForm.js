@@ -11,11 +11,11 @@ export const InputForm = () => {
 
   const handlerSubmit = (e) => {
     e.preventDefault();
-    const inputNameValue = inputName.current.value;
-    const inputEmailValue = inputEmail.current.value;
-    const inputTextAreaValue = inputTextArea.current.value;
+    // const inputNameValue = inputName.current.value;
+    // const inputEmailValue = inputEmail.current.value;
+    // const inputTextAreaValue = inputTextArea.current.value;
 
-    console.log(inputNameValue);
+    // console.log(inputNameValue);
 
     emailjs
       .sendForm(
