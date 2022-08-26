@@ -3,21 +3,23 @@
   height: 100vh;
 }
 
-.margin-top-custom {
-  margin-top: 9rem;
+.custom-flexDesingpage {
+  display: flex;
+  align-items: center;
+  height: 66vh;
 }
 
 .custom-question {
   position: relative;
 }
 
-@media screen and (min-width: 1020px) {
+@media screen and (min-width: 1024px) {
   .custom-question {
     position: static;
   }
 
   .custom-desktop {
-    margin-top: 21rem;
+    /* margin-top: 1rem; */
   }
 
   .margin-top-custom {

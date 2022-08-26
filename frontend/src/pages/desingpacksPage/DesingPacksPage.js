@@ -10,9 +10,9 @@ export const DesingPacksPage = () => {
   return (
     <div className="desingPacksPage">
       <HeaderSub />
-      <div className="container ">
+      <div className="container custom-flexDesingpage  ">
         <div className="row custom-desktop">
-          <div className="col-12 margin-top-custom">
+          <div className="col-12 ">
             <div className="col align-self-center">
               <Titulo />
             </div>
