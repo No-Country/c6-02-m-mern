@@ -5,10 +5,10 @@ import { GlobalContext } from "../../../context/GlobalContext";
 import "./Question.css";
 
 const Question = () => {
-  const { setisModalActive } = useContext(GlobalContext);
+  const { UIstate } = useContext(GlobalContext);
 
   const handlerModalOpen = () => {
-    setisModalActive(true);
+    UIstate.setisModalActive(true);
   };
   return (
     <div>

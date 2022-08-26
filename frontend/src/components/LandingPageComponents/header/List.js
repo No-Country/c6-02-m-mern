@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 import { GlobalContext } from "../../../context/GlobalContext";
 
 export const List = ({ text, path }) => {
-  const { setIsActiveNav } = useContext(GlobalContext);
+  const { UIstate } = useContext(GlobalContext);
   const handlerClickLinkClose = () => {
-    setIsActiveNav(false);
+    UIstate.setIsActiveNav(false);
   };
 
   return (

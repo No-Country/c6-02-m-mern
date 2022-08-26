@@ -8,7 +8,9 @@ import { useContext } from "react";
 import "./header.css";
 
 export const Header = () => {
-  const { isActiveNav } = useContext(GlobalContext);
+  const { UIstate } = useContext(GlobalContext);
+
+  const { isActiveNav } = UIstate;
   return (
     <header className="header">
       <div className="header__wrapper container">

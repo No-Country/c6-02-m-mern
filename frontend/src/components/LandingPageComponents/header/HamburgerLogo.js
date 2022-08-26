@@ -2,9 +2,9 @@ import React, { useContext } from "react";
 import { GlobalContext } from "../../../context/GlobalContext";
 
 export const HamburgerLogo = () => {
-  const { setIsActiveNav } = useContext(GlobalContext);
+  const { UIstate } = useContext(GlobalContext);
   const handlerHamburger = () => {
-    setIsActiveNav(true);
+    UIstate.setIsActiveNav(true);
   };
   return (
     <svg

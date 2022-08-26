@@ -4,14 +4,16 @@ import { GlobalContext } from "../../../context/GlobalContext";
 
 import "./ModalQuestion.css";
 export const ModalQuestion = (props) => {
-  const { isModalActive, setisModalActive } = useContext(GlobalContext);
+  const { UIstate } = useContext(GlobalContext);
 
   const handlerCloseModal = () => {
-    setisModalActive(false);
+    UIstate.setisModalActive(false);
   };
   return (
     <div
-      className={`${isModalActive ? "ModalQuestion active" : "ModalQuestion"}`}
+      className={`${
+        UIstate.isModalActive ? "ModalQuestion active" : "ModalQuestion"
+      }`}
     >
       <img
         src={svgImageClose}
