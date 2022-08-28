@@ -44,21 +44,19 @@ const Auth = () => {
 
     try {
       setIsLoading(true);
-      const response = await fetch(
-        "http://93.189.88.227:4000/api/admin/login",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            email: formState.inputs.email.value,
-            password: formState.inputs.password.value,
-          }),
-        }
-      );
+      const response = await fetch("https://digitize.monster/api/admin/login", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          email: formState.inputs.email.value,
+          password: formState.inputs.password.value,
+        }),
+      });
 
       const responseData = await response.json();
+      console.log(responseData);
 
       if (responseData.error) {
         setIsLoading(false);
