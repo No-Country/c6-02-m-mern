@@ -20,18 +20,18 @@ export const GlobalContextProvider = ({ children }) => {
     setisLogIn(true);
   };
 
-  const handlerLogout = () => {
+  const handlerLogout = (e) => {
+    e.preventDefault();
     setisLogIn(false);
   };
-  const Auth = {
+  const AuthCtx = {
     handlerLogIn,
     handlerLogout,
+    isLogIn,
   };
 
-  console.log(isLogIn);
-
   return (
-    <GlobalContext.Provider value={{ UIstate, Auth }}>
+    <GlobalContext.Provider value={{ UIstate, AuthCtx }}>
       {children}
     </GlobalContext.Provider>
   );

@@ -8,9 +8,11 @@ import { useContext } from "react";
 import "./header.css";
 
 export const Header = () => {
-  const { UIstate } = useContext(GlobalContext);
+  const { AuthCtx, UIstate } = useContext(GlobalContext);
 
+  const { isLogIn, handlerLogout } = AuthCtx;
   const { isActiveNav } = UIstate;
+
   return (
     <header className="header">
       <div className="header__wrapper container">
@@ -21,6 +23,11 @@ export const Header = () => {
           <CloseIconNav />
         </nav>
         <HamburgerLogo />
+        {isLogIn && (
+          <button className="header__logout" onClick={handlerLogout}>
+            LOGOUT
+          </button>
+        )}
       </div>
     </header>
   );

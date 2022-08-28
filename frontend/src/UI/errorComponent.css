@@ -1,0 +1,15 @@
+.ErrorComponent {
+  background-color: #bb4646;
+  text-align: center;
+  width: 30%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3rem auto;
+  border-radius: 3rem;
+}
+
+.ErrorComponent__paragraph {
+  font-size: 3rem;
+}

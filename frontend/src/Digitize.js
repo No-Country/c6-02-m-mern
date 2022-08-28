@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import { LandingPage } from "./pages/LandingPagePrincipal/LandingPage";
 import { Routes, Route } from "react-router-dom";
 import { DesingPacksPage } from "./pages/desingpacksPage/DesingPacksPage";
@@ -8,10 +8,13 @@ import { ContactPage } from "./pages/contactPage/ContactPage";
 import { PaymentPage } from "./pages/paymentPage/PaymentPage";
 import { PageOurWork } from "./pages/ourWorkPage/PageOurWork";
 import { ConfirmationPage } from "./pages/confirmationPage/ConfirmationPage";
-import Auth from "./pages/authPage/Auth";
 import { ControlPanelPage } from "./pages/ControlPanel/ControlPanelPage";
+import { GlobalContext } from "./context/GlobalContext";
+import Auth from "./pages/authPage/Auth";
 
 export const Digitize = () => {
+  const { AuthCtx } = useContext(GlobalContext);
+
   return (
     <>
       <Routes>
@@ -23,7 +26,9 @@ export const Digitize = () => {
           element={<DevelopmentPacksPage />}
         />
         <Route path="marketin-packs-page" element={<MarketinPacksPage />} />
-        <Route path="control-panel-admin" element={<ControlPanelPage />} />
+        {AuthCtx.isLogIn && (
+          <Route path="control-panel-admin" element={<ControlPanelPage />} />
+        )}
         <Route path="payment-page" element={<PaymentPage />} />
         <Route path="confirmation-page" element={<ConfirmationPage />} />
         <Route path="our-work" element={<PageOurWork />} />
