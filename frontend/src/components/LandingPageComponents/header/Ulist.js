@@ -1,13 +1,29 @@
-import React from "react";
+import React, { useContext } from "react";
+import { GlobalContext } from "../../../context/GlobalContext";
 import { List } from "./List";
 
 export const Ulist = () => {
-  const links = [
-    { id: 1, text: "digitize ", path: "/" },
-    { id: 2, text: "contact us ", path: "contact-page" },
-    { id: 3, text: "our Work ", path: "our-work" },
-    { id: 4, text: "ADMIN ", path: "adminlogin-page" },
-  ];
+  const { AuthCtx } = useContext(GlobalContext);
+
+  const { isLogIn } = AuthCtx;
+
+  let links;
+
+  if (!isLogIn) {
+    links = [
+      { id: 1, text: "digitize ", path: "/" },
+      { id: 2, text: "contact us ", path: "contact-page" },
+      { id: 3, text: "our Work ", path: "our-work" },
+      { id: 4, text: "Login Admin ", path: "adminlogin-page" },
+    ];
+  } else {
+    links = [
+      { id: 1, text: "digitize ", path: "/" },
+      { id: 2, text: "contact us ", path: "contact-page" },
+      { id: 3, text: "our Work ", path: "our-work" },
+      { id: 4, text: "PANEL", path: "control-panel-admin" },
+    ];
+  }
 
   return (
     <ul className="Ulist">
