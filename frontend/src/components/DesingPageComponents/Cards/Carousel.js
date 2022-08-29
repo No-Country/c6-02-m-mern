@@ -1,5 +1,6 @@
 import React from "react";
 import "./Carousel.css";
+import CarouselIem from "./CarouselIem";
 
 const Carousel = () => {
   return (
@@ -33,28 +34,32 @@ const Carousel = () => {
         </div>
 
         <div className="carousel-inner">
-          <div className="carousel-item active">
-            <h2>Bronce</h2>
-            <h3>Include</h3>
-            <p>Lainding page design</p>
-            <hr />
-            <h3 className="precio">Chose $ 1.000 </h3>
+          <CarouselIem
+            clases={"carousel-item active"}
+            title={"Bronce"}
+            include={"Include"}
+            landing={"landing page design"}
+            price={"$ 1.000"}
+          />
+
+          <div className="carousel-item">
+            <CarouselIem
+             
+              title={"Silver"}
+              include={"Include"}
+              landing={"landing page design"}
+              price={"$ 3.000"}
+            />
           </div>
 
           <div className="carousel-item">
-            <h2>Silver</h2>
-            <h3>Include</h3>
-            <p>Lainding page design</p>
-            <hr />
-            <h3 className="precio">Chose $ 3.000</h3>
-          </div>
-
-          <div className="carousel-item">
-            <h2>Gold</h2>
-            <h3>Include</h3>
-            <p>Lainding page design</p>
-            <hr />
-            <h3 className="precio">Chose $ 5.000</h3>
+            <CarouselIem
+           
+              title={"Gold"}
+              include={"Include"}
+              landing={"landing page design"}
+              price={"$ 5.000"}
+            />
           </div>
         </div>
 
