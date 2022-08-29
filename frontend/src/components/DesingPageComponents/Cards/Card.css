@@ -29,20 +29,12 @@
 }
 h2 {
   font-weight: bolder;
+  color: #373737;
 }
 .include {
   color: hsl(80, 100%, 70%);
 }
-.precio {
-  background-color: hsl(80, 100%, 70%);
-  margin-top: 130px;
-  border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
-  color: black;
-}
+
 .costo {
   color: #05668d;
 }
