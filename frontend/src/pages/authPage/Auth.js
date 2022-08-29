@@ -56,7 +56,6 @@ const Auth = () => {
       });
 
       const responseData = await response.json();
-      console.log(responseData);
 
       if (responseData.error) {
         setIsLoading(false);
@@ -64,7 +63,7 @@ const Auth = () => {
       }
 
       setIsLoading(false);
-      AuthCtx.handlerLogIn();
+      AuthCtx.handlerLogIn(responseData.token);
       navigate("/control-panel-admin", {
         replace: true,
       });

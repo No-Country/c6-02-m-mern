@@ -7,27 +7,36 @@ export const GlobalContextProvider = ({ children }) => {
 
   // auth
 
-  const [isLogIn, setisLogIn] = useState(false);
+  const [token, setToken] = useState(false);
+
+  // circle bar
+
+  const [isCardActive, setisCardActive] = useState(false);
+
+  // activeLinie;
 
   const UIstate = {
     isActiveNav,
     setIsActiveNav,
     isModalActive,
     setisModalActive,
+    isCardActive,
+    setisCardActive,
   };
 
-  const handlerLogIn = () => {
-    setisLogIn(true);
+  const handlerLogIn = (token) => {
+    setToken(token);
   };
 
   const handlerLogout = (e) => {
     e.preventDefault();
-    setisLogIn(false);
+    setToken(null);
   };
   const AuthCtx = {
     handlerLogIn,
     handlerLogout,
-    isLogIn,
+    isLogIn: !!token,
+    token,
   };
 
   return (

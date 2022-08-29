@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
+import { GlobalContext } from "../../../context/GlobalContext";
 import "./Card.css";
 
 const Card = ({ titulo, include, page, precio }) => {
+  const { UIstate } = useContext(GlobalContext);
+  const handlerActiveCard = () => {
+    UIstate.setisCardActive(true);
+  };
   return (
-    <div className="card-tarjetas ">
+    <div className={`card-tarjetas`} onClick={handlerActiveCard}>
       <div className="card-body">
         <h2>{titulo}</h2>
         <h3 className="include">{include}</h3>

@@ -51,6 +51,6 @@ h2 {
   transform: scale(1);
   transform: scale 1s ease;
 }
-.card-tarjetas:hover {
+.card-tarjetas.active {
   transform: scale(1.1);
 }
