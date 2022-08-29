@@ -2,6 +2,7 @@ import { HeaderSub } from "../../components/DesingPageComponents/HeaderSub/Heade
 import { NextAndBack } from "../../components/DesingPageComponents/DownContainer/NextBack.js";
 import { SectionDesktopCards } from "../../components/DesingPageComponents/Cards/SectionDesktopCards.js";
 import "./desingpacksPakcs.css";
+import { CircleBar } from "../../components/DesingPageComponents/barComponent/CircleBar.js";
 
 export const DesingPacksPage = () => {
   return (
@@ -10,7 +11,8 @@ export const DesingPacksPage = () => {
       <div className="container custom-flexDesingpage  ">
         <SectionDesktopCards />
       </div>
-      <NextAndBack />
+      {/* <NextAndBack /> */}
+      <CircleBar />
     </div>
   );
 };
