@@ -13,13 +13,13 @@
   color: black;
   padding: 7px;
   font-weight: bolder;
-  
+
   margin-right: -9px;
   margin-left: -10px;
 }
-.price{
-    color: #05668d;
-    font-weight: 500;
+.price {
+  color: #05668d;
+  font-weight: 500;
 }
 p {
   color: #05668d;
@@ -38,5 +38,4 @@ p {
     -ms-border-radius: 0px 0px 15px 15px;
     -o-border-radius: 0px 0px 15px 15px;
   }
- 
 }
