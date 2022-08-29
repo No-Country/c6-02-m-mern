@@ -11,6 +11,7 @@ import { ModalQuestion } from "../../components/DesingPageComponents/ModalQuesti
 import "./developmentpage.css";
 import { Button } from "../../components/DesingPageComponents/barComponent/Button";
 import { Link } from "react-router-dom";
+import { Bar } from "../../components/DesingPageComponents/DownContainer/Bar/Bar";
 export const DevelopmentPacksPage = () => {
   return (
     <div className="developmentPacksPage">
@@ -42,7 +43,7 @@ export const DevelopmentPacksPage = () => {
           </div>
         </div>
       </div>
-      <div className="flex-bar">
+      {/* <div className="flex-bar">
         <Link to="/desing-packs-page">
           <Button content="DESIGN PACKS" />
         </Link>
@@ -50,7 +51,15 @@ export const DevelopmentPacksPage = () => {
         <Link to="/marketin-packs-page">
           <Button content="MARKETING PACKS" />
         </Link>
-      </div>
+      </div> */}
+
+      <Bar
+        btn1Content="DESIGN PACKS"
+        pathbtn1="/desing-packs-page"
+        btn2Content="MARKETING PACKS"
+        pathbtn2="/marketin-packs-page"
+        circleActive={1}
+      />
     </div>
   );
 };

@@ -8,6 +8,7 @@ import Question from "../../components/DesingPageComponents/Cards/Question.js";
 import CardDesktop from "../../components/DesingPageComponents/Cards/CardDesktop.js";
 import { Button } from "../../components/DesingPageComponents/barComponent/Button.js";
 import { Link } from "react-router-dom";
+import { Bar } from "../../components/DesingPageComponents/DownContainer/Bar/Bar.js";
 
 export const DesingPacksPage = () => {
   return (
@@ -40,7 +41,7 @@ export const DesingPacksPage = () => {
           </div>
         </div>
       </div>
-      <div className="flex-bar">
+      {/* <div className="flex-bar">
         <Link to="/">
           <Button content="BACK" />
         </Link>
@@ -48,7 +49,14 @@ export const DesingPacksPage = () => {
         <Link to="/development-packs-page">
           <Button content="NEXT" />
         </Link>
-      </div>
+      </div> */}
+      <Bar
+        btn1Content="BACK"
+        pathbtn1="/"
+        btn2Content="NEXT"
+        pathbtn2="/development-packs-page"
+        circleActive={-1}
+      />
     </div>
   );
 };

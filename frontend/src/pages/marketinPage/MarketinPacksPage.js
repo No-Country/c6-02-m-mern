@@ -6,6 +6,7 @@ import CardDesktop from "../../components/DesingPageComponents/Cards/CardDesktop
 import Carousel from "../../components/DesingPageComponents/Cards/Carousel";
 import Question from "../../components/DesingPageComponents/Cards/Question";
 import Titulo from "../../components/DesingPageComponents/Cards/Titulo";
+import { Bar } from "../../components/DesingPageComponents/DownContainer/Bar/Bar";
 import { HeaderSub } from "../../components/DesingPageComponents/HeaderSub/HeaderSub";
 import { ModalQuestion } from "../../components/DesingPageComponents/ModalQuestion.js/ModalQuestion";
 
@@ -41,7 +42,7 @@ export const MarketinPacksPage = () => {
           </div>
         </div>
       </div>
-      <div className="flex-bar">
+      {/* <div className="flex-bar">
         <Link to="/development-packs-page">
           <Button content="DESIGN PACKS" />
         </Link>
@@ -49,7 +50,15 @@ export const MarketinPacksPage = () => {
         <Link to="/payment-page">
           <Button content="PAYMENT DETAILS" />
         </Link>
-      </div>
+      </div> */}
+
+      <Bar
+        btn1Content="DESIGN PACKS"
+        pathbtn1="/development-packs-page"
+        btn2Content="PAYMENT DETAILS"
+        pathbtn2="/payment-page"
+        circleActive={2}
+      />
     </div>
   );
 };
