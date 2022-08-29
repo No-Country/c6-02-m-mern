@@ -1,6 +1,7 @@
 import React from "react";
 import "./Carousel.css";
 import CarouselIem from "./CarouselIem";
+import './CarouselItem.css'
 
 const Carousel = () => {
   return (
@@ -44,7 +45,6 @@ const Carousel = () => {
 
           <div className="carousel-item">
             <CarouselIem
-             
               title={"Silver"}
               include={"Include"}
               landing={"landing page design"}
@@ -54,7 +54,6 @@ const Carousel = () => {
 
           <div className="carousel-item">
             <CarouselIem
-           
               title={"Gold"}
               include={"Include"}
               landing={"landing page design"}
