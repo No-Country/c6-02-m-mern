@@ -13,14 +13,18 @@
   color: black;
   padding: 7px;
   font-weight: bolder;
-  color: #05668d;
+  
   margin-right: -9px;
   margin-left: -10px;
 }
-p {
-  color: #070707;
+.price{
+    color: #05668d;
+    font-weight: 500;
 }
-span {
+p {
+  color: #05668d;
+}
+.chose {
   color: #000000;
 }
 

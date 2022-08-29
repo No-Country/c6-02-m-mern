@@ -7,9 +7,11 @@ const CarouselIem = ({ clases, title, include, landing, price }) => {
       <h3>{include}</h3>
       <p>{landing}</p>
       <div className="precio">
-      <h3 ><span> Chose :</span>{price}</h3>
+        <h3 className="price">
+          <span className="chose"> Chose :</span>
+          {price}
+        </h3>
       </div>
-      
     </div>
   );
 };
