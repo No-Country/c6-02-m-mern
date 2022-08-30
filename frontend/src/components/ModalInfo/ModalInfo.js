@@ -1,15 +1,14 @@
 import React, { useContext } from "react";
 import svgImageClose from "../../assets/images/closeModalIcon.svg";
 import { GlobalContext } from "../../context/GlobalContext";
-
 import "./ModalInfo.css";
 
-const ModalInfo = (props) => {
+const ModalInfo = ({title,parrafo}) => {
   const { UIstate } = useContext(GlobalContext);
 
   const handlerCloseModal = () => {
     UIstate.setisModalActive(false);
-  };
+  };  
   return (
     <div
       className={`${
@@ -22,7 +21,8 @@ const ModalInfo = (props) => {
         className="ModalQuestion__icon"
         onClick={handlerCloseModal}
       />
-      <p className="ModalInfo__icon">{props.content}</p>
+      <h4 className="ModalInfo__title">{title} <span>Successfully</span></h4>
+      <p className='ModalInfo__parrafo'>{parrafo}</p>
     </div>
   );
 };

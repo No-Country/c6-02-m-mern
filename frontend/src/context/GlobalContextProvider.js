@@ -7,7 +7,7 @@ export const GlobalContextProvider = ({ children }) => {
 
   // auth
 
-  const [token, setToken] = useState(false);
+  const [token, setToken] = useState(false); 
 
   const [isCardActive, setisCardActive] = useState(false);
 

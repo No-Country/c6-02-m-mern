@@ -1,31 +1,43 @@
 .ModalInfo {
-    position: absolute;
-    background: #171716;
-    left: 50%;
-    width: 100%;
-    height: 60vh;
-    transform: translateX(-50%) scale(0);
-    display: flex;
-    align-items: center;
-    padding: 2rem; 
-    justify-content: center;
-    border: 1px solid yellow;
-    z-index: 200;
+  position: absolute;
+  top: 280%;
+  background: #171716;
+  left: 50%;
+  width: 100%;
+  height: 60vh;
+  transform: translateX(-50%) scale(0);
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 200;
   }
   
   .ModalInfo.active {
     transform: translateX(-50%) scale(1);
   }
   
-  .ModalInfo__paragraph {
+  .ModalInfo__title {
     font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
+    font-weight: 700;
+    font-size: 22px;
     line-height: 63px;
     width: 90%;
     text-align: center;
   }
-  
+  .ModalInfo__parrafo {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 63px;
+    width: 90%;
+    text-align: center;
+    color: white;
+  }
+  span{
+    color: #CCFF66;
+  }
   .ModalInfo__icon {
     position: absolute;
     right: 40px;

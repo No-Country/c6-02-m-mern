@@ -1,16 +1,28 @@
-import React from "react";
+import React, { useContext } from "react";
+import { GlobalContext } from "../../../context/GlobalContext";
+import ModalInfo from "../../ModalInfo/ModalInfo";
 import "./LogoContact.css";
 
 export const LogoContact = () => {
+  const { UIstate } = useContext(GlobalContext);
+
+  const handleModal = () => {
+    UIstate.setisModalActive(true);
+  };
   return (
     <div className="LogoContact">
       <div className="LogoContact__zIcon">
+        <ModalInfo
+          title={"Your message was sent"}
+          parrafo={"we will contact you soon"}
+        />
         <svg
           width="81"
           height="110"
           viewBox="0 0 81 110"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
+          onClick={handleModal}
         >
           <path
             d="M0 101.72L61.1486 12.3951V11.9033L4.84355 12.1341L4.79278 0.311131L79.7104 0V8.6615L18.9477 97.5447V98.0666L80.9492 97.8056V109.669L0 110V101.72Z"
