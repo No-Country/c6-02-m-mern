@@ -1,0 +1,45 @@
+.ModalInfo {
+    position: absolute;
+    background: #171716;
+    left: 50%;
+    width: 100%;
+    height: 60vh;
+    transform: translateX(-50%) scale(0);
+    display: flex;
+    align-items: center;
+    padding: 2rem; 
+    justify-content: center;
+    border: 1px solid yellow;
+    z-index: 200;
+  }
+  
+  .ModalInfo.active {
+    transform: translateX(-50%) scale(1);
+  }
+  
+  .ModalInfo__paragraph {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 63px;
+    width: 90%;
+    text-align: center;
+  }
+  
+  .ModalInfo__icon {
+    position: absolute;
+    right: 40px;
+    top: 20px;
+    cursor: pointer;
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .ModalInfo__paragraph {
+      font-size: 40px;
+    }
+  
+    .ModalInfo {
+      width: 50%;
+    }
+  }
+  

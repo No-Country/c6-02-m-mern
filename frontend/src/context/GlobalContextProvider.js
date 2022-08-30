@@ -38,9 +38,11 @@ export const GlobalContextProvider = ({ children }) => {
     isActiveNav,
     setIsActiveNav,
     isModalActive,
+
     setisModalActive,
     isCardActive,
     setisCardActive,
+
   };
 
   const handlerLogIn = (token) => {

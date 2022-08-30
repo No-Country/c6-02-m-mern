@@ -6,8 +6,8 @@ const Titulo = (props) => {
     <div className="class-title">
       <h1 className="class-title--yellow">{props.title}</h1>
       <p className="class-parrafo">{props.description}</p>
-    </div>
-  );
+    </div> 
+  ); 
 };
 
 export default Titulo;
