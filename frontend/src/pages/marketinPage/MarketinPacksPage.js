@@ -1,4 +1,5 @@
 import React, { useContext, useState } from "react";
+import { Link } from "react-router-dom";
 
 import CardDesktop from "../../components/DesingPageComponents/Cards/CardDesktop";
 import Carousel from "../../components/DesingPageComponents/Cards/Carousel";
@@ -45,8 +46,8 @@ export const MarketinPacksPage = () => {
   const handlerActive = (e) => {
     setbtnactive(true);
 
-    const titleCardActive = e.target.childNodes[3].textContent;
-    const priceCardActive = e.target.childNodes[0].textContent;
+    const priceCardActive = e.target.childNodes[3].textContent;
+    const titleCardActive = e.target.childNodes[0].textContent;
 
     setmarketingPageCardDataSelect({
       ...marketingPageCardDataSelect,
@@ -92,8 +93,8 @@ export const MarketinPacksPage = () => {
         activebtn={btnactive}
         btn1Content="DESIGN PACKS"
         pathbtn1="/development-packs-page"
-        btn2Content="PAYMENT DETAILS"
-        pathbtn2="/confirmation-page"
+        btn2Content="PAYMENT DETAIL"
+        pathbtn2="/payment-page"
         circleActive={2}
       />
     </div>

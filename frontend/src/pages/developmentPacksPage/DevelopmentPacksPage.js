@@ -5,11 +5,9 @@ import Question from "../../components/DesingPageComponents/Cards/Question";
 import Titulo from "../../components/DesingPageComponents/Cards/Titulo";
 import { HeaderSub } from "../../components/DesingPageComponents/HeaderSub/HeaderSub";
 import { ModalQuestion } from "../../components/DesingPageComponents/ModalQuestion.js/ModalQuestion";
-
-import "./developmentpage.css";
-
 import { Bar } from "../../components/DesingPageComponents/DownContainer/Bar/Bar";
 import { GlobalContext } from "../../context/GlobalContext";
+import "./developmentpage.css";
 
 const cardsDataDUMMY = [
   {
@@ -44,10 +42,8 @@ export const DevelopmentPacksPage = () => {
 
   const handlerActive = (e) => {
     setbtnactive(true);
-
-    const titleCardActive = e.target.childNodes[3].textContent;
-    const priceCardActive = e.target.childNodes[0].textContent;
-
+    const priceCardActive = e.target.childNodes[3].textContent;
+    const titleCardActive = e.target.childNodes[0].textContent;
     setdevelopmentPageCardDataSelect({
       ...developmentPageCardDataSelect,
       title: titleCardActive,

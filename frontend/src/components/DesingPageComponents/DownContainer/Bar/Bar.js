@@ -53,8 +53,7 @@ export const Bar = (props) => {
             <Link to={props.pathbtn2}>
               <button
                 onClick={handlerButtonNext}
-                className="cssButton"
-                disabled={active >= circle - 1 ? true : false}
+                className={`cssButtonNext ${props.activebtn && "active"}`}
               >
                 {props.btn2Content}
               </button>

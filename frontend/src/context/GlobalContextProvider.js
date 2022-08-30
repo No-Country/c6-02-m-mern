@@ -28,9 +28,11 @@ export const GlobalContextProvider = ({ children }) => {
       price: "",
     });
 
-  console.log("desing", desingPageCardDataSelect);
-  console.log("dev", developmentPageCardDataSelect);
-  console.log("marketing", marketingPageCardDataSelect);
+  const allDataUserPayment = [
+    desingPageCardDataSelect,
+    developmentPageCardDataSelect,
+    marketingPageCardDataSelect,
+  ];
 
   const UIstate = {
     isActiveNav,
@@ -63,6 +65,7 @@ export const GlobalContextProvider = ({ children }) => {
     setdesingPageCardDataSelect,
     setmarketingPageCardDataSelect,
     marketingPageCardDataSelect,
+    allDataUserPayment,
   };
 
   return (

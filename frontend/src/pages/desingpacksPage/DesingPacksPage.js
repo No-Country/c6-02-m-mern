@@ -43,8 +43,8 @@ export const DesingPacksPage = () => {
   const handlerActive = (e) => {
     setbtnactive(true);
 
-    const titleCardActive = e.target.childNodes[3].textContent;
-    const priceCardActive = e.target.childNodes[0].textContent;
+    const priceCardActive = e.target.childNodes[3].textContent;
+    const titleCardActive = e.target.childNodes[0].textContent;
 
     setdesingPageCardDataSelect({
       ...desingPageCardDataSelect,
