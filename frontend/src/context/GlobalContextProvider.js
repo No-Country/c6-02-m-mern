@@ -7,31 +7,71 @@ export const GlobalContextProvider = ({ children }) => {
 
   // auth
 
-  const [isLogIn, setisLogIn] = useState(false);
+  const [token, setToken] = useState(false);
+
+  const [isCardActive, setisCardActive] = useState(false);
+
+  // payment
+
+  const [desingPageCardDataSelect, setdesingPageCardDataSelect] = useState({
+    title: "",
+    price: "",
+  });
+  const [developmentPageCardDataSelect, setdevelopmentPageCardDataSelect] =
+    useState({
+      title: "",
+      price: "",
+    });
+  const [marketingPageCardDataSelect, setmarketingPageCardDataSelect] =
+    useState({
+      title: "",
+      price: "",
+    });
+
+  const allDataUserPayment = [
+    desingPageCardDataSelect,
+    developmentPageCardDataSelect,
+    marketingPageCardDataSelect,
+  ];
 
   const UIstate = {
     isActiveNav,
     setIsActiveNav,
     isModalActive,
-    setisModalActive, 
+
+    setisModalActive,
+    isCardActive,
+    setisCardActive,
+
   };
 
-  const handlerLogIn = () => {
-    setisLogIn(true);
+  const handlerLogIn = (token) => {
+    setToken(token);
   };
 
   const handlerLogout = (e) => {
     e.preventDefault();
-    setisLogIn(false);
+    setToken(null);
   };
   const AuthCtx = {
     handlerLogIn,
     handlerLogout,
-    isLogIn,
+    isLogIn: !!token,
+    token,
+  };
+
+  const PaymentCtx = {
+    developmentPageCardDataSelect,
+    setdevelopmentPageCardDataSelect,
+    desingPageCardDataSelect,
+    setdesingPageCardDataSelect,
+    setmarketingPageCardDataSelect,
+    marketingPageCardDataSelect,
+    allDataUserPayment,
   };
 
   return (
-    <GlobalContext.Provider value={{ UIstate, AuthCtx }}>
+    <GlobalContext.Provider value={{ UIstate, AuthCtx, PaymentCtx }}>
       {children}
     </GlobalContext.Provider>
   );

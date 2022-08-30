@@ -1,27 +1,22 @@
-import React from "react";
 import Card from "./Card";
 
-const CardDesktop = () => {
+const CardDesktop = (props) => {
   return (
     <div className="flex-container">
-      <Card
-        titulo={"Bronce"}
-        include={"include"}
-        page={"Landing page design"}
-        precio={"$ 1.000"}
-      />
-      <Card
-        titulo={"Silver"}
-        include={"include"}
-        page={"Landing page design"}
-        precio={"$ 3.000"}
-      />
-      <Card
-        titulo={"Gold"}
-        include={"include"}
-        page={"Landing page design"}
-        precio={"$ 5.000"}
-      />
+      {props.cardsDataDUMMY &&
+        props.cardsDataDUMMY.map((card) => {
+          return (
+            <Card
+              key={card.id}
+              id={props.pagetype + card.id}
+              titulo={card.titulo}
+              include={card.include}
+              page={card.page}
+              precio={card.precio}
+              onActive={props.onActive}
+            />
+          );
+        })}
     </div>
   );
 };

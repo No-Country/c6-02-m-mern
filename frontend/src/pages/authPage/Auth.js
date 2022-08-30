@@ -44,19 +44,21 @@ const Auth = () => {
 
     try {
       setIsLoading(true);
-      const response = await fetch("https://digitize.monster/api/admin/login", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          email: formState.inputs.email.value,
-          password: formState.inputs.password.value,
-        }),
-      });
+      const response = await fetch(
+        "https://nc-digitize.herokuapp.com/api/admin/login",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            email: formState.inputs.email.value,
+            password: formState.inputs.password.value,
+          }),
+        }
+      );
 
       const responseData = await response.json();
-      console.log(responseData);
 
       if (responseData.error) {
         setIsLoading(false);
@@ -64,7 +66,7 @@ const Auth = () => {
       }
 
       setIsLoading(false);
-      AuthCtx.handlerLogIn();
+      AuthCtx.handlerLogIn(responseData.token);
       navigate("/control-panel-admin", {
         replace: true,
       });

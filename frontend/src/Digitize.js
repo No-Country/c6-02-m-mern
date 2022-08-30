@@ -11,6 +11,7 @@ import { ConfirmationPage } from "./pages/confirmationPage/ConfirmationPage";
 import { ControlPanelPage } from "./pages/ControlPanel/ControlPanelPage";
 import { GlobalContext } from "./context/GlobalContext";
 import Auth from "./pages/authPage/Auth";
+import { FinalConfirmationPage } from "./pages/finalConfirmationPage/FinalConfirmationPage";
 
 export const Digitize = () => {
   const { AuthCtx } = useContext(GlobalContext);
@@ -31,6 +32,10 @@ export const Digitize = () => {
         )}
         <Route path="payment-page" element={<PaymentPage />} />
         <Route path="confirmation-page" element={<ConfirmationPage />} />
+        <Route
+          path="final-confirmation-page"
+          element={<FinalConfirmationPage />}
+        />
         <Route path="our-work" element={<PageOurWork />} />
         <Route path="adminlogin-page" element={<Auth />} />
         <Route path="/*" element={<LandingPage />} />

@@ -2,10 +2,11 @@ import React, { useEffect, useState } from "react";
 import { Circle } from "./Circle";
 import "./Progress.css";
 import "../NextBack.css";
+import { Link } from "react-router-dom";
 
-export const Bar = (Back) => {
+export const Bar = (props) => {
   const [circle] = useState(3);
-  const [active, setActive] = useState(0);
+  const [active, setActive] = useState(props.circleActive);
   const [width, setWidth] = useState(0);
   useEffect(() => {
     setWidth((100 / (circle - 1)) * active);
@@ -39,21 +40,25 @@ export const Bar = (Back) => {
     <div className="containerDown">
       <div className="buttonContainer">
         <div className="subuttonContainer">
-          <button
-            onClick={handlerButtonBack}
-            className="cssButton"
-            disabled={active > 0 ? false : true}
-          >
-            BACK
-          </button>
-
-          <button
-            onClick={handlerButtonNext}
-            className="cssButton"
-            disabled={active >= circle - 1 ? true : false}
-          >
-            NEXT
-          </button>
+          <Link to={props.pathbtn1}>
+            <button
+              onClick={handlerButtonBack}
+              className="cssButton"
+              disabled={active > 0 ? false : true}
+            >
+              {props.btn1Content}
+            </button>
+          </Link>
+          {props.activebtn && (
+            <Link to={props.pathbtn2}>
+              <button
+                onClick={handlerButtonNext}
+                className={`cssButtonNext ${props.activebtn && "active"}`}
+              >
+                {props.btn2Content}
+              </button>
+            </Link>
+          )}
         </div>
       </div>
       <div className="containerBar">

@@ -1,3 +1,4 @@
+
 import React from "react";
 import ModalInfo from "../../ModalInfo/ModalInfo";
 import { ModalQuestion } from "../ModalQuestion.js/ModalQuestion";
@@ -24,15 +25,4 @@ export const SectionDesktopCards = () => {
         </div>
       </div>
 
-      <div className="col-12 d-lg-none d-md-block">
-        <Carousel />
-      </div>
-      <div className="col align-self-start custom-question">
-        <Question />
-      </div>
-      <div className="col-12 d-none d-lg-block ">
-        <CardDesktop />
-      </div>
-    </div>
-  );
-};
+)}
