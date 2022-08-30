@@ -1,7 +1,5 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { Button } from "../../components/DesingPageComponents/barComponent/Button";
-import { CircleBar } from "../../components/DesingPageComponents/barComponent/CircleBar";
+import React, { useContext, useState } from "react";
+
 import CardDesktop from "../../components/DesingPageComponents/Cards/CardDesktop";
 import Carousel from "../../components/DesingPageComponents/Cards/Carousel";
 import Question from "../../components/DesingPageComponents/Cards/Question";
@@ -9,9 +7,53 @@ import Titulo from "../../components/DesingPageComponents/Cards/Titulo";
 import { Bar } from "../../components/DesingPageComponents/DownContainer/Bar/Bar";
 import { HeaderSub } from "../../components/DesingPageComponents/HeaderSub/HeaderSub";
 import { ModalQuestion } from "../../components/DesingPageComponents/ModalQuestion.js/ModalQuestion";
+import { GlobalContext } from "../../context/GlobalContext";
 
 import "./marketingPacks.css";
+
+const cardsDataDUMMY = [
+  {
+    id: "1mark",
+    titulo: "Bronce",
+    include: "include",
+    page: "Landing page design",
+    precio: 1000,
+  },
+  {
+    id: "2mark",
+    titulo: "Silver",
+    include: "include",
+    page: "Landing page design",
+    precio: 3000,
+  },
+  {
+    id: "3mark",
+    titulo: "Gold",
+    include: "include",
+    page: "Landing page design",
+    precio: 5000,
+  },
+];
 export const MarketinPacksPage = () => {
+  const [btnactive, setbtnactive] = useState(false);
+
+  const { PaymentCtx } = useContext(GlobalContext);
+
+  const { marketingPageCardDataSelect, setmarketingPageCardDataSelect } =
+    PaymentCtx;
+
+  const handlerActive = (e) => {
+    setbtnactive(true);
+
+    const titleCardActive = e.target.childNodes[3].textContent;
+    const priceCardActive = e.target.childNodes[0].textContent;
+
+    setmarketingPageCardDataSelect({
+      ...marketingPageCardDataSelect,
+      title: titleCardActive,
+      price: priceCardActive,
+    });
+  };
   return (
     <div className="marketinPacksPage">
       <HeaderSub />
@@ -38,25 +80,20 @@ export const MarketinPacksPage = () => {
             <Question />
           </div>
           <div className="col-12 d-none d-lg-block ">
-            <CardDesktop />
+            <CardDesktop
+              pagetype="marketingpage"
+              onActive={handlerActive}
+              cardsDataDUMMY={cardsDataDUMMY}
+            />
           </div>
         </div>
       </div>
-      {/* <div className="flex-bar">
-        <Link to="/development-packs-page">
-          <Button content="DESIGN PACKS" />
-        </Link>
-        <CircleBar />
-        <Link to="/payment-page">
-          <Button content="PAYMENT DETAILS" />
-        </Link>
-      </div> */}
-
       <Bar
+        activebtn={btnactive}
         btn1Content="DESIGN PACKS"
         pathbtn1="/development-packs-page"
         btn2Content="PAYMENT DETAILS"
-        pathbtn2="/payment-page"
+        pathbtn2="/confirmation-page"
         circleActive={2}
       />
     </div>

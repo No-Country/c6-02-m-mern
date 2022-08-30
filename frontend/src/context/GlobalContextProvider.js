@@ -9,11 +9,28 @@ export const GlobalContextProvider = ({ children }) => {
 
   const [token, setToken] = useState(false);
 
-  // circle bar
-
   const [isCardActive, setisCardActive] = useState(false);
 
-  // activeLinie;
+  // payment
+
+  const [desingPageCardDataSelect, setdesingPageCardDataSelect] = useState({
+    title: "",
+    price: "",
+  });
+  const [developmentPageCardDataSelect, setdevelopmentPageCardDataSelect] =
+    useState({
+      title: "",
+      price: "",
+    });
+  const [marketingPageCardDataSelect, setmarketingPageCardDataSelect] =
+    useState({
+      title: "",
+      price: "",
+    });
+
+  console.log("desing", desingPageCardDataSelect);
+  console.log("dev", developmentPageCardDataSelect);
+  console.log("marketing", marketingPageCardDataSelect);
 
   const UIstate = {
     isActiveNav,
@@ -39,8 +56,17 @@ export const GlobalContextProvider = ({ children }) => {
     token,
   };
 
+  const PaymentCtx = {
+    developmentPageCardDataSelect,
+    setdevelopmentPageCardDataSelect,
+    desingPageCardDataSelect,
+    setdesingPageCardDataSelect,
+    setmarketingPageCardDataSelect,
+    marketingPageCardDataSelect,
+  };
+
   return (
-    <GlobalContext.Provider value={{ UIstate, AuthCtx }}>
+    <GlobalContext.Provider value={{ UIstate, AuthCtx, PaymentCtx }}>
       {children}
     </GlobalContext.Provider>
   );

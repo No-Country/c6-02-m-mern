@@ -1,3 +1,4 @@
+import { useContext, useState } from "react";
 import Titulo from "../../components/DesingPageComponents/Cards/Titulo.js";
 import Carousel from "../../components/DesingPageComponents/Cards/Carousel.js";
 import Question from "../../components/DesingPageComponents/Cards/Question.js";
@@ -6,13 +7,50 @@ import { HeaderSub } from "../../components/DesingPageComponents/HeaderSub/Heade
 import { ModalQuestion } from "../../components/DesingPageComponents/ModalQuestion.js/ModalQuestion.js";
 import { Bar } from "../../components/DesingPageComponents/DownContainer/Bar/Bar.js";
 
+import { GlobalContext } from "../../context/GlobalContext.js";
 import "./desingpacksPakcs.css";
-import { useState } from "react";
+
+const cardsDataDUMMY = [
+  {
+    id: "1des",
+    titulo: "Bronce",
+    include: "include",
+    page: "Landing page design",
+    precio: 1000,
+  },
+  {
+    id: "2des",
+    titulo: "Silver",
+    include: "include",
+    page: "Landing page design",
+    precio: 3000,
+  },
+  {
+    id: "3des",
+    titulo: "Gold",
+    include: "include",
+    page: "Landing page design",
+    precio: 5000,
+  },
+];
 export const DesingPacksPage = () => {
   const [btnactive, setbtnactive] = useState(false);
+
+  const { PaymentCtx } = useContext(GlobalContext);
+
+  const { desingPageCardDataSelect, setdesingPageCardDataSelect } = PaymentCtx;
+
   const handlerActive = (e) => {
     setbtnactive(true);
-    console.log(e.target.firstChild.id);
+
+    const titleCardActive = e.target.childNodes[3].textContent;
+    const priceCardActive = e.target.childNodes[0].textContent;
+
+    setdesingPageCardDataSelect({
+      ...desingPageCardDataSelect,
+      title: titleCardActive,
+      price: priceCardActive,
+    });
   };
   return (
     <div className="desingPacksPage">
@@ -40,19 +78,14 @@ export const DesingPacksPage = () => {
             <Question />
           </div>
           <div className="col-12 d-none d-lg-block ">
-            <CardDesktop pagetype="desingPage" onActive={handlerActive} />
+            <CardDesktop
+              pagetype="desingPage"
+              onActive={handlerActive}
+              cardsDataDUMMY={cardsDataDUMMY}
+            />
           </div>
         </div>
       </div>
-      {/* <div className="flex-bar">
-        <Link to="/">
-          <Button content="BACK" />
-        </Link>
-        <CircleBar />
-        <Link to="/development-packs-page">
-          <Button content="NEXT" />
-        </Link>
-      </div> */}
       <Bar
         activebtn={btnactive}
         btn1Content="BACK"
