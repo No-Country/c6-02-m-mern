@@ -1,16 +1,19 @@
-import { HeaderSub } from "../../components/DesingPageComponents/HeaderSub/HeaderSub.js";
-import "./desingpacksPakcs.css";
-import { CircleBar } from "../../components/DesingPageComponents/barComponent/CircleBar.js";
-import { ModalQuestion } from "../../components/DesingPageComponents/ModalQuestion.js/ModalQuestion.js";
 import Titulo from "../../components/DesingPageComponents/Cards/Titulo.js";
 import Carousel from "../../components/DesingPageComponents/Cards/Carousel.js";
 import Question from "../../components/DesingPageComponents/Cards/Question.js";
 import CardDesktop from "../../components/DesingPageComponents/Cards/CardDesktop.js";
-import { Button } from "../../components/DesingPageComponents/barComponent/Button.js";
-import { Link } from "react-router-dom";
+import { HeaderSub } from "../../components/DesingPageComponents/HeaderSub/HeaderSub.js";
+import { ModalQuestion } from "../../components/DesingPageComponents/ModalQuestion.js/ModalQuestion.js";
 import { Bar } from "../../components/DesingPageComponents/DownContainer/Bar/Bar.js";
 
+import "./desingpacksPakcs.css";
+import { useState } from "react";
 export const DesingPacksPage = () => {
+  const [btnactive, setbtnactive] = useState(false);
+  const handlerActive = (e) => {
+    setbtnactive(true);
+    console.log(e.target.firstChild.id);
+  };
   return (
     <div className="desingPacksPage">
       <HeaderSub />
@@ -37,7 +40,7 @@ export const DesingPacksPage = () => {
             <Question />
           </div>
           <div className="col-12 d-none d-lg-block ">
-            <CardDesktop />
+            <CardDesktop pagetype="desingPage" onActive={handlerActive} />
           </div>
         </div>
       </div>
@@ -51,6 +54,7 @@ export const DesingPacksPage = () => {
         </Link>
       </div> */}
       <Bar
+        activebtn={btnactive}
         btn1Content="BACK"
         pathbtn1="/"
         btn2Content="NEXT"

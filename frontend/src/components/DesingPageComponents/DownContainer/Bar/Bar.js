@@ -49,16 +49,17 @@ export const Bar = (props) => {
               {props.btn1Content}
             </button>
           </Link>
-
-          <Link to={props.pathbtn2}>
-            <button
-              onClick={handlerButtonNext}
-              className="cssButton"
-              disabled={active >= circle - 1 ? true : false}
-            >
-              {props.btn2Content}
-            </button>
-          </Link>
+          {props.activebtn && (
+            <Link to={props.pathbtn2}>
+              <button
+                onClick={handlerButtonNext}
+                className="cssButton"
+                disabled={active >= circle - 1 ? true : false}
+              >
+                {props.btn2Content}
+              </button>
+            </Link>
+          )}
         </div>
       </div>
       <div className="containerBar">
