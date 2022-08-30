@@ -12,6 +12,7 @@ export const LogoContact = () => {
   return (
     <div className="LogoContact">
       <div className="LogoContact__zIcon">
+        {/* Inserto COMPONENTE para probar funcionalidad! */}
         <ModalInfo
           title={"Your message was sent"}
           parrafo={"we will contact you soon"}
