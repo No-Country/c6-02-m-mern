@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-
 import Icono from "../../../assets/images/question.png";
 import { GlobalContext } from "../../../context/GlobalContext";
 import "./Question.css";

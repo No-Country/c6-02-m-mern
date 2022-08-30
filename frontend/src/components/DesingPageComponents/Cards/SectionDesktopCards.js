@@ -1,4 +1,5 @@
 import React from "react";
+import ModalInfo from "../../ModalInfo/ModalInfo";
 import { ModalQuestion } from "../ModalQuestion.js/ModalQuestion";
 import CardDesktop from "./CardDesktop";
 import Carousel from "./Carousel";
@@ -13,6 +14,7 @@ export const SectionDesktopCards = () => {
           "Select the cards corresponding to the pack you want to hire and follow the buttons to continue the process!"
         }
       />
+
       <div className="col-12 ">
         <div className="col align-self-center">
           <Titulo

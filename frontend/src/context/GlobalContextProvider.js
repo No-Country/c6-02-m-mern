@@ -13,7 +13,7 @@ export const GlobalContextProvider = ({ children }) => {
     isActiveNav,
     setIsActiveNav,
     isModalActive,
-    setisModalActive,
+    setisModalActive, 
   };
 
   const handlerLogIn = () => {
