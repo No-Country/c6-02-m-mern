@@ -1,9 +1,9 @@
 .ModalQuestion {
   position: absolute;
-  background: #171716;
+  background: #171716e5;
   left: 50%;
-  width: 100%;
-  height: 60vh;
+  width: 90%;
+  height: 50vh;
   transform: translateX(-50%) scale(0);
   display: flex;
   align-items: center;
@@ -20,7 +20,8 @@
 .ModalQuestion__paragraph {
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 25px;
+  color: white;
   line-height: 63px;
   width: 90%;
   text-align: center;
@@ -28,10 +29,11 @@
 
 .ModalQuestion__icon {
   position: absolute;
-  right: 40px;
-  top: 20px;
+  right: 10px;
+  top: 10px;
   cursor: pointer;
 }
+
 
 @media screen and (min-width: 1024px) {
   .ModalQuestion__paragraph {
@@ -39,6 +41,7 @@
   }
 
   .ModalQuestion {
-    width: 50%;
+    width: 60%;
+    height: 60vh;
   }
 }

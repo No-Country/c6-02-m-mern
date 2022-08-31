@@ -44,7 +44,7 @@ export const MarketinPacksPage = () => {
           <div className="col-12 ">
             <div className="col align-self-center">
               <Titulo
-                title="marketingPacksPage"
+                title="MARKETING PAGE"
                 description="We create and manage your presence in social networks and advertising, based on a rigorous study of the market and the user of your product!"
               />
             </div>

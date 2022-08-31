@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
-import { Circle } from "./Circle";
-import "./Progress.css";
-import "../NextBack.css";
-import { Link } from "react-router-dom";
+import { Circle } from "../DesingPageComponents/DownContainer/Bar/Circle";
+import "../DesingPageComponents/DownContainer/Bar/Progress.css";
+import "../DesingPageComponents/DownContainer/NextBack.css";
 
-export const Bar = (props) => {
+export const Bar = () => {
+  /* Creamos la constante Bar*/
   const [circle] = useState(3);
-  const [active, setActive] = useState(props.circleActive);
+  const [active, setActive] = useState(0);
   const [width, setWidth] = useState(0);
   useEffect(() => {
     setWidth((100 / (circle - 1)) * active);
@@ -40,29 +40,21 @@ export const Bar = (props) => {
     <div className="containerDown">
       <div className="buttonContainer">
         <div className="subuttonContainer">
-          <Link to={props.pathbtn1} className="linkButtonOneContainer">
-            <div className="containercssButton">
-              <button
-                onClick={handlerButtonBack}
-                className="cssButton"
-                disabled={active > 0 ? false : true}
-              >
-                {props.btn1Content}
-              </button>
-            </div>
-          </Link>
-          {props.activebtn && (
-            <Link to={props.pathbtn2} className="linkButtonTwoContainer">
-              <div className="containercssButtonNext">
-                <button
-                  onClick={handlerButtonNext}
-                  className={`cssButtonNext ${props.activebtn && "active"}`}
-                >
-                  {props.btn2Content}
-                </button>
-              </div>
-            </Link>
-          )}
+          <button
+            onClick={handlerButtonBack}
+            className="cssButton"
+            disabled={active > 0 ? false : true}
+          >
+            BACK
+          </button>
+
+          <button
+            onClick={handlerButtonNext}
+            className="cssButton"
+            disabled={active >= circle - 1 ? true : false}
+          >
+            NEXT
+          </button>
         </div>
       </div>
       <div className="containerBar">

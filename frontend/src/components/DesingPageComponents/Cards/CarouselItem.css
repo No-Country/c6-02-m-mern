@@ -31,11 +31,12 @@ p {
 @media screen and (min-width: 1024px) {
   .precio {
     position: relative;
-    top: 45px;
+    top: 47px;
     border-radius: 0px 0px 15px 15px;
     -webkit-border-radius: 0px 0px 15px 15px;
     -moz-border-radius: 0px 0px 15px 15px;
     -ms-border-radius: 0px 0px 15px 15px;
     -o-border-radius: 0px 0px 15px 15px;
+    width: 249.5px;
   }
 }
