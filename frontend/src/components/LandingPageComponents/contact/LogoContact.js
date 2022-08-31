@@ -1,6 +1,5 @@
 import React, { useContext } from "react";
 import { GlobalContext } from "../../../context/GlobalContext";
-import ModalInfo from "../../ModalInfo/ModalInfo";
 import "./LogoContact.css";
 
 export const LogoContact = () => {
@@ -12,11 +11,6 @@ export const LogoContact = () => {
   return (
     <div className="LogoContact">
       <div className="LogoContact__zIcon">
-        {/* Inserto COMPONENTE para probar funcionalidad! */}
-        <ModalInfo
-          title={"Your message was sent"}
-          parrafo={"we will contact you soon"}
-        />
         <svg
           width="81"
           height="110"

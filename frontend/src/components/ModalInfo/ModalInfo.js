@@ -1,28 +1,18 @@
-import React, { useContext } from "react";
-import svgImageClose from "../../assets/images/closeModalIcon.svg";
-import { GlobalContext } from "../../context/GlobalContext";
 import "./ModalInfo.css";
 
-const ModalInfo = ({ title, parrafo }) => {
-  const { UIstate } = useContext(GlobalContext);
-
-  const handlerCloseModal = () => {
-    UIstate.setisModalActive(false);
-  };
+const ModalInfo = (props) => {
   return (
-    <div
-      className={`${UIstate.isModalActive ? "ModalInfo active" : "ModalInfo"}`}
-    >
+    <div className={`ModalInfo ${props.className}`}>
       <img
-        src={svgImageClose}
-        alt="modalIconClose"
+        src={props.img}
+        alt={props.alt}
         className="ModalInfo__icon"
-        onClick={handlerCloseModal}
+        onClick={props.close}
       />
       <h4 className="ModalInfo__title">
-        {title} <span>Successfully</span>
+        {props.title} <span>{props.success}</span>
       </h4>
-      <p className="ModalInfo__parrafo">{parrafo}</p>
+      <p className="ModalInfo__parrafo">{props.parrafo}</p>
     </div>
   );
 };

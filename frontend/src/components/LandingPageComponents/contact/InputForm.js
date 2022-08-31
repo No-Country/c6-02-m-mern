@@ -1,9 +1,15 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
+import svgImageClose from "../../../assets/images/closeModalIcon.svg";
 import "./input.css";
+import ModalInfo from "../../ModalInfo/ModalInfo";
+import { useState } from "react";
 
 export const InputForm = () => {
+  const [IsModalInfoActive, setIsModalInfoActive] = useState(false);
+  const [isLoading, setisLoading] = useState(false);
+
   const inputName = useRef();
   const inputEmail = useRef();
   const inputTextArea = useRef();
@@ -33,6 +39,7 @@ export const InputForm = () => {
             showConfirmButton: false,
             timer: 1500,
           });
+          setIsModalInfoActive(true);
         },
         (error) => {
           Swal.fire({
@@ -47,6 +54,15 @@ export const InputForm = () => {
   };
   return (
     <form className="InputForm" onSubmit={handlerSubmit} ref={form}>
+      <ModalInfo
+        img={svgImageClose}
+        title={"Your message was sent"}
+        success={"successfully!"}
+        parrafo={"we will contact you soon"}
+        alt={"closeIcon"}
+        className={IsModalInfoActive && "ModalInfo active"}
+        close={() => setIsModalInfoActive(false)}
+      />
       <label>Full name</label>
       <input
         type="text"
