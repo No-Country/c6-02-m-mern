@@ -1,6 +1,4 @@
 import React, { useContext, useState } from "react";
-import { Link } from "react-router-dom";
-
 import CardDesktop from "../../components/DesingPageComponents/Cards/CardDesktop";
 import Carousel from "../../components/DesingPageComponents/Cards/Carousel";
 import Question from "../../components/DesingPageComponents/Cards/Question";
@@ -12,33 +10,11 @@ import { GlobalContext } from "../../context/GlobalContext";
 
 import "./marketingPacks.css";
 
-const cardsDataDUMMY = [
-  {
-    id: "1mark",
-    titulo: "Bronce",
-    include: "include",
-    page: "Landing page design",
-    precio: 1000,
-  },
-  {
-    id: "2mark",
-    titulo: "Silver",
-    include: "include",
-    page: "Landing page design",
-    precio: 3000,
-  },
-  {
-    id: "3mark",
-    titulo: "Gold",
-    include: "include",
-    page: "Landing page design",
-    precio: 5000,
-  },
-];
 export const MarketinPacksPage = () => {
   const [btnactive, setbtnactive] = useState(false);
 
-  const { PaymentCtx } = useContext(GlobalContext);
+  const { PaymentCtx, httpsCardsctx } = useContext(GlobalContext);
+  const { datamarketingCards } = httpsCardsctx;
 
   const { marketingPageCardDataSelect, setmarketingPageCardDataSelect } =
     PaymentCtx;
@@ -84,7 +60,7 @@ export const MarketinPacksPage = () => {
             <CardDesktop
               pagetype="marketingpage"
               onActive={handlerActive}
-              cardsDataDUMMY={cardsDataDUMMY}
+              data={datamarketingCards}
             />
           </div>
         </div>

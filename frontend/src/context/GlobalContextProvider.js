@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useFetch } from "../shared/hooks/useFetch";
 import { GlobalContext } from "./GlobalContext";
 
 export const GlobalContextProvider = ({ children }) => {
@@ -28,12 +29,6 @@ export const GlobalContextProvider = ({ children }) => {
       price: "",
     });
 
-  const allDataUserPayment = [
-    desingPageCardDataSelect,
-    developmentPageCardDataSelect,
-    marketingPageCardDataSelect,
-  ];
-
   const UIstate = {
     isActiveNav,
     setIsActiveNav,
@@ -42,7 +37,6 @@ export const GlobalContextProvider = ({ children }) => {
     setisModalActive,
     isCardActive,
     setisCardActive,
-
   };
 
   const handlerLogIn = (token) => {
@@ -60,6 +54,25 @@ export const GlobalContextProvider = ({ children }) => {
     token,
   };
 
+  const listPrice = [
+    Number(desingPageCardDataSelect.price),
+    Number(developmentPageCardDataSelect.price),
+    Number(marketingPageCardDataSelect.price),
+  ];
+
+  let totalAmount = listPrice.reduce((a, b) => a + b, 0);
+
+  const totalAmountPayment = {
+    totalAmount,
+  };
+
+  const allDataUserPayment = [
+    desingPageCardDataSelect,
+    developmentPageCardDataSelect,
+    marketingPageCardDataSelect,
+    totalAmountPayment,
+  ];
+
   const PaymentCtx = {
     developmentPageCardDataSelect,
     setdevelopmentPageCardDataSelect,
@@ -70,8 +83,26 @@ export const GlobalContextProvider = ({ children }) => {
     allDataUserPayment,
   };
 
+  const { statehttp: datadesingCards } = useFetch(
+    "https://nc-digitize.herokuapp.com/api/cards?categoria=design"
+  );
+  const { statehttp: datadevCards } = useFetch(
+    "https://nc-digitize.herokuapp.com/api/cards?categoria=dev "
+  );
+  const { statehttp: datamarketingCards } = useFetch(
+    "https://nc-digitize.herokuapp.com/api/cards?categoria=marketing"
+  );
+
+  const httpsCardsctx = {
+    datadesingCards,
+    datadevCards,
+    datamarketingCards,
+  };
+
   return (
-    <GlobalContext.Provider value={{ UIstate, AuthCtx, PaymentCtx }}>
+    <GlobalContext.Provider
+      value={{ UIstate, AuthCtx, PaymentCtx, httpsCardsctx }}
+    >
       {children}
     </GlobalContext.Provider>
   );

@@ -10,39 +10,15 @@ import { Bar } from "../../components/DesingPageComponents/DownContainer/Bar/Bar
 import { GlobalContext } from "../../context/GlobalContext.js";
 import "./desingpacksPakcs.css";
 
-const cardsDataDUMMY = [
-  {
-    id: "1des",
-    titulo: "Bronce",
-    include: "include",
-    page: "Landing page design",
-    precio: 1000,
-  },
-  {
-    id: "2des",
-    titulo: "Silver",
-    include: "include",
-    page: "Landing page design",
-    precio: 3000,
-  },
-  {
-    id: "3des",
-    titulo: "Gold",
-    include: "include",
-    page: "Landing page design",
-    precio: 5000,
-  },
-];
 export const DesingPacksPage = () => {
   const [btnactive, setbtnactive] = useState(false);
 
-  const { PaymentCtx } = useContext(GlobalContext);
-
+  const { PaymentCtx, httpsCardsctx } = useContext(GlobalContext);
+  const { datadesingCards } = httpsCardsctx;
   const { desingPageCardDataSelect, setdesingPageCardDataSelect } = PaymentCtx;
 
   const handlerActive = (e) => {
     setbtnactive(true);
-
     const priceCardActive = e.target.childNodes[3].textContent;
     const titleCardActive = e.target.childNodes[0].textContent;
 
@@ -52,6 +28,7 @@ export const DesingPacksPage = () => {
       price: priceCardActive,
     });
   };
+
   return (
     <div className="desingPacksPage">
       <HeaderSub />
@@ -81,7 +58,7 @@ export const DesingPacksPage = () => {
             <CardDesktop
               pagetype="desingPage"
               onActive={handlerActive}
-              cardsDataDUMMY={cardsDataDUMMY}
+              data={datadesingCards}
             />
           </div>
         </div>
@@ -92,7 +69,7 @@ export const DesingPacksPage = () => {
         pathbtn1="/"
         btn2Content="NEXT"
         pathbtn2="/development-packs-page"
-        circleActive={-1}
+        circleActive={0}
       />
     </div>
   );

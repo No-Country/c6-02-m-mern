@@ -1,42 +1,19 @@
 import React, { useContext, useState } from "react";
-import CardDesktop from "../../components/DesingPageComponents/Cards/CardDesktop";
-import Carousel from "../../components/DesingPageComponents/Cards/Carousel";
-import Question from "../../components/DesingPageComponents/Cards/Question";
-import Titulo from "../../components/DesingPageComponents/Cards/Titulo";
 import { HeaderSub } from "../../components/DesingPageComponents/HeaderSub/HeaderSub";
 import { ModalQuestion } from "../../components/DesingPageComponents/ModalQuestion.js/ModalQuestion";
 import { Bar } from "../../components/DesingPageComponents/DownContainer/Bar/Bar";
 import { GlobalContext } from "../../context/GlobalContext";
+import CardDesktop from "../../components/DesingPageComponents/Cards/CardDesktop";
+import Carousel from "../../components/DesingPageComponents/Cards/Carousel";
+import Question from "../../components/DesingPageComponents/Cards/Question";
+import Titulo from "../../components/DesingPageComponents/Cards/Titulo";
 import "./developmentpage.css";
 
-const cardsDataDUMMY = [
-  {
-    id: "1dev",
-    titulo: "Bronce",
-    include: "include",
-    page: "Landing page design",
-    precio: 1000,
-  },
-  {
-    id: "2dev",
-    titulo: "Silver",
-    include: "include",
-    page: "Landing page design",
-    precio: 3000,
-  },
-  {
-    id: "3dev",
-    titulo: "Gold",
-    include: "include",
-    page: "Landing page design",
-    precio: 5000,
-  },
-];
 export const DevelopmentPacksPage = () => {
   const [btnactive, setbtnactive] = useState(false);
 
-  const { PaymentCtx } = useContext(GlobalContext);
-
+  const { PaymentCtx, httpsCardsctx } = useContext(GlobalContext);
+  const { datadevCards } = httpsCardsctx;
   const { developmentPageCardDataSelect, setdevelopmentPageCardDataSelect } =
     PaymentCtx;
 
@@ -79,7 +56,7 @@ export const DevelopmentPacksPage = () => {
             <CardDesktop
               pagetype="development"
               onActive={handlerActive}
-              cardsDataDUMMY={cardsDataDUMMY}
+              data={datadevCards}
             />
           </div>
         </div>

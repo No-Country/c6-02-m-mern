@@ -3,15 +3,15 @@ import Card from "./Card";
 const CardDesktop = (props) => {
   return (
     <div className="flex-container">
-      {props.cardsDataDUMMY &&
-        props.cardsDataDUMMY.map((card) => {
+      {props.data &&
+        props.data.map((card) => {
           return (
             <Card
-              key={card.id}
-              id={props.pagetype + card.id}
+              key={card._id}
+              id={card._id}
               titulo={card.titulo}
               include={card.include}
-              page={card.page}
+              page={card.categoria}
               precio={card.precio}
               onActive={props.onActive}
             />
