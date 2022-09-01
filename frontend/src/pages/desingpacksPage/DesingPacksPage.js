@@ -1,6 +1,6 @@
 import { useContext, useState } from "react";
 import Titulo from "../../components/DesingPageComponents/Cards/Titulo.js";
-import Carousel from "../../components/DesingPageComponents/Cards/Carousel.js";
+
 import Question from "../../components/DesingPageComponents/Cards/Question.js";
 import CardDesktop from "../../components/DesingPageComponents/Cards/CardDesktop.js";
 import { HeaderSub } from "../../components/DesingPageComponents/HeaderSub/HeaderSub.js";
@@ -48,9 +48,6 @@ export const DesingPacksPage = () => {
             </div>
           </div>
 
-          <div className="col-12 d-lg-none d-md-block">
-            <Carousel />
-          </div>
           <div className="col align-self-start custom-question">
             <Question />
           </div>

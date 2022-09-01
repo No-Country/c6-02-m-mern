@@ -4,7 +4,7 @@ import { ModalQuestion } from "../../components/DesingPageComponents/ModalQuesti
 import { Bar } from "../../components/DesingPageComponents/DownContainer/Bar/Bar";
 import { GlobalContext } from "../../context/GlobalContext";
 import CardDesktop from "../../components/DesingPageComponents/Cards/CardDesktop";
-import Carousel from "../../components/DesingPageComponents/Cards/Carousel";
+
 import Question from "../../components/DesingPageComponents/Cards/Question";
 import Titulo from "../../components/DesingPageComponents/Cards/Titulo";
 import "./developmentpage.css";
@@ -46,9 +46,6 @@ export const DevelopmentPacksPage = () => {
             </div>
           </div>
 
-          <div className="col-12 d-lg-none d-md-block">
-            <Carousel />
-          </div>
           <div className="col align-self-start custom-question">
             <Question />
           </div>
