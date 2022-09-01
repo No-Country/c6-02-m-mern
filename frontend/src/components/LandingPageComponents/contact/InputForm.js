@@ -7,7 +7,7 @@ import ModalInfo from "../../ModalInfo/ModalInfo";
 import { useState } from "react";
 import { Loading } from "../../loading/Loading";
 import { validarEmail } from "../../../util/validateEmail";
-
+ 
 export const InputForm = () => {
   const [IsModalInfoActive, setIsModalInfoActive] = useState(false);
   const [isLoading, setisLoading] = useState(false);
