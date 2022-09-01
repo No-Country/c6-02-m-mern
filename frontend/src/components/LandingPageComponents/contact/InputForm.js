@@ -46,35 +46,35 @@ export const InputForm = () => {
       return;
     }
 
-    emailjs
-      .sendForm(
-        "service_d40ov0j",
-        "template_h8rbjxs",
-        "form",
-        "zg9uaqkAbfcchByFK"
-      )
-      .then(
-        (response) => {
-          Swal.fire({
-            position: "top-end",
-            icon: "success",
-            title: "SEND",
-            showConfirmButton: false,
-            timer: 1500,
-          });
-          setIsModalInfoActive(true);
-          setisLoading(false);
-        },
-        (error) => {
-          Swal.fire({
-            position: "top-end",
-            icon: "warning",
-            title: "please try later ",
-            showConfirmButton: false,
-            timer: 1500,
-          });
-        }
-      );
+    // emailjs
+    //   .sendForm(
+    //     "service_d40ov0j",
+    //     "template_h8rbjxs",
+    //     "form",
+    //     "zg9uaqkAbfcchByFK"
+    //   )
+    //   .then(
+    //     (response) => {
+    //       Swal.fire({
+    //         position: "top-end",
+    //         icon: "success",
+    //         title: "SEND",
+    //         showConfirmButton: false,
+    //         timer: 1500,
+    //       });
+    //       setIsModalInfoActive(true);
+    //       setisLoading(false);
+    //     },
+    //     (error) => {
+    //       Swal.fire({
+    //         position: "top-end",
+    //         icon: "warning",
+    //         title: "please try later ",
+    //         showConfirmButton: false,
+    //         timer: 1500,
+    //       });
+    //     }
+    //   );
     setisLoading(true);
   };
   return (

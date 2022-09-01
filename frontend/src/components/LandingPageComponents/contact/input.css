@@ -55,3 +55,8 @@
     font-size: 30px;
   }
 }
+@media screen and(min-width: 425px) {
+  .InputForm {
+    width: 69%;
+  }
+}

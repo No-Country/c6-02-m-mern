@@ -14,7 +14,7 @@ const ModalInfo = (props) => {
       </h4>
       <p className="ModalInfo__parrafo">{props.parrafo}</p>
     </div>
-  );
+  ); 
 };
 
 export default ModalInfo;
