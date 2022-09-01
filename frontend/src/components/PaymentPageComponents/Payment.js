@@ -19,7 +19,7 @@ export const Payment = () => {
         <div className="paymentMethodContainer">
           <div className="subPaymentMethodContainer">
             <div className="paragraphContainer">
-              <p>Choose the</p>
+              <p className="colorChooseThe">Choose the</p>
               <p className="paymentmeth">payment method</p>
             </div>
             <div className="buttonsPayContainer">
@@ -30,7 +30,7 @@ export const Payment = () => {
                 <div className="PaypalIcon">
                   <PaypalIcon />
                 </div>
-                <p>PAYPAL</p>
+                <p className="colorPayPal">PAYPAL</p>
               </button>
               <button className="buttons">
                 <div className="BigStrypiceIcon">
@@ -39,7 +39,7 @@ export const Payment = () => {
                 <div className="StrypiceIcon">
                   <StrypiceIcon />
                 </div>
-                <p>STRIPE</p>
+                <p className="colorStripe">STRIPE</p>
               </button>
             </div>
           </div>
