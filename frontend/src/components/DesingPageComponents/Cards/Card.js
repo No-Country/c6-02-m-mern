@@ -11,8 +11,8 @@ const Card = ({ titulo, include, page, precio, onActive, id }) => {
         <p className="colorText">{page}</p>
         <div className="precio">
           <h3 className="costo">
-            {" "}
-            <span className="choseColor">Chose..</span> ${precio}
+            <span className="choseColor">Chose..</span>
+            <span className="choseColor">{precio}</span>
           </h3>
         </div>
       </div>

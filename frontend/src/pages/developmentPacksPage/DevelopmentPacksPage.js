@@ -18,14 +18,21 @@ export const DevelopmentPacksPage = () => {
     PaymentCtx;
 
   const handlerActive = (e) => {
-    setbtnactive(true);
-    const priceCardActive = e.target.childNodes[3].textContent;
-    const titleCardActive = e.target.childNodes[0].textContent;
-    setdevelopmentPageCardDataSelect({
-      ...developmentPageCardDataSelect,
-      title: titleCardActive,
-      price: priceCardActive,
-    });
+    if (e.target.className === "card-body") {
+      setbtnactive(true);
+      const pageSelect = e.target.childNodes[2].textContent;
+      const priceCardActive =
+        e.target.childNodes[3].firstChild.lastChild.textContent;
+      const titleCardActive = e.target.childNodes[0].textContent;
+      setdevelopmentPageCardDataSelect({
+        ...developmentPageCardDataSelect,
+        title: titleCardActive,
+        price: priceCardActive,
+        pageSelect: pageSelect,
+      });
+    } else {
+      alert("please select a card");
+    }
   };
   return (
     <div className="developmentPacksPage">
