@@ -40,7 +40,7 @@ export const DevelopmentPacksPage = () => {
           <div className="col-12 ">
             <div className="col align-self-center">
               <Titulo
-                title="developmentPacksPage"
+                title="DEVELOPMENT PACKS"
                 description="We develop the website and/or the software solutions you need to scale your business to the next level."
               />
             </div>
@@ -70,6 +70,6 @@ export const DevelopmentPacksPage = () => {
         pathbtn2="/marketin-packs-page"
         circleActive={1}
       />
-    </div>
+    </div> /**/
   );
 };

@@ -42,7 +42,7 @@ export const DesingPacksPage = () => {
           <div className="col-12 ">
             <div className="col align-self-center">
               <Titulo
-                title="DesingPacksPage"
+                title="DESIGN PACKS"
                 description="We design everything from the image of your business to the functionality of your website or software solution, to achieve an excellent experience for your users."
               />
             </div>
@@ -71,6 +71,6 @@ export const DesingPacksPage = () => {
         pathbtn2="/development-packs-page"
         circleActive={0}
       />
-    </div>
+    </div> /**/
   );
 };
