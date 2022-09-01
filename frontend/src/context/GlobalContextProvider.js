@@ -17,16 +17,19 @@ export const GlobalContextProvider = ({ children }) => {
   const [desingPageCardDataSelect, setdesingPageCardDataSelect] = useState({
     title: "",
     price: "",
+    pageSelect: "",
   });
   const [developmentPageCardDataSelect, setdevelopmentPageCardDataSelect] =
     useState({
       title: "",
       price: "",
+      pageSelect: "",
     });
   const [marketingPageCardDataSelect, setmarketingPageCardDataSelect] =
     useState({
       title: "",
       price: "",
+      pageSelect: "",
     });
 
   const UIstate = {
@@ -70,7 +73,6 @@ export const GlobalContextProvider = ({ children }) => {
     desingPageCardDataSelect,
     developmentPageCardDataSelect,
     marketingPageCardDataSelect,
-    totalAmountPayment,
   ];
 
   const PaymentCtx = {
@@ -81,6 +83,7 @@ export const GlobalContextProvider = ({ children }) => {
     setmarketingPageCardDataSelect,
     marketingPageCardDataSelect,
     allDataUserPayment,
+    totalAmountPayment,
   };
 
   const { statehttp: datadesingCards } = useFetch(
