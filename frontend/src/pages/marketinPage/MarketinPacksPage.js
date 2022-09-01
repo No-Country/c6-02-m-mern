@@ -61,12 +61,7 @@ export const MarketinPacksPage = () => {
           {/* carousel */}
 
           <div className="col-12">
-            <Carousel
-              fade
-              style={{
-                marginTop: "10rem",
-              }}
-            >
+            <Carousel fade>
               {datamarketingCards &&
                 datamarketingCards.map((card) => {
                   return (

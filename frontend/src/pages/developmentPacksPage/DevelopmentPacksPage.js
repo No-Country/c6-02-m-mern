@@ -60,12 +60,7 @@ export const DevelopmentPacksPage = () => {
           {/* carousel */}
 
           <div className="col-12">
-            <Carousel
-              fade
-              style={{
-                marginTop: "10rem",
-              }}
-            >
+            <Carousel fade>
               {datadevCards &&
                 datadevCards.map((card) => {
                   return (

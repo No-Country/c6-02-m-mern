@@ -8,7 +8,6 @@
 
 .card-tarjetas {
   margin: 5px;
-  width: 40%;
   margin: 0 auto;
   background: linear-gradient(
     180deg,
@@ -30,6 +29,11 @@
 .card-body {
   width: 250px;
   height: 250px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 h2 {
   font-weight: bolder;
@@ -47,17 +51,14 @@ h2 {
   color: black;
 }
 
-.card-tarjetas:hover {
-  transform: scale(1.17);
-  background-color: rgba(77, 174, 213, 1);
-}
-.card-tarjetas.active {
-  transform: scale(1.1);
-}
-
 @media screen and (min-width: 1024px) {
   .card-tarjetas {
-    margin: 30px;
+    width: 30%;
+    height: 400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: linear-gradient(
       180deg,
       #05668d 0%,

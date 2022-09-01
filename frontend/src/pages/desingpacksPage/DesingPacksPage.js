@@ -63,12 +63,7 @@ export const DesingPacksPage = () => {
           {/* carousel */}
 
           <div className="col-12">
-            <Carousel
-              fade
-              style={{
-                marginTop: "10rem",
-              }}
-            >
+            <Carousel fade style={{ marginTop: "0" }}>
               {datadesingCards &&
                 datadesingCards.map((card) => {
                   return (
