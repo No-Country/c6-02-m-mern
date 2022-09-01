@@ -1,15 +1,17 @@
 import { useContext, useState } from "react";
+import Carousel from "react-bootstrap/Carousel";
+import Card from "../../components/DesingPageComponents/Cards/Card.js";
+// import Card from "react-bootstrap/Card";
+
 import Titulo from "../../components/DesingPageComponents/Cards/Titulo.js";
 
 import Question from "../../components/DesingPageComponents/Cards/Question.js";
-import CardDesktop from "../../components/DesingPageComponents/Cards/CardDesktop.js";
+
 import { HeaderSub } from "../../components/DesingPageComponents/HeaderSub/HeaderSub.js";
 import { ModalQuestion } from "../../components/DesingPageComponents/ModalQuestion.js/ModalQuestion.js";
 import { Bar } from "../../components/DesingPageComponents/DownContainer/Bar/Bar.js";
-
 import { GlobalContext } from "../../context/GlobalContext.js";
 import "./desingpacksPakcs.css";
-import { Carrousel } from "../../components/DesingPageComponents/Carrousel/Carrousel.js";
 
 export const DesingPacksPage = () => {
   const [btnactive, setbtnactive] = useState(false);
@@ -54,13 +56,37 @@ export const DesingPacksPage = () => {
               />
             </div>
           </div>
-
           <div className="col align-self-start custom-question">
             <Question />
           </div>
-          <div className="col-12 d-none d-lg-block ">
-            <Carrousel />
+
+          {/* carousel */}
+
+          <div className="col-12">
+            <Carousel
+              fade
+              style={{
+                marginTop: "10rem",
+              }}
+            >
+              {datadesingCards &&
+                datadesingCards.map((card) => {
+                  return (
+                    <Carousel.Item key={card._id}>
+                      <Card
+                        id={card._id}
+                        titulo={card.titulo}
+                        include={card.include}
+                        page={card.categoria}
+                        precio={card.precio}
+                        onActive={handlerActive}
+                      />
+                    </Carousel.Item>
+                  );
+                })}
+            </Carousel>
           </div>
+          {/* carousel */}
         </div>
       </div>
       <Bar
@@ -71,6 +97,6 @@ export const DesingPacksPage = () => {
         pathbtn2="/development-packs-page"
         circleActive={0}
       />
-    </div> /**/
+    </div>
   );
 };

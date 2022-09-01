@@ -3,7 +3,8 @@ import { HeaderSub } from "../../components/DesingPageComponents/HeaderSub/Heade
 import { ModalQuestion } from "../../components/DesingPageComponents/ModalQuestion.js/ModalQuestion";
 import { Bar } from "../../components/DesingPageComponents/DownContainer/Bar/Bar";
 import { GlobalContext } from "../../context/GlobalContext";
-import CardDesktop from "../../components/DesingPageComponents/Cards/CardDesktop";
+import Carousel from "react-bootstrap/Carousel";
+import Card from "../../components/DesingPageComponents/Cards/Card.js";
 
 import Question from "../../components/DesingPageComponents/Cards/Question";
 import Titulo from "../../components/DesingPageComponents/Cards/Titulo";
@@ -56,13 +57,33 @@ export const DevelopmentPacksPage = () => {
           <div className="col align-self-start custom-question">
             <Question />
           </div>
-          <div className="col-12 d-none d-lg-block ">
-            <CardDesktop
-              pagetype="development"
-              onActive={handlerActive}
-              data={datadevCards}
-            />
+          {/* carousel */}
+
+          <div className="col-12">
+            <Carousel
+              fade
+              style={{
+                marginTop: "10rem",
+              }}
+            >
+              {datadevCards &&
+                datadevCards.map((card) => {
+                  return (
+                    <Carousel.Item key={card._id}>
+                      <Card
+                        id={card._id}
+                        titulo={card.titulo}
+                        include={card.include}
+                        page={card.categoria}
+                        precio={card.precio}
+                        onActive={handlerActive}
+                      />
+                    </Carousel.Item>
+                  );
+                })}
+            </Carousel>
           </div>
+          {/* carousel */}
         </div>
       </div>
 

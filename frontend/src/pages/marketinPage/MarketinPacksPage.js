@@ -1,12 +1,12 @@
 import React, { useContext, useState } from "react";
-import CardDesktop from "../../components/DesingPageComponents/Cards/CardDesktop";
-
+import Card from "../../components/DesingPageComponents/Cards/Card";
 import Question from "../../components/DesingPageComponents/Cards/Question";
 import Titulo from "../../components/DesingPageComponents/Cards/Titulo";
 import { Bar } from "../../components/DesingPageComponents/DownContainer/Bar/Bar";
 import { HeaderSub } from "../../components/DesingPageComponents/HeaderSub/HeaderSub";
 import { ModalQuestion } from "../../components/DesingPageComponents/ModalQuestion.js/ModalQuestion";
 import { GlobalContext } from "../../context/GlobalContext";
+import Carousel from "react-bootstrap/Carousel";
 
 import "./marketingPacks.css";
 
@@ -58,13 +58,33 @@ export const MarketinPacksPage = () => {
           <div className="col align-self-start custom-question">
             <Question />
           </div>
-          <div className="col-12 d-none d-lg-block ">
-            <CardDesktop
-              pagetype="marketingpage"
-              onActive={handlerActive}
-              data={datamarketingCards}
-            />
+          {/* carousel */}
+
+          <div className="col-12">
+            <Carousel
+              fade
+              style={{
+                marginTop: "10rem",
+              }}
+            >
+              {datamarketingCards &&
+                datamarketingCards.map((card) => {
+                  return (
+                    <Carousel.Item key={card._id}>
+                      <Card
+                        id={card._id}
+                        titulo={card.titulo}
+                        include={card.include}
+                        page={card.categoria}
+                        precio={card.precio}
+                        onActive={handlerActive}
+                      />
+                    </Carousel.Item>
+                  );
+                })}
+            </Carousel>
           </div>
+          {/* carousel */}
         </div>
       </div>
       <Bar
