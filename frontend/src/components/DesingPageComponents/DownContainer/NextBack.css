@@ -63,9 +63,7 @@
 .cssButton.active {
   opacity: 0;
 }
-.cssButton:hover{
- 
-}
+
 
 .bar {
   display: flex;
@@ -132,7 +130,7 @@
         .cssButtonNext:hover{
           color: white;
         }
-}
+}/*d*/
 
 /*///                                      DESIGN MOBI                  ///*/
 

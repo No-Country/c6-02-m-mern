@@ -70,6 +70,6 @@ export const DevelopmentPacksPage = () => {
         pathbtn2="/marketin-packs-page"
         circleActive={1}
       />
-    </div>
+    </div> /**/
   );
 };

@@ -73,6 +73,6 @@ export const MarketinPacksPage = () => {
         pathbtn2="/payment-page"
         circleActive={2}
       />
-    </div>
+    </div> /**/
   );
 };

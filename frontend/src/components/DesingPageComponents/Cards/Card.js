@@ -12,7 +12,7 @@ const Card = ({ titulo, include, page, precio, onActive, id }) => {
         <div className="precio">
           <h3 className="costo">
             {" "}
-            <span className="choseColor">Chose</span> ${precio}
+            <span className="choseColor">Chose..</span> ${precio}
           </h3>
         </div>
       </div>

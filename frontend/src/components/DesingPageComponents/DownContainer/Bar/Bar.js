@@ -71,6 +71,6 @@ export const Bar = (props) => {
           <div className="circleContainer">{arr}</div>
         </div>
       </div>
-    </div>
+    </div> /*a*/
   );
 };

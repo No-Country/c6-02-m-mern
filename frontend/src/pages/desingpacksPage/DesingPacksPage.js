@@ -71,6 +71,6 @@ export const DesingPacksPage = () => {
         pathbtn2="/development-packs-page"
         circleActive={0}
       />
-    </div>
+    </div> /**/
   );
 };
