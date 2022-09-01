@@ -9,6 +9,7 @@ import { Bar } from "../../components/DesingPageComponents/DownContainer/Bar/Bar
 
 import { GlobalContext } from "../../context/GlobalContext.js";
 import "./desingpacksPakcs.css";
+import { Carrousel } from "../../components/DesingPageComponents/Carrousel/Carrousel.js";
 
 export const DesingPacksPage = () => {
   const [btnactive, setbtnactive] = useState(false);
@@ -58,11 +59,7 @@ export const DesingPacksPage = () => {
             <Question />
           </div>
           <div className="col-12 d-none d-lg-block ">
-            <CardDesktop
-              pagetype="desingPage"
-              onActive={handlerActive}
-              data={datadesingCards}
-            />
+            <Carrousel />
           </div>
         </div>
       </div>
