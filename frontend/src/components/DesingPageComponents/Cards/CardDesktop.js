@@ -1,5 +1,7 @@
 import Card from "./Card";
 
+import "./CardDesktop.css";
+
 const CardDesktop = (props) => {
   return (
     <div className="flex-container">

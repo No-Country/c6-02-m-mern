@@ -1,6 +1,5 @@
 import React, { useContext, useState } from "react";
 import CardDesktop from "../../components/DesingPageComponents/Cards/CardDesktop";
-import Carousel from "../../components/DesingPageComponents/Cards/Carousel";
 import Question from "../../components/DesingPageComponents/Cards/Question";
 import Titulo from "../../components/DesingPageComponents/Cards/Titulo";
 import { Bar } from "../../components/DesingPageComponents/DownContainer/Bar/Bar";
@@ -50,9 +49,6 @@ export const MarketinPacksPage = () => {
             </div>
           </div>
 
-          <div className="col-12 d-lg-none d-md-block">
-            <Carousel />
-          </div>
           <div className="col align-self-start custom-question">
             <Question />
           </div>

@@ -18,10 +18,6 @@
     position: static;
   }
 
-  .custom-desktop {
-    /* margin-top: 1rem; */
-  }
-
   .margin-top-custom {
     margin-top: unset;
   }
