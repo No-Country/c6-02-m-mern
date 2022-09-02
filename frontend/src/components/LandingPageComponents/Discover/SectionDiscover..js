@@ -21,9 +21,9 @@ export const SectionDiscover = () => {
             <CardDiscover
               image={discoverOffice}
               description="we have a panel of experts in your area willing to take your
-                business to the."
+                business to the"
               alt={"discoverimage"}
-              extraDes="next level"
+              extraDes=" next level"
             />
             <CardDiscover
               image={discoverSuccess}
@@ -35,7 +35,7 @@ export const SectionDiscover = () => {
 
             <CardDiscover
               image={discoverGuy}
-              description="We have a wide variety of packages </span>
+              description="We have a wide variety of packages
                 according to "
               alt={"discoverGuy"}
               extraDes="your needs!"
