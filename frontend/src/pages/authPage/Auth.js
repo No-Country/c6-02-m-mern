@@ -8,16 +8,16 @@ import { VALIDATOR_EMAIL, VALIDATOR_MINLENGTH } from "../../util/validators";
 // useForm hook
 import { useForm } from "../../shared/hooks/form-hook";
 
-// css
-
-import "./Auth.css";
-
 import Input from "../../shared/Input";
 import Button from "../../shared/Button";
 import { HeaderSub } from "../../components/DesingPageComponents/HeaderSub/HeaderSub";
 import { GlobalContext } from "../../context/GlobalContext";
-import LoadingSpinner from "../../UI/LoadingSpinner";
 import { ErrorComponent } from "../../UI/ErrorComponent";
+
+// css
+
+import "./Auth.css";
+import LoadingSpinner from "../../UI/LoadingSpinner";
 
 const Auth = () => {
   const navigate = useNavigate();

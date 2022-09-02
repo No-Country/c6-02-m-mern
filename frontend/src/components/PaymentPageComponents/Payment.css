@@ -1,273 +1,255 @@
-.paymentContainer{
-    display: flex;
-    background-color: #171716;
-    height: 93.4vh;
-    width: 100%;
-    flex-direction: column;
-   
-   
+.paymentContainer {
+  display: flex;
+  background-color: #171716;
+  height: 93.4vh;
+  width: 100%;
+  flex-direction: column;
 }
 .classPacks {
-    font-family: 'Saira';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 50px;
-    
-    color: #FFFFFF;
+  font-family: "Saira";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 50px;
+
+  color: #ffffff;
+}
+.subPaymentMethodContainer {
+  margin-top: -73px;
 }
 
-.total{
-    color: rgba(204, 255, 102, 1);
-    font-size: 24px;
-    font-weight: 600;
-    font-family: 'Saira';
+.total {
+  color: rgba(204, 255, 102, 1);
+  font-size: 24px;
+  font-weight: 600;
+  font-family: "Saira";
 }
-.colorPrice{
-    font-size: 30px;
+.colorPrice {
+  font-size: 30px;
 }
-.colorPricePacks{
-    color: rgba(204, 255, 102, 1);
-    font-size: 20px;
-    font-weight: 600;
+.colorPricePacks {
+  color: rgba(204, 255, 102, 1);
+  font-size: 20px;
+  font-weight: 600;
 }
-.colorChooseThe{
-    color: white;
+.colorChooseThe {
+  color: white;
 }
-.colorPayPal{
-    color: rgba(204, 255, 102, 1);
+.colorPayPal {
+  color: rgba(204, 255, 102, 1);
 }
-.colorStripe{
-    color:rgba(204, 255, 102, 1);
+.colorStripe {
+  color: rgba(204, 255, 102, 1);
 }
-.accountDetails{
-   
-    display: flex;
-    width: 90%;
-    max-width: 500px;
-    height: 300px;
-    
-    background: linear-gradient(180deg, #05668D 0%, rgba(5, 102, 141, 0.16) 100%);
-    box-sizing: border-box;
-    border: 0.01px solid #05668D;
-    box-shadow: inset 6px 10px 15px rgba(33, 1, 36, 0.3);
-    backdrop-filter: blur(10px);
-    border-radius: 20px;
-    margin: 0 auto;
-    margin-top: 50px;
- 
+.accountDetails {
+  display: flex;
+  width: 90%;
+  max-width: 500px;
+  height: 300px;
+
+  background: linear-gradient(180deg, #05668d 0%, rgba(5, 102, 141, 0.16) 100%);
+  box-sizing: border-box;
+  border: 0.01px solid #05668d;
+  box-shadow: inset 6px 10px 15px rgba(33, 1, 36, 0.3);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  margin: 0 auto;
+  margin-top: 50px;
 }
 
 .accountDetails h1 {
-    
-    display: flex;
-    width: 100%;
-    height: 10%;
-    font-family: 'Saira';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 26px;
-    justify-content: center;
-    color: #ffff;
-    
+  display: flex;
+  width: 100%;
+  height: 10%;
+  font-family: "Saira";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 26px;
+  justify-content: center;
+  color: #ffff;
 }
 
-.textContent{
-    
-    display: flex;
-    flex-direction: column;
-    position:absolute;
-    width: 90%;
-    min-width: 297px;
-    height: 25vh;
-    top: 20%;
-    left: 5%;
+.textContent {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 90%;
+  min-width: 297px;
+  height: 25vh;
+  top: 20%;
+  left: 5%;
 }
 
-.paymentMethodContainer{
-   margin-top: 100px;
-   height: 50%;
+.paymentMethodContainer {
+  margin-top: 100px;
+  height: 50%;
 }
 
-.paymentMethodContainer .choose{
-    max-height: 1.5vh;
-    color: aliceblue;
+.paymentMethodContainer .choose {
+  max-height: 1.5vh;
+  color: aliceblue;
 }
 
-
-
-.paymentMethodContainer p{
-    line-height: 15.92px;
-    font-size: 27px;  
-    text-align: center;
-    font-family: 'Saira';
-    font-weight: 800;
+.paymentMethodContainer p {
+  line-height: 15.92px;
+  font-size: 27px;
+  text-align: center;
+  font-family: "Saira";
+  font-weight: 800;
 }
-.paragraphContainer{
-    width: 100%;
-    margin-top: 5%;
-   
+.paragraphContainer {
+  width: 100%;
+  margin-top: 5%;
 }
-.paymentmeth{
-    color: rgba(204, 255, 102, 1);
-    margin-top: 5%;
+.paymentmeth {
+  color: rgba(204, 255, 102, 1);
+  margin-top: 5%;
 }
 
-.buttonsPayContainer{
-    margin-top: 100px;
+.buttonsPayContainer {
+  /* margin-top: 100px; */
 }
 
 .paymentMethodContainer .buttons {
-    justify-content: center;
-    
+  justify-content: center;
 }
 
-.buttons{
-    display: flex;
-    align-items: center;
-    color: #CCFF66;
-    width: 53%;
-    max-width: 190px;
-    height: 40px;
-    margin: 0 auto;
-    margin-top: 60px;
-    border-radius: 25px;
-    border: 5px solid  rgba(204, 255, 102, 1);
-    background-color: transparent;
-    font-weight: 700;
-    cursor: pointer;
+.buttons {
+  display: flex;
+  align-items: center;
+  color: #ccff66;
+  width: 53%;
+  max-width: 190px;
+  height: 40px;
+  margin: 0 auto;
+  margin-top: 60px;
+  border-radius: 25px;
+  border: 5px solid rgba(204, 255, 102, 1);
+  background-color: transparent;
+  font-weight: 700;
+  cursor: pointer;
 }
 
 .buttons p {
-    
-    margin-left: 25px;
-    margin-right: 10px;
-    margin-top: 6%;
-    font-size: 22px;
+  margin-left: 25px;
+  margin-right: 10px;
+  margin-top: 6%;
+  font-size: 22px;
 }
 
-.BigStrypiceIcon{
-    display: none;
+.BigStrypiceIcon {
+  display: none;
 }
- .BigPaypalIcon {
-     display: none;
- }
+.BigPaypalIcon {
+  display: none;
+}
 
 @media screen and (min-width: 1024px) {
-    .paymentContainer {
-            display: flex;
-            flex-direction: row;
-            
-    
-        }
-                .classPacks {
-                    font-family: 'Saira';
-                    font-style: normal;
-                    font-weight: 400;
-                    font-size: 25px;
-                    line-height: 100px;
-        
-                    color: #FFFFFF;
-                }
+  .paymentContainer {
+    display: flex;
+    flex-direction: row;
+  }
+  .classPacks {
+    font-family: "Saira";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 100px;
 
-                 .accountDetails {
-                   
-                    display: flex;
-                    max-width: 643px;
-                    height: 541px;
-                    
-                    
-                }
-                .sizeAccountDetails{
-                    font-size: 40px;
-                    color: white;
-                }
-                    .subPaymentContainer{
-                        display: flex;
-                        height: 80%;
-                        width: 100%;
-                        margin-top: 25px;
-                    
-                    }
-                                        .total {
-                                            color: rgba(204, 255, 102, 1);
-                                            font-size: 35px;
-                                            font-weight: 600;
-                                            font-family: 'Saira';
-                                            line-height: 100px;
-                                        }
-                                                                                .colorPrice {
-                                                                                    font-size: 45px;
-                                                                                }
-                                                                                                                                                                .colorPricePacks {
-                                                                                                                                                                    color: rgba(204, 255, 102, 1);
-                                                                                                                                                                    font-size: 27px;
-                                                                                                                                                                    font-weight: 600;
-                                                                                                                                                                }
+    color: #ffffff;
+  }
 
-                                        .paymentMethodContainer {
-                                         
-                                            margin-top: 0%;
-                                            width: 45%;
-                                            height: 100%;
-                                            display: flex;
-                                            
-                                        }
+  .accountDetails {
+    display: flex;
+    max-width: 643px;
+    height: 541px;
+  }
+  .sizeAccountDetails {
+    font-size: 40px;
+    color: white;
+  }
+  .subPaymentContainer {
+    display: flex;
+    height: 80%;
+    width: 100%;
+    margin-top: 25px;
+  }
+  .total {
+    color: rgba(204, 255, 102, 1);
+    font-size: 35px;
+    font-weight: 600;
+    font-family: "Saira";
+    line-height: 100px;
+  }
+  .colorPrice {
+    font-size: 45px;
+  }
+  .colorPricePacks {
+    color: rgba(204, 255, 102, 1);
+    font-size: 27px;
+    font-weight: 600;
+  }
 
-                                                                            .subPaymentMethodContainer{
-                                                                                width: 600px;
-                                                                                margin-top: 50px;
-                                                                            }
-                                                                            .buttonsPayContainer {
-                                                                             margin-top: 170px;
-                                                                             
-                                                                            }.paymentMethodContainer p {
-                                                                                line-height: 18.92px;
-                                                                                font-size: 38px;
-                                                                            }
-                                                                                                                                                        .textContent {
-                                                                            
-                                                                                                                                                            display: flex;
-                                                                                                                                                            flex-direction: column;
-                                                                                                                                                            position: absolute;
-                                                                                                                                                            width: 90%;
-                                                                                                                                                            min-width: 297px;
-                                                                                                                                                            height: 45vh;
-                                                                                                                                                         
-                                                                                                                                                            top: 20%;
-                                                                                                                                                            left: 5%;
-                                                                                                                                                        }
-                                                                            .buttons {
-                                                                                display: flex;
-                                                                                align-items: center;
-                                                                                color: #CCFF66;
-                                                                                width: 407px;
-                                                                                max-width: 800px;
-                                                                                height: 88px;
-                                                                                margin: 0 auto;
-                                                                                margin-top: 90px;
-                                                                                border-radius: 25px;
-                                                                                border: 5px solid rgba(204, 255, 102, 1);
-                                                                                background-color: transparent;
-                                                                                font-weight: 700;
-                                                                            }
-                                                                            .buttons p {
-                                                                              margin-top: 2%;
-                                                                            }
+  .paymentMethodContainer {
+    margin-top: 0%;
+    width: 45%;
+    height: 100%;
+    display: flex;
+  }
 
-                                                                           .StrypiceIcon{
-                                                                                display: none;
-                                                                            }
-                                                                                                                                                        .BigStrypiceIcon {
-                                                                                                                                                            display: flex;
-                                                                                                                                                        }
-                                                                                                                                                       
-                                                                                                                                                                                                                                                                                                                .BigPaypalIcon{
-                                                                                                                                                                                                                                                                                                                    display: flex;
-                                                                                                                                                                                                                                                                                                                }
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 .PaypalIcon{
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    display: none;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 }
-                                                                            
-                                                                            
+  .subPaymentMethodContainer {
+    width: 600px;
+    margin-top: 50px;
+  }
+
+  .paymentMethodContainer p {
+    line-height: 18.92px;
+    font-size: 38px;
+  }
+
+  .subPaymentMethodContainer {
+    margin-top: 100px;
+  }
+  .textContent {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 90%;
+    min-width: 297px;
+    height: 45vh;
+
+    top: 20%;
+    left: 5%;
+  }
+  .buttons {
+    display: flex;
+    align-items: center;
+    color: #ccff66;
+    width: 407px;
+    max-width: 800px;
+    height: 88px;
+    margin: 0 auto;
+    margin-top: 90px;
+    border-radius: 25px;
+    border: 5px solid rgba(204, 255, 102, 1);
+    background-color: transparent;
+    font-weight: 700;
+  }
+  .buttons p {
+    margin-top: 2%;
+  }
+
+  .StrypiceIcon {
+    display: none;
+  }
+  .BigStrypiceIcon {
+    display: flex;
+  }
+
+  .BigPaypalIcon {
+    display: flex;
+  }
+  .PaypalIcon {
+    display: none;
+  }
 }

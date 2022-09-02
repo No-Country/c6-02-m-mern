@@ -7,6 +7,7 @@ import { BigStrypiceIcon } from "./BigStrypiceIcon";
 import { useState } from "react";
 
 import { PayPalButtons, PayPalScriptProvider } from "@paypal/react-paypal-js";
+import LoadingSpinner from "../../UI/LoadingSpinner";
 
 export const Payment = () => {
   const [isLoading, setIsLoading] = useState(false);
@@ -43,12 +44,12 @@ export const Payment = () => {
     } catch (e) {
       setIsLoading(false);
       console.log(e.message);
-      seterror(e.message || "something wend wrong please try again");
+      seterror(e.message || "something wend wrong in stripe please try again");
     }
   };
 
   const createOrder = async () => {
- 
+    try {
       const response = await fetch(
         "https://nc-digitize.herokuapp.com/api/payment/paypal",
         {
@@ -57,18 +58,26 @@ export const Payment = () => {
             "Content-Type": "application/json",
           },
           body: JSON.stringify({
-            value: 100
-          })
+            value: 100,
+          }),
         }
-      )
+      );
 
       const responseData = await response.json();
-      return responseData.orderID
-    
-  }
+
+      if (responseData.error) {
+        throw new Error(responseData.message);
+      }
+
+      return responseData.orderID;
+    } catch (e) {
+      console.log(e.message);
+      seterror(e.message || "something wend wrong in paypal please try again");
+    }
+  };
   const onApprove = (data) => {
-    console.log(data)
-  }
+    console.log(data);
+  };
   return (
     <div className="paymentContainer">
       <div className="subPaymentContainer">
@@ -81,25 +90,22 @@ export const Payment = () => {
             </div>
             <div className="buttonsPayContainer">
               <PayPalScriptProvider
-                options={
-                  {
-                    'client-id':'AX3zcQlLa0eRLfFezweDWnBEz8-uamICBoGUP3FkpLM8dLk4A4kZr6vDI5TkQqsTyzkq7fI5PKUsH-1S',
-                    'currency':'USD'
-                  }
-                }
+                options={{
+                  "client-id":
+                    "AX3zcQlLa0eRLfFezweDWnBEz8-uamICBoGUP3FkpLM8dLk4A4kZr6vDI5TkQqsTyzkq7fI5PKUsH-1S",
+                  currency: "USD",
+                }}
               >
                 <PayPalButtons
                   style={{
-                    color:"blue",
-                    shape:"pill",
-                    label:"pay",
-                    height: 35
+                    color: "blue",
+                    shape: "pill",
+                    label: "pay",
+                    height: 35,
                   }}
                   createOrder={createOrder}
                   onApprove={onApprove}
-                >
-            
-                </PayPalButtons>
+                ></PayPalButtons>
               </PayPalScriptProvider>
               {/*
               <button className="buttons">
@@ -114,15 +120,24 @@ export const Payment = () => {
                 
               </button>
               */}
-              <button className="buttons" onClick={handlerOpenStripe}>
-                <div className="BigStrypiceIcon">
-                  <BigStrypiceIcon />
-                </div>
-                <div className="StrypiceIcon">
-                  <StrypiceIcon />
-                </div>
-                <p className="colorStripe">STRIPE</p>
-              </button>
+
+              {isLoading ? (
+                <LoadingSpinner />
+              ) : (
+                <button
+                  className="buttons"
+                  onClick={handlerOpenStripe}
+                  style={{ marginTop: "-6px" }}
+                >
+                  <div className="BigStrypiceIcon">
+                    <BigStrypiceIcon />
+                  </div>
+                  <div className="StrypiceIcon">
+                    <StrypiceIcon />
+                  </div>
+                  <p className="colorStripe">STRIPE</p>
+                </button>
+              )}
             </div>
           </div>
         </div>

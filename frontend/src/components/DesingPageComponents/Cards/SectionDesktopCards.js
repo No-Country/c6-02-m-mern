@@ -1,4 +1,3 @@
-
 import React from "react";
 import ModalInfo from "../../ModalInfo/ModalInfo";
 import { ModalQuestion } from "../ModalQuestion.js/ModalQuestion";
@@ -24,5 +23,6 @@ export const SectionDesktopCards = () => {
           />
         </div>
       </div>
-
-)}
+    </div>
+  );
+};
