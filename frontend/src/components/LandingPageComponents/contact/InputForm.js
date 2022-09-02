@@ -7,7 +7,7 @@ import ModalInfo from "../../ModalInfo/ModalInfo";
 import { useState } from "react";
 import { Loading } from "../../loading/Loading";
 import { validarEmail } from "../../../util/validateEmail";
- 
+
 export const InputForm = () => {
   const [IsModalInfoActive, setIsModalInfoActive] = useState(false);
   const [isLoading, setisLoading] = useState(false);
@@ -118,7 +118,9 @@ export const InputForm = () => {
         </p>
       )}
 
-      <button type="submit">Submit</button>
+      <button type="submit">
+        <span className="sumbitSize">SUBMIT</span>
+      </button>
       {isLoading && <Loading />}
     </form>
   );

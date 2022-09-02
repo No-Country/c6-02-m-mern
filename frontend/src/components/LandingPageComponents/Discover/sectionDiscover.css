@@ -20,10 +20,14 @@
 }
 
 .wrapper-title__title {
+  width: 77%;
+  height: 12vh;
   margin: 0 auto;
   text-align: center;
-  max-width: 548px;
+  max-width: 246.4px;
   color: white;
+  font-size: 24px;
+  line-height: 38px;
 }
 
 .cardDiscover {
@@ -39,9 +43,10 @@
 }
 
 .cardDiscover__paragraph {
+  width: 222px;
   text-align: center;
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 500;
   margin: 0 auto;
   margin-top: 4rem;
   line-height: 25px;
@@ -73,4 +78,14 @@
   .wrapper-title {
     padding-top: 0;
   }
+    .wrapper-title__title {
+      margin: 0 auto;
+      text-align: center;
+      width: 50%;
+      height: 15vh;
+      max-width: 589px;
+      color: white;
+      font-size: 40px;
+      line-height: 60px;
+    }
 }

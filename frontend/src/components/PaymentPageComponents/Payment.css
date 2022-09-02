@@ -5,6 +5,13 @@
   width: 100%;
   flex-direction: column;
 }
+ .subPaymentContainer {
+
+   height: 70vh;
+   width: 100%;
+
+
+ }
 .classPacks {
   font-family: "Saira";
   font-style: normal;
