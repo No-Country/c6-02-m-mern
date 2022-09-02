@@ -8,7 +8,7 @@ const Question = () => {
 
   const handlerModalOpen = () => {
     UIstate.setisModalActive(true);
-  };
+  }; 
   return (
     <div>
       <img src={Icono} className="icono-question" onClick={handlerModalOpen} />

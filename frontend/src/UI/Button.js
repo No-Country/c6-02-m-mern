@@ -5,7 +5,7 @@ import './button.css';
 export const Button = () => {
   return (
     <Link to="/desing-packs-page" className="button">
-      START NOW!
+      DIGITIZE NOW!
     </Link>
   );
 };

@@ -16,7 +16,7 @@ export const ModalQuestion = (props) => {
       }`}
     >
       <img
-        src={svgImageClose}
+        src={svgImageClose} 
         alt="modalIconClose"
         className="ModalQuestion__icon"
         onClick={handlerCloseModal}
