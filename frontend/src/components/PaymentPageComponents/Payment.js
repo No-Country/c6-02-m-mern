@@ -6,6 +6,8 @@ import { BigPaypalIcon } from "./BigPaypalIcon";
 import { BigStrypiceIcon } from "./BigStrypiceIcon";
 import { useState } from "react";
 
+import { PayPalButtons, PayPalScriptProvider } from "@paypal/react-paypal-js";
+
 export const Payment = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [error, seterror] = useState(null);
@@ -45,6 +47,28 @@ export const Payment = () => {
     }
   };
 
+  const createOrder = async () => {
+ 
+      const response = await fetch(
+        "https://nc-digitize.herokuapp.com/api/payment/paypal",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            value: 100
+          })
+        }
+      )
+
+      const responseData = await response.json();
+      return responseData.orderID
+    
+  }
+  const onApprove = (data) => {
+    console.log(data)
+  }
   return (
     <div className="paymentContainer">
       <div className="subPaymentContainer">
@@ -56,15 +80,40 @@ export const Payment = () => {
               <p className="paymentmeth">payment method</p>
             </div>
             <div className="buttonsPayContainer">
+              <PayPalScriptProvider
+                options={
+                  {
+                    'client-id':'AX3zcQlLa0eRLfFezweDWnBEz8-uamICBoGUP3FkpLM8dLk4A4kZr6vDI5TkQqsTyzkq7fI5PKUsH-1S',
+                    'currency':'USD'
+                  }
+                }
+              >
+                <PayPalButtons
+                  style={{
+                    color:"blue",
+                    shape:"pill",
+                    label:"pay",
+                    height: 35
+                  }}
+                  createOrder={createOrder}
+                  onApprove={onApprove}
+                >
+            
+                </PayPalButtons>
+              </PayPalScriptProvider>
+              {/*
               <button className="buttons">
-                <div className="BigPaypalIcon">
+                
+                  <div className="BigPaypalIcon">
                   <BigPaypalIcon />
                 </div>
                 <div className="PaypalIcon">
                   <PaypalIcon />
                 </div>
                 <p className="colorPayPal">PAYPAL</p>
+                
               </button>
+              */}
               <button className="buttons" onClick={handlerOpenStripe}>
                 <div className="BigStrypiceIcon">
                   <BigStrypiceIcon />
