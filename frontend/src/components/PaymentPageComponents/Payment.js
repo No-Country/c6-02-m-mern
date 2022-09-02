@@ -98,37 +98,26 @@ export const Payment = () => {
               <p className="paymentmeth">payment method</p>
             </div>
             <div className="buttonsPayContainer">
-              <PayPalScriptProvider
-                options={{
-                  "client-id":
-                    "AX3zcQlLa0eRLfFezweDWnBEz8-uamICBoGUP3FkpLM8dLk4A4kZr6vDI5TkQqsTyzkq7fI5PKUsH-1S",
-                  currency: "USD",
-                }}
-              >
-                <PayPalButtons
-                  style={{
-                    color: "blue",
-                    shape: "pill",
-                    label: "pay",
-                    height: 35,
+              <div className="wrapper-paypal-custom">
+                <PayPalScriptProvider
+                  options={{
+                    "client-id":
+                      "AX3zcQlLa0eRLfFezweDWnBEz8-uamICBoGUP3FkpLM8dLk4A4kZr6vDI5TkQqsTyzkq7fI5PKUsH-1S",
+                    currency: "USD",
                   }}
-                  createOrder={createOrder}
-                  onApprove={onApprove}
-                ></PayPalButtons>
-              </PayPalScriptProvider>
-              {/*
-              <button className="buttons">
-                
-                  <div className="BigPaypalIcon">
-                  <BigPaypalIcon />
-                </div>
-                <div className="PaypalIcon">
-                  <PaypalIcon />
-                </div>
-                <p className="colorPayPal">PAYPAL</p>
-                
-              </button>
-              */}
+                >
+                  <PayPalButtons
+                    style={{
+                      color: "blue",
+                      shape: "pill",
+                      label: "pay",
+                      height: 45,
+                    }}
+                    createOrder={createOrder}
+                    onApprove={onApprove}
+                  ></PayPalButtons>
+                </PayPalScriptProvider>
+              </div>
 
               {isLoading ? (
                 <LoadingSpinner />

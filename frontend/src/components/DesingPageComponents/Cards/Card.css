@@ -1,6 +1,9 @@
 .card {
-  width: 239px;
+  width: 210px;
   height: 400px;
+
+  width: 184px;
+  height: 334px;
   margin: 0 auto;
   position: relative;
   text-align: center;
@@ -92,6 +95,7 @@
   background-image: url("../../../assets/images/backIcon.svg");
   width: 23px;
   height: 45px;
+  margin-right: 1rem;
 }
 
 .carousel-indicators {
@@ -99,3 +103,20 @@
 }
 
 /*carousel custom */
+
+@media screen and (min-width: 1024px) {
+  .carousel-control-next-icon {
+    position: absolute;
+    left: -190px;
+  }
+
+  .carousel-control-prev-icon {
+    position: absolute;
+    right: -190px;
+  }
+
+  .card {
+    width: 260px;
+    height: 400px;
+  }
+}

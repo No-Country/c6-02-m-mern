@@ -100,14 +100,11 @@
 .paragraphContainer {
   width: 100%;
   margin-top: 5%;
+  margin-bottom: 4rem;
 }
 .paymentmeth {
   color: rgba(204, 255, 102, 1);
   margin-top: 5%;
-}
-
-.buttonsPayContainer {
-  /* margin-top: 100px; */
 }
 
 .paymentMethodContainer .buttons {
@@ -118,7 +115,7 @@
   display: flex;
   align-items: center;
   color: #ccff66;
-  width: 53%;
+  width: 50%;
   max-width: 190px;
   height: 40px;
   margin: 0 auto;
@@ -207,8 +204,13 @@
     font-size: 38px;
   }
 
+  .wrapper-paypal-custom {
+    width: 70%;
+    margin: 0 auto;
+    display: block;
+  }
+
   .subPaymentMethodContainer {
-    margin-top: 100px;
   }
   .textContent {
     display: flex;

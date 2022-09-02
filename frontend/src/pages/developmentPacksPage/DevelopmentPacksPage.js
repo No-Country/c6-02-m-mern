@@ -59,7 +59,7 @@ export const DevelopmentPacksPage = () => {
           {/* carousel */}
 
           <div className="col-12">
-            <Carousel fade>
+            <Carousel>
               {datadevCards &&
                 datadevCards.map((card) => {
                   return (

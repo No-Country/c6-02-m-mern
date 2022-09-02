@@ -60,7 +60,7 @@ export const MarketinPacksPage = () => {
           {/* carousel */}
 
           <div className="col-12">
-            <Carousel fade>
+            <Carousel>
               {datamarketingCards &&
                 datamarketingCards.map((card) => {
                   return (
