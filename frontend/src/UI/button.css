@@ -1,17 +1,18 @@
 .button {
-    background-color: hsl(80, 100%, 70%);
+    background-color: #CCFF66;
     color: #05668D;
-    width: 195px;
+    width: 200px;
     height: 45px;
     font-weight: 700;
-    font-size: 16px;
-
+    font-size: 25px;
+    font-family: 'Saira' ; 
+    font-style: normal;
     text-align: center;
     line-height: 45px;
     margin-top: 112px;
     /* cambiar margin top */
     border-radius: 20px;
-    box-shadow: 4px 20px 7px -10px hsl(80deg 100% 70% / 81%);
+    box-shadow: 4px 11px 7px -10px hsl(80deg 100% 70% / 81%);
     margin: 0 auto;
 
 
