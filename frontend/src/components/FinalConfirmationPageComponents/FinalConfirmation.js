@@ -12,11 +12,11 @@ export const FinalConfirmation = () => {
             <div className="greenSuccesfully">successfully!</div>
           </p>
         </div>
-        <div className="showVoucherContainer">
+        {/* <div className="showVoucherContainer">
           <p>
             <button className="showVoucherButton">SHOW VOUCHER</button>
           </p>
-        </div>
+        </div> */}
         <div className="ourRepresentativesContainer">
           <p className="ourRepresentatives">
             Our representatives will be in contact with you soon
