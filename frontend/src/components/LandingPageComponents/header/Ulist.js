@@ -25,14 +25,14 @@ export const Ulist = () => {
     links = [
       { id: 1, text: <Now />, path: "/" },
       { id: 2, text: "contact us ", path: "contact-page" },
-      { id: 3, text: "our Work ", path: "our-work" },
+      { id: 3, text: "our work ", path: "our-work" },
       { id: 4, text: "Login Admin ", path: "adminlogin-page" },
     ];
   } else {
     links = [
       { id: 1, text: "digitize NOW ", path: "/" },
       { id: 2, text: "contact us ", path: "contact-page" },
-      { id: 3, text: "our Work ", path: "our-work" },
+      { id: 3, text: "our work ", path: "our-work" },
       { id: 4, text: "PANEL", path: "control-panel-admin" },
     ];
   }
