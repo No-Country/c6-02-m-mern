@@ -4,12 +4,22 @@ import { StrypiceIcon } from "./StrypiceIcon";
 import { AccountDetail } from "./AccountDetails";
 import { BigPaypalIcon } from "./BigPaypalIcon";
 import { BigStrypiceIcon } from "./BigStrypiceIcon";
-import { useState } from "react";
+import { useContext, useState } from "react";
 
 import { PayPalButtons, PayPalScriptProvider } from "@paypal/react-paypal-js";
 import LoadingSpinner from "../../UI/LoadingSpinner";
+import { GlobalContext } from "../../context/GlobalContext";
 
 export const Payment = () => {
+  const { PaymentCtx } = useContext(GlobalContext);
+
+  const {
+    desingPageCardDataSelect,
+    developmentPageCardDataSelect,
+    marketingPageCardDataSelect,
+    totalAmountPayment: { totalAmount },
+  } = PaymentCtx;
+
   const [isLoading, setIsLoading] = useState(false);
   const [error, seterror] = useState(null);
   const handlerOpenStripe = async () => {
@@ -24,9 +34,8 @@ export const Payment = () => {
           },
           body: JSON.stringify({
             name: "Adquirir paquetes digitize",
-            default_price_data: 4000,
-            description:
-              "silver devPacket + Gold desingPacket + silver desingPacket",
+            default_price_data: totalAmount,
+            description: `${desingPageCardDataSelect.title} desingPacket + ${developmentPageCardDataSelect.title} developmentPacket +  ${marketingPageCardDataSelect.title} marketinPacket`,
           }),
         }
       );
@@ -58,7 +67,7 @@ export const Payment = () => {
             "Content-Type": "application/json",
           },
           body: JSON.stringify({
-            value: 100,
+            value: totalAmount,
           }),
         }
       );

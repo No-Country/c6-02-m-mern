@@ -6,7 +6,7 @@ const Card = ({ titulo, include, page, precio, onActive, id }) => {
       <h3 className="card__title">{titulo}</h3>
       <p className="card__includes-paragraph">{include}</p>
 
-      <p className="card__description">Landing page desing</p>
+      <p className="card__description">{`Landing  ${page}`}</p>
       <div className="card__wrapper-price">
         <p className="card__wrapper__chose">chose</p>
         <p className="card__wrapper__exchange">$</p>
