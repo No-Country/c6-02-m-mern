@@ -13,7 +13,7 @@ export const SocialMedia = () => {
         <p className="SocialMedia__type">twitter.com/digitize.ok</p>
       </li>
       <li className="SocialMedia__list">
-        <InstagramIcon />
+        <InstagramIcon /> 
         <p className="SocialMedia__type">instagram.com/digitize.ok</p>
       </li>
       <li className="SocialMedia__list">
