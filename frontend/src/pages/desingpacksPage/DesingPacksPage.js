@@ -21,11 +21,10 @@ export const DesingPacksPage = () => {
   const { desingPageCardDataSelect, setdesingPageCardDataSelect } = PaymentCtx;
 
   const handlerActive = (e) => {
-    if (e.target.className === "card-body") {
+    if (e.target.className === "card") {
       setbtnactive(true);
       const pageSelect = e.target.childNodes[2].textContent;
-      const priceCardActive =
-        e.target.childNodes[3].firstChild.lastChild.textContent;
+      const priceCardActive = e.target.lastChild.lastChild.textContent;
       const titleCardActive = e.target.childNodes[0].textContent;
       setdesingPageCardDataSelect({
         ...desingPageCardDataSelect,
