@@ -40,23 +40,27 @@ export const Bar = (props) => {
     <div className="containerDown">
       <div className="buttonContainer">
         <div className="subuttonContainer">
-          <Link to={props.pathbtn1}>
-            <button
-              onClick={handlerButtonBack}
-              className="cssButton"
-              disabled={active > 0 ? false : true}
-            >
-              {props.btn1Content}
-            </button>
+          <Link to={props.pathbtn1} className="linkButtonOneContainer">
+            <div className="containercssButton">
+              <button
+                onClick={handlerButtonBack}
+                className="cssButton"
+                disabled={active > 0 ? false : true}
+              >
+                {props.btn1Content}
+              </button>
+            </div>
           </Link>
           {props.activebtn && (
-            <Link to={props.pathbtn2}>
-              <button
-                onClick={handlerButtonNext}
-                className={`cssButtonNext ${props.activebtn && "active"}`}
-              >
-                {props.btn2Content}
-              </button>
+            <Link to={props.pathbtn2} className="linkButtonTwoContainer">
+              <div className="containercssButtonNext">
+                <button
+                  onClick={handlerButtonNext}
+                  className={`cssButtonNext ${props.activebtn && "active"}`}
+                >
+                  {props.btn2Content}
+                </button>
+              </div>
             </Link>
           )}
         </div>
@@ -67,6 +71,6 @@ export const Bar = (props) => {
           <div className="circleContainer">{arr}</div>
         </div>
       </div>
-    </div>
+    </div> /*a*/
   );
 };

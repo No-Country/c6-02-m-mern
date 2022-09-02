@@ -1,12 +1,15 @@
 import { useContext, useState } from "react";
+import Carousel from "react-bootstrap/Carousel";
+import Card from "../../components/DesingPageComponents/Cards/Card.js";
+// import Card from "react-bootstrap/Card";
+
 import Titulo from "../../components/DesingPageComponents/Cards/Titulo.js";
-import Carousel from "../../components/DesingPageComponents/Cards/Carousel.js";
+
 import Question from "../../components/DesingPageComponents/Cards/Question.js";
-import CardDesktop from "../../components/DesingPageComponents/Cards/CardDesktop.js";
+
 import { HeaderSub } from "../../components/DesingPageComponents/HeaderSub/HeaderSub.js";
 import { ModalQuestion } from "../../components/DesingPageComponents/ModalQuestion.js/ModalQuestion.js";
 import { Bar } from "../../components/DesingPageComponents/DownContainer/Bar/Bar.js";
-
 import { GlobalContext } from "../../context/GlobalContext.js";
 import "./desingpacksPakcs.css";
 
@@ -18,15 +21,20 @@ export const DesingPacksPage = () => {
   const { desingPageCardDataSelect, setdesingPageCardDataSelect } = PaymentCtx;
 
   const handlerActive = (e) => {
-    setbtnactive(true);
-    const priceCardActive = e.target.childNodes[3].textContent;
-    const titleCardActive = e.target.childNodes[0].textContent;
-
-    setdesingPageCardDataSelect({
-      ...desingPageCardDataSelect,
-      title: titleCardActive,
-      price: priceCardActive,
-    });
+    if (e.target.className === "card") {
+      setbtnactive(true);
+      const pageSelect = e.target.childNodes[2].textContent;
+      const priceCardActive = e.target.lastChild.lastChild.textContent;
+      const titleCardActive = e.target.childNodes[0].textContent;
+      setdesingPageCardDataSelect({
+        ...desingPageCardDataSelect,
+        title: titleCardActive,
+        price: priceCardActive,
+        pageSelect: pageSelect,
+      });
+    } else {
+      alert("please select a card");
+    }
   };
 
   return (
@@ -42,25 +50,37 @@ export const DesingPacksPage = () => {
           <div className="col-12 ">
             <div className="col align-self-center">
               <Titulo
-                title="DesingPacksPage"
+                title="DESIGN PACKS"
                 description="We design everything from the image of your business to the functionality of your website or software solution, to achieve an excellent experience for your users."
               />
             </div>
           </div>
-
-          <div className="col-12 d-lg-none d-md-block">
-            <Carousel />
-          </div>
           <div className="col align-self-start custom-question">
             <Question />
           </div>
-          <div className="col-12 d-none d-lg-block ">
-            <CardDesktop
-              pagetype="desingPage"
-              onActive={handlerActive}
-              data={datadesingCards}
-            />
+
+          {/* carousel */}
+
+          <div className="col-12 mt-4">
+            <Carousel className="carousel-custom">
+              {datadesingCards &&
+                datadesingCards.map((card) => {
+                  return (
+                    <Carousel.Item key={card._id}>
+                      <Card
+                        id={card._id}
+                        titulo={card.titulo}
+                        include={card.include}
+                        page={card.categoria}
+                        precio={card.precio}
+                        onActive={handlerActive}
+                      />
+                    </Carousel.Item>
+                  );
+                })}
+            </Carousel>
           </div>
+          {/* carousel */}
         </div>
       </div>
       <Bar

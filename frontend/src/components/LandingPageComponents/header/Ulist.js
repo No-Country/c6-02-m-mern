@@ -1,7 +1,18 @@
 import React, { useContext } from "react";
 import { GlobalContext } from "../../../context/GlobalContext";
 import { List } from "./List";
-import './header.css'
+import "./header.css";
+
+export const Now = () => {
+  return (
+    <div>
+      <div className="digitizeColor">
+        digitize
+        <font color="CCFF66"> NOW</font>!
+      </div>
+    </div>
+  );
+};
 
 export const Ulist = () => {
   const { AuthCtx } = useContext(GlobalContext);
@@ -12,7 +23,7 @@ export const Ulist = () => {
 
   if (!isLogIn) {
     links = [
-      { id: 1, text: "digitize NOW ", path: "/" },
+      { id: 1, text: <Now />, path: "/" },
       { id: 2, text: "contact us ", path: "contact-page" },
       { id: 3, text: "our Work ", path: "our-work" },
       { id: 4, text: "Login Admin ", path: "adminlogin-page" },

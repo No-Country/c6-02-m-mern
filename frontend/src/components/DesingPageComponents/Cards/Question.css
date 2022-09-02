@@ -5,6 +5,7 @@
   left: 50%;
   transform: translateX(-50%);
   cursor: pointer;
+  display: none;
 }
 
 @media screen and (min-width: 1020px) {

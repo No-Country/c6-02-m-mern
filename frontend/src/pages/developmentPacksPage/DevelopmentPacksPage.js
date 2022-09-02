@@ -3,8 +3,9 @@ import { HeaderSub } from "../../components/DesingPageComponents/HeaderSub/Heade
 import { ModalQuestion } from "../../components/DesingPageComponents/ModalQuestion.js/ModalQuestion";
 import { Bar } from "../../components/DesingPageComponents/DownContainer/Bar/Bar";
 import { GlobalContext } from "../../context/GlobalContext";
-import CardDesktop from "../../components/DesingPageComponents/Cards/CardDesktop";
-import Carousel from "../../components/DesingPageComponents/Cards/Carousel";
+import Carousel from "react-bootstrap/Carousel";
+import Card from "../../components/DesingPageComponents/Cards/Card.js";
+
 import Question from "../../components/DesingPageComponents/Cards/Question";
 import Titulo from "../../components/DesingPageComponents/Cards/Titulo";
 import "./developmentpage.css";
@@ -18,14 +19,20 @@ export const DevelopmentPacksPage = () => {
     PaymentCtx;
 
   const handlerActive = (e) => {
-    setbtnactive(true);
-    const priceCardActive = e.target.childNodes[3].textContent;
-    const titleCardActive = e.target.childNodes[0].textContent;
-    setdevelopmentPageCardDataSelect({
-      ...developmentPageCardDataSelect,
-      title: titleCardActive,
-      price: priceCardActive,
-    });
+    if (e.target.className === "card") {
+      setbtnactive(true);
+      const pageSelect = e.target.childNodes[2].textContent;
+      const priceCardActive = e.target.lastChild.lastChild.textContent;
+      const titleCardActive = e.target.childNodes[0].textContent;
+      setdevelopmentPageCardDataSelect({
+        ...developmentPageCardDataSelect,
+        title: titleCardActive,
+        price: priceCardActive,
+        pageSelect: pageSelect,
+      });
+    } else {
+      alert("please select a card");
+    }
   };
   return (
     <div className="developmentPacksPage">
@@ -40,25 +47,37 @@ export const DevelopmentPacksPage = () => {
           <div className="col-12 ">
             <div className="col align-self-center">
               <Titulo
-                title="developmentPacksPage"
+                title="DEVELOPMENT PACKS"
                 description="We develop the website and/or the software solutions you need to scale your business to the next level."
               />
             </div>
           </div>
 
-          <div className="col-12 d-lg-none d-md-block">
-            <Carousel />
-          </div>
           <div className="col align-self-start custom-question">
             <Question />
           </div>
-          <div className="col-12 d-none d-lg-block ">
-            <CardDesktop
-              pagetype="development"
-              onActive={handlerActive}
-              data={datadevCards}
-            />
+          {/* carousel */}
+
+          <div className="col-12">
+            <Carousel>
+              {datadevCards &&
+                datadevCards.map((card) => {
+                  return (
+                    <Carousel.Item key={card._id}>
+                      <Card
+                        id={card._id}
+                        titulo={card.titulo}
+                        include={card.include}
+                        page={card.categoria}
+                        precio={card.precio}
+                        onActive={handlerActive}
+                      />
+                    </Carousel.Item>
+                  );
+                })}
+            </Carousel>
           </div>
+          {/* carousel */}
         </div>
       </div>
 
@@ -70,6 +89,6 @@ export const DevelopmentPacksPage = () => {
         pathbtn2="/marketin-packs-page"
         circleActive={1}
       />
-    </div>
+    </div> /**/
   );
 };
