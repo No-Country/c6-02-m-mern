@@ -61,7 +61,7 @@ export const DesingPacksPage = () => {
 
           {/* carousel */}
 
-          <div className="col-12 mt-4">
+          <div className="col-12 mt-lg-5">
             <Carousel className="carousel-custom">
               {datadesingCards &&
                 datadesingCards.map((card) => {

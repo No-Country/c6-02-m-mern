@@ -58,7 +58,7 @@ export const DevelopmentPacksPage = () => {
           </div>
           {/* carousel */}
 
-          <div className="col-12">
+          <div className="col-12 mt-lg-5">
             <Carousel>
               {datadevCards &&
                 datadevCards.map((card) => {

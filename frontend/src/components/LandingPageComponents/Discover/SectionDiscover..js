@@ -28,7 +28,7 @@ export const SectionDiscover = () => {
             <CardDiscover
               image={discoverSuccess}
               description="hire the digitization of
-                your business in simple steps! "
+                your business in  "
               alt={"discoverSuccess"}
               extraDes="simple steps!"
             />
