@@ -5,14 +5,14 @@ import "../NextBack.css";
 import { Link } from "react-router-dom";
 
 export const Bar = (props) => {
-  const [circle] = useState(3);
+  const [circle] = useState(4);
   const [active, setActive] = useState(props.circleActive);
   const [width, setWidth] = useState(0);
   useEffect(() => {
     setWidth((100 / (circle - 1)) * active);
   }, [circle, active]);
   const arr = [];
-  for (let i = 0; i < circle; i++) {
+  for (let i = 1; i < circle; i++) {
     arr.push(
       <Circle className={i <= active ? "circle active" : "circle"} key={i}>
         {i}
