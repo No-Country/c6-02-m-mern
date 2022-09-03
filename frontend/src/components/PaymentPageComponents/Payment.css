@@ -21,7 +21,7 @@
   color: #ffffff;
 }
 .subPaymentMethodContainer {
-  margin-top: -73px;
+  
 }
 
 .total {
@@ -52,7 +52,6 @@
   width: 90%;
   max-width: 500px;
   height: 300px;
-
   background: linear-gradient(180deg, #05668d 0%, rgba(5, 102, 141, 0.16) 100%);
   box-sizing: border-box;
   border: 0.01px solid #05668d;
@@ -131,8 +130,11 @@
   background-color: transparent;
   font-weight: 700;
   cursor: pointer;
+  transition: 2s;
 }
-
+ .buttons:hover {
+   box-shadow: 0px 25px 15px -20px #05668d;
+ }
 .buttons p {
   margin-left: 25px;
   margin-right: 10px;
@@ -145,6 +147,14 @@
 }
 .BigPaypalIcon {
   display: none;
+}
+.wrapper-paypal-custom{
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
+.containerpaypalButton{
+  width: 70%;
 }
 
 @media screen and (min-width: 1024px) {
@@ -237,11 +247,15 @@
     max-width: 800px;
     height: 88px;
     margin: 0 auto;
-    margin-top: 90px;
+    margin-top: 165px;
     border-radius: 25px;
     border: 5px solid rgba(204, 255, 102, 1);
     background-color: transparent;
     font-weight: 700;
+    transition: 2s;
+  }
+  .buttons:hover{
+    box-shadow: 0px 25px 15px -20px #05668d;
   }
   .buttons p {
     margin-top: 2%;
@@ -260,4 +274,16 @@
   .PaypalIcon {
     display: none;
   }
+}
+
+@media screen and (min-width:1024px) {
+  .wrapper-paypal-custom {
+      width: 100%;
+      justify-content: center;
+      display: flex;
+    }
+  
+    .containerpaypalButton {
+      width: 70%;
+    }
 }
