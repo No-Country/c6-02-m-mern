@@ -4,9 +4,9 @@ import "./FinalConfirmation.css";
 
 export const FinalButton = () => {
   return (
-    <div> 
+    <div>
       <Link to={"/contact-page"}>
-        <button className="buttonContactUs">CONTACT US</button>
+        <p className="buttonContactUs">CONTACT US</p>
       </Link>
     </div>
   );
