@@ -99,34 +99,32 @@ export const Payment = () => {
             </div>
             <div className="buttonsPayContainer">
               <div className="wrapper-paypal-custom">
-                <PayPalScriptProvider
-                  options={{
-                    "client-id":
-                      "AX3zcQlLa0eRLfFezweDWnBEz8-uamICBoGUP3FkpLM8dLk4A4kZr6vDI5TkQqsTyzkq7fI5PKUsH-1S",
-                    currency: "USD",
-                  }}
-                >
-                  <PayPalButtons
-                    style={{
-                      color: "blue",
-                      shape: "pill",
-                      label: "pay",
-                      height: 45,
+                <div className="containerpaypalButton">
+                  <PayPalScriptProvider
+                    options={{
+                      "client-id":
+                        "AX3zcQlLa0eRLfFezweDWnBEz8-uamICBoGUP3FkpLM8dLk4A4kZr6vDI5TkQqsTyzkq7fI5PKUsH-1S",
+                      currency: "USD",
                     }}
-                    createOrder={createOrder}
-                    onApprove={onApprove}
-                  ></PayPalButtons>
-                </PayPalScriptProvider>
+                  >
+                    <PayPalButtons
+                      style={{
+                        color: "blue",
+                        shape: "pill",
+                        label: "pay",
+                        height: 45,
+                      }}
+                      createOrder={createOrder}
+                      onApprove={onApprove}
+                    ></PayPalButtons>
+                  </PayPalScriptProvider>
+                </div>
               </div>
 
               {isLoading ? (
                 <LoadingSpinner />
               ) : (
-                <button
-                  className="buttons"
-                  onClick={handlerOpenStripe}
-                  style={{ marginTop: "-6px" }}
-                >
+                <button className="buttons" onClick={handlerOpenStripe}>
                   <div className="BigStrypiceIcon">
                     <BigStrypiceIcon />
                   </div>

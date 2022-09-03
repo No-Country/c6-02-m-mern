@@ -39,6 +39,7 @@
   background: transparent;
   margin-top: 4rem;
   padding: 0;
+  transition: 2s;
 }
 
 .form-paragraph-error {
