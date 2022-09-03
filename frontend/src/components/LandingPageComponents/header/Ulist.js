@@ -26,7 +26,7 @@ export const Ulist = () => {
       { id: 1, text: <Now />, path: "/" },
       { id: 2, text: "contact us ", path: "contact-page" },
       { id: 3, text: "our work ", path: "our-work" },
-      // { id: 4, text: "Login Admin ", path: "adminlogin-page" },
+      { id: 4, text: "Login Admin ", path: "adminlogin-page" },
     ];
   } else {
     links = [
