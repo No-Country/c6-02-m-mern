@@ -69,7 +69,7 @@ export const MarketinPacksPage = () => {
                         id={card._id}
                         titulo={card.titulo}
                         include={card.include}
-                        page={card.categoria}
+                        page={card.page}
                         precio={card.precio}
                         onActive={handlerActive}
                       />

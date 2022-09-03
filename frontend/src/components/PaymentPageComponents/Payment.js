@@ -1,14 +1,13 @@
-import "./Payment.css";
-import { PaypalIcon } from "./PaypalIcon";
 import { StrypiceIcon } from "./StrypiceIcon";
 import { AccountDetail } from "./AccountDetails";
-import { BigPaypalIcon } from "./BigPaypalIcon";
+
 import { BigStrypiceIcon } from "./BigStrypiceIcon";
 import { useContext, useState } from "react";
 
 import { PayPalButtons, PayPalScriptProvider } from "@paypal/react-paypal-js";
 import LoadingSpinner from "../../UI/LoadingSpinner";
 import { GlobalContext } from "../../context/GlobalContext";
+import "./Payment.css";
 
 export const Payment = () => {
   const { PaymentCtx } = useContext(GlobalContext);

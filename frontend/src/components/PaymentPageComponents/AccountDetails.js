@@ -15,8 +15,8 @@ export const AccountDetail = () => {
         {PaymentCtx.allDataUserPayment.map((detail, idx) => {
           return (
             <p className="classPacks" key={idx}>
-              {detail.title} {detail.pageSelect + " " + "Page"} ...{" "}
-              <span className="colorPricePacks">${detail.price}</span>
+              {detail.title} {detail.pageSelect}
+              <span className="colorPricePacks"> - ${detail.price}</span>
             </p>
           );
         })}
