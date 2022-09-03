@@ -8,10 +8,12 @@
 
 ## Cohorte c6-02-M-MERN
 
+## participantes
 
+## Cristian Mosquera (Frontend)
 
-**Gonza
+## Eze astrada (Backend)
 
+## Gonza cubillas (fontend)
 
-# Santiago Schroh
-
+## Santiago Schroh (frontend)
