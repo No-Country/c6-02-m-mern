@@ -1,8 +1,15 @@
-import React from 'react';
-import './iconRowDown.css';
+import React from "react";
+import "./iconRowDown.css";
 export const IconRow = () => {
+  const toGoDiscoverSection = () => {
+    console.log("disparando");
+    window.scrollTo({
+      top: document.documentElement.scrollHeight,
+      behavior: "smooth",
+    });
+  };
   return (
-    <div className="wrapper-iconRow">
+    <div className="wrapper-iconRow" onClick={toGoDiscoverSection}>
       <svg
         width="73"
         height="73"

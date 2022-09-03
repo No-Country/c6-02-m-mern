@@ -1,13 +1,13 @@
 .wrapper-iconRow {
-    width: 100%;
-    height: 125px;
-    background: linear-gradient(180deg, #171716 0%, #05668D 100%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 5rem;
+  width: 100%;
+  height: 125px;
+  background: linear-gradient(180deg, #171716 0%, #05668d 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  cursor: pointer;
 }
-
 
 /* @media screen and (min-width: 1024px) {
     .icon-row-down {
